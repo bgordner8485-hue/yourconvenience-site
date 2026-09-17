@@ -26,6 +26,19 @@ Cover or crop the **barcode / validation number** before saving, or only save ti
 6. Optional: GitHub → Actions → *Sync winners* → Run workflow once. To load past winners onto the
    site without posting them, run `python automation/winners_sync.py --backfill` locally once.
 
+## Lottery data on the site
+- **Winning numbers** (`automation/lottery_data.py`): pulled hourly from the Lottery's own RSS feed
+  (`palottery.pa.gov/feeds/Games.aspx`) into `public/numbers.json`, then rendered to `/numbers` and a page per game.
+- **Scratch-off top prizes left**: parsed daily from `palottery.pa.gov/Scratch-Offs/Prizes-Remaining.aspx` into
+  `public/prizes.json` → `/scratch-offs`.
+- **Daily payouts and other retailer reports**: emailed reports are filed into a Drive folder by
+  `automation/gmail_to_drive.gs` (Google Apps Script, installed in the mailbox that receives them), then
+  `automation/reports_ingest.py` parses them into `public/payouts.json`. Parsers are matched on file name —
+  add one per report type as real samples arrive.
+- **ScratchinLottoTV**: set `youtube_url` or `youtube_channel_id` in `public/site.json`; `automation/youtube_feed.py`
+  pulls the latest episodes into `public/videos.json` for `/scratchinlottotv` and the numbers page.
+- **Blog**: write markdown in `content/posts/`; `automation/build_site.py` renders `/blog`, the sitemap and the RSS feed.
+
 ## Editing
 - Deals and hours: `public/site.json` (edit on GitHub, site updates in ~2 min).
 - Songs / chorus start time: `automation/config.json` → `montage.music`.

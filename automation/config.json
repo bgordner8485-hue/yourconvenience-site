@@ -5,7 +5,6 @@
   "drive_winners_folder_id": "112jl4d9_ep7Yfs9c6MG_c9ZEqxyl1O_x",
   "default_store": "South Williamsport",
   "hashtags": "#YourConvenience #PALottery #Winner #SouthWilliamsport #WilliamsportPA #ScratchOff",
-
   "postiz": {
     "api_base": "https://api.postiz.com/public/v1",
     "winner_channels": {
@@ -20,18 +19,38 @@
       "youtube": "PASTE_YOURCONVENIENCE_YOUTUBE_ID"
     }
   },
-
   "montage": {
     "min_winners": 2,
     "seconds_per_winner": 2.6,
     "max_seconds": 58,
     "music_rotation_note": "Rust & Rail tracks from the 'Lucky Enough' Drive folder. start = seconds into the song to begin (pick the chorus). Rotates weekly.",
     "music": [
-      {"title": "Lucky Enough", "drive_id": "13GcxLSj9pbUm9v3U9xkwCN0OCrFSCLP2", "start": 30},
-      {"title": "Stay Young Forever", "drive_id": "1KPNB-6gga0ZWR2XwmY0eecvW-OGXrEBP", "start": 30},
-      {"title": "Once In A While", "drive_id": "1vjUEi4tshf_pCbViVKOWLI8auea266O6", "start": 30},
-      {"title": "Home", "drive_id": "1xtrqJKvav_CHZ9eo_1GkIiSMegdKC0Rg", "start": 30},
-      {"title": "Every Version of Me", "drive_id": "1YhUaY25C_e8dpcI6OkK_BVc4ZChV96f8", "start": 30}
+      {
+        "title": "Lucky Enough",
+        "drive_id": "13GcxLSj9pbUm9v3U9xkwCN0OCrFSCLP2",
+        "start": 30
+      },
+      {
+        "title": "Stay Young Forever",
+        "drive_id": "1KPNB-6gga0ZWR2XwmY0eecvW-OGXrEBP",
+        "start": 30
+      },
+      {
+        "title": "Once In A While",
+        "drive_id": "1vjUEi4tshf_pCbViVKOWLI8auea266O6",
+        "start": 30
+      },
+      {
+        "title": "Home",
+        "drive_id": "1xtrqJKvav_CHZ9eo_1GkIiSMegdKC0Rg",
+        "start": 30
+      },
+      {
+        "title": "Every Version of Me",
+        "drive_id": "1YhUaY25C_e8dpcI6OkK_BVc4ZChV96f8",
+        "start": 30
+      }
     ]
-  }
+  },
+  "drive_reports_folder_id": "PASTE_LOTTERY_REPORTS_FOLDER_ID"
 }

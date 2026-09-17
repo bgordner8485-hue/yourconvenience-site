@@ -83,7 +83,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">@ Your <b>Convenience</b></a>
-  <ul><li><a href="#winners">Winners</a></li><li><a href="#carry">What we carry</a></li><li><a href="#deals">Deals</a></li><li><a href="#stores">Stores</a></li><li><a href="#hiring">Now hiring</a></li></ul>
+  <ul><li><a href="/numbers">Winning Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="#winners">Our Winners</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="#stores">Stores</a></li></ul>
   <a class="call" href="tel:+15709747351">📞 (570) 974-7351</a>
 </div></nav>
 
@@ -92,7 +92,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
     <span class="eyebrow">South Williamsport's lucky store</span>
     <h1>Play here.<br><span>Win here.</span></h1>
     <p>Lottery, tobacco, vape, CBD, games of skill, cold drinks and snacks — and a wall full of winning tickets sold right at our counter.</p>
-    <div class="btns"><a class="btn gold" href="#winners">See this week's winners</a><a class="btn ghost" href="#stores">Get directions</a></div>
+    <div class="btns"><a class="btn gold" href="/numbers">Check tonight's numbers</a><a class="btn ghost" href="#winners">See this week's winners</a></div>
   </div>
   <div class="tally">
     <div class="big" id="weekTotal">$0</div>
@@ -100,10 +100,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
     <div class="row">
       <div><b id="weekCount">0</b><small>winners this week</small></div>
       <div><b id="allTotal">$0</b><small>on our winners wall</small></div>
+      <div id="paidBox" hidden><b id="paidOut">$0</b><small id="paidLabel">paid out at the counter</small></div>
     </div>
   </div>
 </div></header>
 
+
+<section id="todaysnumbers" style="padding:36px 0;background:#fff;border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="sec-head"><div><h2 style="font-size:clamp(26px,4vw,38px)">Today's winning numbers</h2>
+  <p>Every PA game, updated after each drawing. <a href="/numbers"><b>See all games and past results →</b></a></p></div>
+  <div class="filters"><a class="chip" href="/scratch-offs">Scratch-off top prizes left</a></div></div>
+  <div class="grid" id="numgrid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))"></div>
+</div></section>
 <section id="winners"><div class="wrap">
   <div class="sec-head">
     <div><h2>🎉 Winners sold here</h2><p>Updated automatically every time we sell a winner.</p></div>
@@ -208,6 +216,28 @@ fetch('/winners.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
 fetch('/site.json',{cache:'no-store'}).then(r=>r.json()).then(s=>{
   if(s.hours)hoursSW.innerHTML=s.hours;
   dealCards.innerHTML=(s.deals||[]).map(d=>`<div class="card deal"><div class="ic">🔥</div><h3>${d.title}</h3><p>${d.details}</p></div>`).join('')||'<div class="empty">Ask at the counter for this week\'s specials.</div>';
+}).catch(()=>{});
+
+fetch('/numbers.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  const want=['PICK 3','PICK 4','PICK 5','Cash 5','Match 6','Powerball','Mega Millions','Treasure Hunt'];
+  const seen={},out=[];
+  for(const dr of d.draws){ if(!want.includes(dr.game))continue; const k=dr.game; if(seen[k])continue; seen[k]=1; out.push(dr); }
+  out.sort((a,b)=>want.indexOf(a.game)-want.indexOf(b.game));
+  const ball=n=>`<span style="width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:'Archivo Black';font-size:16px">${n}</span>`;
+  numgrid.innerHTML=out.map(dr=>{
+    let extra='';
+    if(dr.wild_ball)extra=`<span style="font-size:11px;color:var(--muted);align-self:center;font-weight:700">WB</span><span style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-family:'Archivo Black';font-size:16px">${dr.wild_ball}</span>`;
+    if(dr.powerball)extra=`<span style="width:36px;height:36px;border-radius:50%;background:#d7263d;color:#fff;display:grid;place-items:center;font-family:'Archivo Black';font-size:16px">${dr.powerball}</span>`;
+    if(dr.mega_ball)extra=`<span style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-family:'Archivo Black';font-size:16px">${dr.mega_ball}</span>`;
+    return `<a class="card" style="text-decoration:none;display:block" href="/numbers/${dr.slug}">
+      <div style="font-family:'Archivo Black';font-size:17px">${dr.game}</div>
+      <div style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;font-weight:700;margin:4px 0 10px">${dr.date}${dr.draw?' · '+dr.draw:''}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">${dr.numbers.map(ball).join('')}${extra}</div></a>`;}).join('');
+}).catch(()=>{});
+fetch('/payouts.json',{cache:'no-store'}).then(r=>r.json()).then(p=>{
+  const days=(p.days||[]).slice(0,7); if(!days.length)return;
+  const total=days.reduce((s,d)=>s+d.amount,0);
+  paidOut.textContent=fmt(total); paidLabel.textContent='paid out at the counter (7 days)'; paidBox.hidden=false;
 }).catch(()=>{});
 document.getElementById('filters').onclick=e=>{const f=e.target.dataset.f;if(!f)return;filter=f;shown=16;document.querySelectorAll('.chip[data-f]').forEach(c=>c.classList.toggle('on',c===e.target));render()};
 moreBtn.onclick=()=>{shown+=16;render()};

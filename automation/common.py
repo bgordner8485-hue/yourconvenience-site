@@ -24,6 +24,22 @@ def drive():
         info, scopes=["https://www.googleapis.com/auth/drive.readonly"])
     return build("drive", "v3", credentials=creds, cache_discovery=False)
 
+def list_files_any(svc, folder_id, since_iso=None):
+    """Every non-trashed file in a folder (reports: CSV, XLSX, PDF...)."""
+    q = f"'{folder_id}' in parents and trashed=false"
+    if since_iso:
+        q += f" and createdTime > '{since_iso}'"
+    out, token = [], None
+    while True:
+        r = svc.files().list(q=q, fields="nextPageToken, files(id,name,createdTime,mimeType)",
+                             orderBy="createdTime", pageSize=200, pageToken=token,
+                             supportsAllDrives=True, includeItemsFromAllDrives=True).execute()
+        out += r.get("files", [])
+        token = r.get("nextPageToken")
+        if not token:
+            return out
+
+
 def list_images(svc, folder_id, since_iso=None):
     q = f"'{folder_id}' in parents and mimeType contains 'image/' and trashed=false"
     if since_iso:

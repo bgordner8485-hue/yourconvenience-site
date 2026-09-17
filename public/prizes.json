@@ -1,0 +1,7015 @@
+{
+ "updated": "2026-09-17T18:54:27+00:00",
+ "games": [
+  {
+   "number": "1806",
+   "name": "Cash Grab",
+   "price": "$1",
+   "new": true,
+   "top_prize": "$1,000",
+   "top_prize_left": "50",
+   "prizes": [
+    {
+     "prize": "$1,000",
+     "left": "50"
+    },
+    {
+     "prize": "$150",
+     "left": "142"
+    },
+    {
+     "prize": "$100",
+     "left": "1,559"
+    },
+    {
+     "prize": "$50",
+     "left": "6,387"
+    },
+    {
+     "prize": "$30",
+     "left": "4,258"
+    },
+    {
+     "prize": "$15",
+     "left": "72,250"
+    }
+   ]
+  },
+  {
+   "number": "1805",
+   "name": "Ghostbusters\u2122 Second-Chance Eligible",
+   "price": "$2",
+   "new": true,
+   "top_prize": "$10,000",
+   "top_prize_left": "20",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "20"
+    },
+    {
+     "prize": "$1,000",
+     "left": "30"
+    },
+    {
+     "prize": "$400",
+     "left": "329"
+    },
+    {
+     "prize": "$100",
+     "left": "2,049"
+    },
+    {
+     "prize": "$40",
+     "left": "8,990"
+    },
+    {
+     "prize": "$20",
+     "left": "53,904"
+    }
+   ]
+  },
+  {
+   "number": "1804",
+   "name": "Fat Stacks",
+   "price": "$5",
+   "new": true,
+   "top_prize": "$250,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "5"
+    },
+    {
+     "prize": "$5,000",
+     "left": "15"
+    },
+    {
+     "prize": "$1,000",
+     "left": "285"
+    },
+    {
+     "prize": "$500",
+     "left": "1,771"
+    },
+    {
+     "prize": "$250",
+     "left": "21,530"
+    },
+    {
+     "prize": "$100",
+     "left": "11,043"
+    }
+   ]
+  },
+  {
+   "number": "1803",
+   "name": "Candy-Coated Ca$h Available on iLottery",
+   "price": "$10",
+   "new": true,
+   "top_prize": "$500,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "5"
+    },
+    {
+     "prize": "$5,000",
+     "left": "10"
+    },
+    {
+     "prize": "$1,000",
+     "left": "459"
+    },
+    {
+     "prize": "$500",
+     "left": "4,608"
+    },
+    {
+     "prize": "$250",
+     "left": "9,211"
+    },
+    {
+     "prize": "$150",
+     "left": "12,369"
+    }
+   ]
+  },
+  {
+   "number": "1802",
+   "name": "GAME SHOW EXPERIENCE Second-Chance Eligible Available on iLottery",
+   "price": "$30",
+   "new": true,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "5"
+    },
+    {
+     "prize": "$300,000",
+     "left": "10"
+    },
+    {
+     "prize": "$30,000",
+     "left": "15"
+    },
+    {
+     "prize": "$3,000",
+     "left": "1,172"
+    },
+    {
+     "prize": "$500",
+     "left": "5,147"
+    },
+    {
+     "prize": "$300",
+     "left": "25,631"
+    }
+   ]
+  },
+  {
+   "number": "1801",
+   "name": "THE WIZARD OF OZ\u2122 GLINDA THE GOOD WITCH Second-Chance Eligible Available on iLottery",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "10",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "184"
+    },
+    {
+     "prize": "$100",
+     "left": "508"
+    },
+    {
+     "prize": "$50",
+     "left": "15,512"
+    },
+    {
+     "prize": "$20",
+     "left": "6,960"
+    },
+    {
+     "prize": "$10",
+     "left": "60,868"
+    }
+   ]
+  },
+  {
+   "number": "1800",
+   "name": "Winner Winner Chicken Dinner",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$25,000",
+   "top_prize_left": "8",
+   "prizes": [
+    {
+     "prize": "$25,000",
+     "left": "8"
+    },
+    {
+     "prize": "$1,000",
+     "left": "20"
+    },
+    {
+     "prize": "$400",
+     "left": "294"
+    },
+    {
+     "prize": "$100",
+     "left": "2,518"
+    },
+    {
+     "prize": "$30",
+     "left": "32,226"
+    },
+    {
+     "prize": "$20",
+     "left": "45,111"
+    }
+   ]
+  },
+  {
+   "number": "1799",
+   "name": "THE WIZARD OF OZ\u2122 YELLOW BRICK ROAD Second-Chance Eligible Available on iLottery",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "9",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "9"
+    },
+    {
+     "prize": "$1,000",
+     "left": "42"
+    },
+    {
+     "prize": "$500",
+     "left": "1,637"
+    },
+    {
+     "prize": "$150",
+     "left": "5,006"
+    },
+    {
+     "prize": "$75",
+     "left": "61,658"
+    },
+    {
+     "prize": "$50",
+     "left": "54,250"
+    }
+   ]
+  },
+  {
+   "number": "1798",
+   "name": "THE WIZARD OF OZ\u2122 THE GREAT AND POWERFUL OZ Second-Chance Eligible Available on iLottery",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$400,000",
+   "top_prize_left": "7",
+   "prizes": [
+    {
+     "prize": "$400,000",
+     "left": "7"
+    },
+    {
+     "prize": "$4,000",
+     "left": "14"
+    },
+    {
+     "prize": "$1,000",
+     "left": "662"
+    },
+    {
+     "prize": "$600",
+     "left": "21,458"
+    },
+    {
+     "prize": "$400",
+     "left": "4,162"
+    },
+    {
+     "prize": "$200",
+     "left": "19,951"
+    }
+   ]
+  },
+  {
+   "number": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "4"
+    },
+    {
+     "prize": "$50,000",
+     "left": "16"
+    },
+    {
+     "prize": "$5,000",
+     "left": "40"
+    },
+    {
+     "prize": "$1,000",
+     "left": "14,157"
+    },
+    {
+     "prize": "$500",
+     "left": "8,908"
+    },
+    {
+     "prize": "$250",
+     "left": "8,330"
+    }
+   ]
+  },
+  {
+   "number": "1796",
+   "name": "Ca$h Money",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$4,000,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$4,000,000",
+     "left": "5"
+    },
+    {
+     "prize": "$100,000",
+     "left": "14"
+    },
+    {
+     "prize": "$30,000",
+     "left": "25"
+    },
+    {
+     "prize": "$5,000",
+     "left": "275"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,475"
+    },
+    {
+     "prize": "$500",
+     "left": "56,446"
+    }
+   ]
+  },
+  {
+   "number": "1795",
+   "name": "Bright Buck$",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "10",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "14"
+    },
+    {
+     "prize": "$100",
+     "left": "818"
+    },
+    {
+     "prize": "$50",
+     "left": "1,379"
+    },
+    {
+     "prize": "$40",
+     "left": "1,101"
+    },
+    {
+     "prize": "$20",
+     "left": "33,327"
+    }
+   ]
+  },
+  {
+   "number": "1794",
+   "name": "$20 Frenzy",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$2,000",
+   "top_prize_left": "67",
+   "prizes": [
+    {
+     "prize": "$2,000",
+     "left": "67"
+    },
+    {
+     "prize": "$200",
+     "left": "318"
+    },
+    {
+     "prize": "$100",
+     "left": "466"
+    },
+    {
+     "prize": "$40",
+     "left": "1,868"
+    },
+    {
+     "prize": "$20",
+     "left": "106,194"
+    },
+    {
+     "prize": "$10",
+     "left": "17,841"
+    }
+   ]
+  },
+  {
+   "number": "1793",
+   "name": "Crossword Deluxe",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "6"
+    },
+    {
+     "prize": "$10,000",
+     "left": "36"
+    },
+    {
+     "prize": "$5,000",
+     "left": "90"
+    },
+    {
+     "prize": "$1,000",
+     "left": "430"
+    },
+    {
+     "prize": "$500",
+     "left": "2,512"
+    },
+    {
+     "prize": "$250",
+     "left": "5,136"
+    }
+   ]
+  },
+  {
+   "number": "1792",
+   "name": "Wild Side",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$150,000",
+   "top_prize_left": "9",
+   "prizes": [
+    {
+     "prize": "$150,000",
+     "left": "9"
+    },
+    {
+     "prize": "$10,000",
+     "left": "24"
+    },
+    {
+     "prize": "$1,000",
+     "left": "29"
+    },
+    {
+     "prize": "$500",
+     "left": "479"
+    },
+    {
+     "prize": "$200",
+     "left": "887"
+    },
+    {
+     "prize": "$100",
+     "left": "8,904"
+    }
+   ]
+  },
+  {
+   "number": "1791",
+   "name": "VIP Bonus Cash",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$750,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$750,000",
+     "left": "6"
+    },
+    {
+     "prize": "$10,000",
+     "left": "33"
+    },
+    {
+     "prize": "$1,000",
+     "left": "352"
+    },
+    {
+     "prize": "$500",
+     "left": "609"
+    },
+    {
+     "prize": "$250",
+     "left": "5,233"
+    },
+    {
+     "prize": "$150",
+     "left": "54,081"
+    }
+   ]
+  },
+  {
+   "number": "1790",
+   "name": "$1,500,000 Super Star",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$1,500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$1,500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$150,000",
+     "left": "8"
+    },
+    {
+     "prize": "$10,000",
+     "left": "11"
+    },
+    {
+     "prize": "$3,000",
+     "left": "361"
+    },
+    {
+     "prize": "$1,500",
+     "left": "1,458"
+    },
+    {
+     "prize": "$600",
+     "left": "2,565"
+    }
+   ]
+  },
+  {
+   "number": "1789",
+   "name": "Super 7s",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$17,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$17,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "13"
+    },
+    {
+     "prize": "$200",
+     "left": "220"
+    },
+    {
+     "prize": "$70",
+     "left": "3,898"
+    },
+    {
+     "prize": "$35",
+     "left": "1,867"
+    },
+    {
+     "prize": "$17",
+     "left": "64,694"
+    }
+   ]
+  },
+  {
+   "number": "1788",
+   "name": "Lights, Camera, Crossword",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$30,000",
+   "top_prize_left": "7",
+   "prizes": [
+    {
+     "prize": "$30,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "15"
+    },
+    {
+     "prize": "$200",
+     "left": "1,622"
+    },
+    {
+     "prize": "$100",
+     "left": "5,431"
+    },
+    {
+     "prize": "$80",
+     "left": "8,286"
+    },
+    {
+     "prize": "$50",
+     "left": "13,695"
+    }
+   ]
+  },
+  {
+   "number": "1787",
+   "name": "Fever Doubler",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "4"
+    },
+    {
+     "prize": "$10,000",
+     "left": "16"
+    },
+    {
+     "prize": "$1,000",
+     "left": "73"
+    },
+    {
+     "prize": "$500",
+     "left": "1,169"
+    },
+    {
+     "prize": "$100",
+     "left": "13,726"
+    },
+    {
+     "prize": "$50",
+     "left": "28,769"
+    }
+   ]
+  },
+  {
+   "number": "1786",
+   "name": "Ruby Rich3s",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$300,000",
+   "top_prize_left": "8",
+   "prizes": [
+    {
+     "prize": "$300,000",
+     "left": "8"
+    },
+    {
+     "prize": "$30,000",
+     "left": "22"
+    },
+    {
+     "prize": "$1,500",
+     "left": "401"
+    },
+    {
+     "prize": "$600",
+     "left": "762"
+    },
+    {
+     "prize": "$300",
+     "left": "7,445"
+    },
+    {
+     "prize": "$150",
+     "left": "16,478"
+    }
+   ]
+  },
+  {
+   "number": "1785",
+   "name": "THE GAME OF LIFE Available on iLottery",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "32"
+    },
+    {
+     "prize": "$5,000",
+     "left": "55"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3,644"
+    },
+    {
+     "prize": "$500",
+     "left": "7,682"
+    },
+    {
+     "prize": "$250",
+     "left": "59,629"
+    }
+   ]
+  },
+  {
+   "number": "1784",
+   "name": "Million Dollar Win It All",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "17",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "17"
+    },
+    {
+     "prize": "$100,000",
+     "left": "24"
+    },
+    {
+     "prize": "$10,000",
+     "left": "155"
+    },
+    {
+     "prize": "$5,000",
+     "left": "268"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2,129"
+    },
+    {
+     "prize": "$500",
+     "left": "77,516"
+    }
+   ]
+  },
+  {
+   "number": "1783",
+   "name": "GOLD FISH\u00ae Available on iLottery",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "11",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "11"
+    },
+    {
+     "prize": "$500",
+     "left": "75"
+    },
+    {
+     "prize": "$100",
+     "left": "402"
+    },
+    {
+     "prize": "$50",
+     "left": "716"
+    },
+    {
+     "prize": "$20",
+     "left": "21,219"
+    },
+    {
+     "prize": "$10",
+     "left": "51,505"
+    }
+   ]
+  },
+  {
+   "number": "1782",
+   "name": "GUS\u00ae",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "6"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "120"
+    },
+    {
+     "prize": "$200",
+     "left": "311"
+    },
+    {
+     "prize": "$100",
+     "left": "1,088"
+    }
+   ]
+  },
+  {
+   "number": "1781",
+   "name": "Win Win Win",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "21"
+    },
+    {
+     "prize": "$500",
+     "left": "1,314"
+    },
+    {
+     "prize": "$250",
+     "left": "3,080"
+    },
+    {
+     "prize": "$150",
+     "left": "38,093"
+    }
+   ]
+  },
+  {
+   "number": "1780",
+   "name": "Triple Red 777",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "5"
+    },
+    {
+     "prize": "$150,000",
+     "left": "5"
+    },
+    {
+     "prize": "$7,000",
+     "left": "1,486"
+    },
+    {
+     "prize": "$3,000",
+     "left": "337"
+    },
+    {
+     "prize": "$1,500",
+     "left": "1,326"
+    },
+    {
+     "prize": "$500",
+     "left": "3,362"
+    }
+   ]
+  },
+  {
+   "number": "1779",
+   "name": "A Latte Money",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$400",
+     "left": "75"
+    },
+    {
+     "prize": "$200",
+     "left": "77"
+    },
+    {
+     "prize": "$100",
+     "left": "439"
+    },
+    {
+     "prize": "$40",
+     "left": "918"
+    },
+    {
+     "prize": "$20",
+     "left": "14,009"
+    }
+   ]
+  },
+  {
+   "number": "1778",
+   "name": "Money Rush",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "11",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "11"
+    },
+    {
+     "prize": "$1,000",
+     "left": "12"
+    },
+    {
+     "prize": "$500",
+     "left": "21"
+    },
+    {
+     "prize": "$100",
+     "left": "1,089"
+    },
+    {
+     "prize": "$50",
+     "left": "1,648"
+    },
+    {
+     "prize": "$30",
+     "left": "4,659"
+    }
+   ]
+  },
+  {
+   "number": "1777",
+   "name": "Money Box Bingo",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "20"
+    },
+    {
+     "prize": "$5,000",
+     "left": "18"
+    },
+    {
+     "prize": "$1,000",
+     "left": "26"
+    },
+    {
+     "prize": "$500",
+     "left": "184"
+    },
+    {
+     "prize": "$250",
+     "left": "2,405"
+    }
+   ]
+  },
+  {
+   "number": "1776",
+   "name": "$100 Blowout",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100",
+   "top_prize_left": "11,191",
+   "prizes": [
+    {
+     "prize": "$100",
+     "left": "11,191"
+    },
+    {
+     "prize": "$50",
+     "left": "8,419"
+    },
+    {
+     "prize": "$25",
+     "left": "57,172"
+    },
+    {
+     "prize": "$10",
+     "left": "141,796"
+    },
+    {
+     "prize": "$5",
+     "left": "347,294"
+    },
+    {
+     "prize": "0",
+     "left": "0"
+    }
+   ]
+  },
+  {
+   "number": "1775",
+   "name": "$250 Blowout",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$250",
+   "top_prize_left": "36,327",
+   "prizes": [
+    {
+     "prize": "$250",
+     "left": "36,327"
+    },
+    {
+     "prize": "$100",
+     "left": "35,838"
+    },
+    {
+     "prize": "$50",
+     "left": "76,758"
+    },
+    {
+     "prize": "$25",
+     "left": "705,194"
+    },
+    {
+     "prize": "$10",
+     "left": "1,203,003"
+    },
+    {
+     "prize": "0",
+     "left": "0"
+    }
+   ]
+  },
+  {
+   "number": "1774",
+   "name": "$500 Blowout",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$500",
+   "top_prize_left": "29,099",
+   "prizes": [
+    {
+     "prize": "$500",
+     "left": "29,099"
+    },
+    {
+     "prize": "$200",
+     "left": "16,881"
+    },
+    {
+     "prize": "$100",
+     "left": "66,001"
+    },
+    {
+     "prize": "$50",
+     "left": "319,832"
+    },
+    {
+     "prize": "$20",
+     "left": "930,550"
+    },
+    {
+     "prize": "0",
+     "left": "0"
+    }
+   ]
+  },
+  {
+   "number": "1773",
+   "name": "5 Star Wins",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$100",
+     "left": "234"
+    },
+    {
+     "prize": "$50",
+     "left": "299"
+    },
+    {
+     "prize": "$25",
+     "left": "6,645"
+    },
+    {
+     "prize": "$10",
+     "left": "31,062"
+    }
+   ]
+  },
+  {
+   "number": "1772",
+   "name": "Find the Leprechaun",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "6"
+    },
+    {
+     "prize": "$3,000",
+     "left": "3"
+    },
+    {
+     "prize": "$300",
+     "left": "111"
+    },
+    {
+     "prize": "$100",
+     "left": "352"
+    },
+    {
+     "prize": "$70",
+     "left": "391"
+    },
+    {
+     "prize": "$30",
+     "left": "4,460"
+    }
+   ]
+  },
+  {
+   "number": "1771",
+   "name": "Big Bonus Triple Play",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$130,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$130,000",
+     "left": "3"
+    },
+    {
+     "prize": "$15,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,500",
+     "left": "8"
+    },
+    {
+     "prize": "$300",
+     "left": "327"
+    },
+    {
+     "prize": "$150",
+     "left": "373"
+    },
+    {
+     "prize": "$90",
+     "left": "341"
+    }
+   ]
+  },
+  {
+   "number": "1770",
+   "name": "PHILADELPHIA 76ERS",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "3"
+    },
+    {
+     "prize": "$25,000",
+     "left": "8"
+    },
+    {
+     "prize": "$5,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,776",
+     "left": "170"
+    },
+    {
+     "prize": "$500",
+     "left": "343"
+    },
+    {
+     "prize": "$100",
+     "left": "1,522"
+    }
+   ]
+  },
+  {
+   "number": "1769",
+   "name": "Code Word Crossword",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$50,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "8"
+    },
+    {
+     "prize": "$5,000",
+     "left": "7"
+    },
+    {
+     "prize": "$2,500",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "387"
+    }
+   ]
+  },
+  {
+   "number": "1768",
+   "name": "$120,000,000 Payout",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$2,500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$2,500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$250,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "6"
+    },
+    {
+     "prize": "$3,000",
+     "left": "361"
+    },
+    {
+     "prize": "$1,500",
+     "left": "1,201"
+    },
+    {
+     "prize": "$600",
+     "left": "3,119"
+    }
+   ]
+  },
+  {
+   "number": "1767",
+   "name": "$500 a Week for Life",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$350,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$350,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$100",
+     "left": "188"
+    },
+    {
+     "prize": "$40",
+     "left": "1,265"
+    },
+    {
+     "prize": "$20",
+     "left": "2,140"
+    },
+    {
+     "prize": "$10",
+     "left": "35,070"
+    }
+   ]
+  },
+  {
+   "number": "1766",
+   "name": "LOVE IS BLIND",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "1"
+    },
+    {
+     "prize": "$2,000",
+     "left": "5"
+    },
+    {
+     "prize": "$400",
+     "left": "192"
+    },
+    {
+     "prize": "$100",
+     "left": "317"
+    },
+    {
+     "prize": "$40",
+     "left": "1,532"
+    },
+    {
+     "prize": "$20",
+     "left": "26,729"
+    }
+   ]
+  },
+  {
+   "number": "1765",
+   "name": "$10,000 a Month for Life",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$1,600,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,600,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "10"
+    },
+    {
+     "prize": "$1,000",
+     "left": "224"
+    },
+    {
+     "prize": "$500",
+     "left": "1,117"
+    },
+    {
+     "prize": "$100",
+     "left": "9,604"
+    },
+    {
+     "prize": "$50",
+     "left": "21,784"
+    }
+   ]
+  },
+  {
+   "number": "1764",
+   "name": "$20,000 a Month for Life",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$3,200,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$3,200,000",
+     "left": "4"
+    },
+    {
+     "prize": "$10,000",
+     "left": "10"
+    },
+    {
+     "prize": "$1,000",
+     "left": "373"
+    },
+    {
+     "prize": "$500",
+     "left": "6,456"
+    },
+    {
+     "prize": "$100",
+     "left": "38,839"
+    },
+    {
+     "prize": "$50",
+     "left": "89,504"
+    }
+   ]
+  },
+  {
+   "number": "1763",
+   "name": "$500,000 a Year for Life",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$7,250,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$7,250,000",
+     "left": "4"
+    },
+    {
+     "prize": "$50,000",
+     "left": "6"
+    },
+    {
+     "prize": "$5,000",
+     "left": "152"
+    },
+    {
+     "prize": "$1,000",
+     "left": "924"
+    },
+    {
+     "prize": "$500",
+     "left": "11,155"
+    },
+    {
+     "prize": "$200",
+     "left": "11,764"
+    }
+   ]
+  },
+  {
+   "number": "1762",
+   "name": "$1,000,000 a Year for Life",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$14,500,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$14,500,000",
+     "left": "2"
+    },
+    {
+     "prize": "$100,000",
+     "left": "6"
+    },
+    {
+     "prize": "$10,000",
+     "left": "35"
+    },
+    {
+     "prize": "$5,000",
+     "left": "192"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9,815"
+    },
+    {
+     "prize": "$500",
+     "left": "69,290"
+    }
+   ]
+  },
+  {
+   "number": "1761",
+   "name": "Ho Ho Ho",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$500",
+   "top_prize_left": "66",
+   "prizes": [
+    {
+     "prize": "$500",
+     "left": "66"
+    },
+    {
+     "prize": "$50",
+     "left": "258"
+    },
+    {
+     "prize": "$25",
+     "left": "818"
+    },
+    {
+     "prize": "$10",
+     "left": "14,075"
+    },
+    {
+     "prize": "$5",
+     "left": "29,322"
+    },
+    {
+     "prize": "$4",
+     "left": "49,809"
+    }
+   ]
+  },
+  {
+   "number": "1760",
+   "name": "Snow Place Like Home",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "24"
+    },
+    {
+     "prize": "$100",
+     "left": "540"
+    },
+    {
+     "prize": "$50",
+     "left": "1,007"
+    },
+    {
+     "prize": "$30",
+     "left": "3,450"
+    }
+   ]
+  },
+  {
+   "number": "1759",
+   "name": "Trim the Tree X-word",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$30,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$30,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "8"
+    },
+    {
+     "prize": "$500",
+     "left": "26"
+    },
+    {
+     "prize": "$250",
+     "left": "135"
+    },
+    {
+     "prize": "$100",
+     "left": "883"
+    }
+   ]
+  },
+  {
+   "number": "1758",
+   "name": "ELF Available on iLottery",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "16"
+    },
+    {
+     "prize": "$500",
+     "left": "248"
+    },
+    {
+     "prize": "$100",
+     "left": "2,982"
+    },
+    {
+     "prize": "$50",
+     "left": "7,473"
+    }
+   ]
+  },
+  {
+   "number": "1757",
+   "name": "$2,500 Festive Frenzy",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "161",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "161"
+    },
+    {
+     "prize": "$500",
+     "left": "496"
+    },
+    {
+     "prize": "$250",
+     "left": "1,164"
+    },
+    {
+     "prize": "$100",
+     "left": "4,648"
+    },
+    {
+     "prize": "$50",
+     "left": "9,758"
+    },
+    {
+     "prize": "$20",
+     "left": "63,844"
+    }
+   ]
+  },
+  {
+   "number": "1756",
+   "name": "Fro$ted Fortune",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "89"
+    },
+    {
+     "prize": "$500",
+     "left": "8,089"
+    },
+    {
+     "prize": "$100",
+     "left": "15,898"
+    },
+    {
+     "prize": "$50",
+     "left": "59,215"
+    }
+   ]
+  },
+  {
+   "number": "1755",
+   "name": "Merry Money Match",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$300,000",
+     "left": "4"
+    },
+    {
+     "prize": "$30,000",
+     "left": "7"
+    },
+    {
+     "prize": "$3,000",
+     "left": "334"
+    },
+    {
+     "prize": "$500",
+     "left": "1,731"
+    },
+    {
+     "prize": "$300",
+     "left": "13,396"
+    }
+   ]
+  },
+  {
+   "number": "1754",
+   "name": "Mini Monsters $100 Blowout",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$100",
+   "top_prize_left": "7,178",
+   "prizes": [
+    {
+     "prize": "$100",
+     "left": "7,178"
+    },
+    {
+     "prize": "$50",
+     "left": "781"
+    },
+    {
+     "prize": "$40",
+     "left": "1,747"
+    },
+    {
+     "prize": "$10",
+     "left": "18,479"
+    },
+    {
+     "prize": "$5",
+     "left": "51,032"
+    },
+    {
+     "prize": "$4",
+     "left": "95,043"
+    }
+   ]
+  },
+  {
+   "number": "1753",
+   "name": "Crossword Extra",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "4"
+    },
+    {
+     "prize": "$5,000",
+     "left": "9"
+    },
+    {
+     "prize": "$300",
+     "left": "117"
+    },
+    {
+     "prize": "$250",
+     "left": "123"
+    },
+    {
+     "prize": "$150",
+     "left": "1,051"
+    },
+    {
+     "prize": "$75",
+     "left": "2,130"
+    }
+   ]
+  },
+  {
+   "number": "1752",
+   "name": "Winning 7s",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$20,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$500",
+     "left": "25"
+    },
+    {
+     "prize": "$200",
+     "left": "58"
+    }
+   ]
+  },
+  {
+   "number": "1751",
+   "name": "Extreme Green",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "14"
+    },
+    {
+     "prize": "$500",
+     "left": "2,244"
+    },
+    {
+     "prize": "$200",
+     "left": "2,469"
+    },
+    {
+     "prize": "$100",
+     "left": "3,083"
+    },
+    {
+     "prize": "$50",
+     "left": "89,626"
+    }
+   ]
+  },
+  {
+   "number": "1750",
+   "name": "Cash Spectacular",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$1,500,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$1,500,000",
+     "left": "5"
+    },
+    {
+     "prize": "$150,000",
+     "left": "2"
+    },
+    {
+     "prize": "$30,000",
+     "left": "8"
+    },
+    {
+     "prize": "$5,000",
+     "left": "21"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,772"
+    },
+    {
+     "prize": "$500",
+     "left": "2,386"
+    }
+   ]
+  },
+  {
+   "number": "1749",
+   "name": "Simply A Buck",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$1,000",
+   "top_prize_left": "9",
+   "prizes": [
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "3"
+    },
+    {
+     "prize": "$100",
+     "left": "32"
+    },
+    {
+     "prize": "$50",
+     "left": "900"
+    },
+    {
+     "prize": "$20",
+     "left": "1,764"
+    },
+    {
+     "prize": "$10",
+     "left": "8,326"
+    }
+   ]
+  },
+  {
+   "number": "1748",
+   "name": "Money Maker",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "13"
+    },
+    {
+     "prize": "$500",
+     "left": "467"
+    },
+    {
+     "prize": "$150",
+     "left": "1,112"
+    },
+    {
+     "prize": "$75",
+     "left": "18,440"
+    },
+    {
+     "prize": "$50",
+     "left": "28,154"
+    }
+   ]
+  },
+  {
+   "number": "1747",
+   "name": "JURASSIC PARK Available on iLottery",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "12"
+    },
+    {
+     "prize": "$1,000",
+     "left": "262"
+    },
+    {
+     "prize": "$500",
+     "left": "352"
+    },
+    {
+     "prize": "$250",
+     "left": "3,663"
+    },
+    {
+     "prize": "$150",
+     "left": "40,184"
+    }
+   ]
+  },
+  {
+   "number": "1746",
+   "name": "Millionaire Loading",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$4,000",
+     "left": "21"
+    },
+    {
+     "prize": "$1,000",
+     "left": "736"
+    },
+    {
+     "prize": "$400",
+     "left": "4,741"
+    },
+    {
+     "prize": "$200",
+     "left": "1,793"
+    }
+   ]
+  },
+  {
+   "number": "1745",
+   "name": "Win Pigs Fly",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$400",
+     "left": "75"
+    },
+    {
+     "prize": "$100",
+     "left": "2,333"
+    },
+    {
+     "prize": "$40",
+     "left": "2,014"
+    },
+    {
+     "prize": "$20",
+     "left": "14,209"
+    }
+   ]
+  },
+  {
+   "number": "1744",
+   "name": "Goat Load of Cash Crossword",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "25"
+    },
+    {
+     "prize": "$1,000",
+     "left": "19"
+    },
+    {
+     "prize": "$500",
+     "left": "315"
+    },
+    {
+     "prize": "$250",
+     "left": "312"
+    }
+   ]
+  },
+  {
+   "number": "1743",
+   "name": "$50, $100 or $500",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500",
+   "top_prize_left": "423",
+   "prizes": [
+    {
+     "prize": "$500",
+     "left": "423"
+    },
+    {
+     "prize": "$100",
+     "left": "7,428"
+    },
+    {
+     "prize": "$50",
+     "left": "25,337"
+    }
+   ]
+  },
+  {
+   "number": "1742",
+   "name": "$3 Million Mega Moolah Multiplier",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$300,000",
+     "left": "6"
+    },
+    {
+     "prize": "$30,000",
+     "left": "4"
+    },
+    {
+     "prize": "$3,000",
+     "left": "200"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,895"
+    },
+    {
+     "prize": "$500",
+     "left": "711"
+    }
+   ]
+  },
+  {
+   "number": "1741",
+   "name": "Win It All",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1"
+    },
+    {
+     "prize": "$250",
+     "left": "6"
+    },
+    {
+     "prize": "$100",
+     "left": "134"
+    },
+    {
+     "prize": "$50",
+     "left": "152"
+    },
+    {
+     "prize": "$25",
+     "left": "3,054"
+    }
+   ]
+  },
+  {
+   "number": "1740",
+   "name": "Bonus Ball Bingo",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "6"
+    },
+    {
+     "prize": "$3,000",
+     "left": "15"
+    },
+    {
+     "prize": "$1,000",
+     "left": "31"
+    },
+    {
+     "prize": "$300",
+     "left": "487"
+    },
+    {
+     "prize": "$150",
+     "left": "910"
+    },
+    {
+     "prize": "$100",
+     "left": "4,816"
+    }
+   ]
+  },
+  {
+   "number": "1739",
+   "name": "MONOPOLY SECRET VAULT Available on iLottery",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "4"
+    },
+    {
+     "prize": "$10,000",
+     "left": "9"
+    },
+    {
+     "prize": "$1,000",
+     "left": "111"
+    },
+    {
+     "prize": "$500",
+     "left": "923"
+    },
+    {
+     "prize": "$400",
+     "left": "4,284"
+    },
+    {
+     "prize": "$100",
+     "left": "6,747"
+    }
+   ]
+  },
+  {
+   "number": "1738",
+   "name": "Jackpot",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$50,000",
+     "left": "5"
+    },
+    {
+     "prize": "$5,000",
+     "left": "16"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4,158"
+    },
+    {
+     "prize": "$500",
+     "left": "4,007"
+    },
+    {
+     "prize": "$250",
+     "left": "2,178"
+    }
+   ]
+  },
+  {
+   "number": "1737",
+   "name": "Neon 9s",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$9,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$9,000",
+     "left": "1"
+    },
+    {
+     "prize": "$900",
+     "left": "4"
+    },
+    {
+     "prize": "$300",
+     "left": "64"
+    },
+    {
+     "prize": "$90",
+     "left": "2,574"
+    },
+    {
+     "prize": "$50",
+     "left": "960"
+    },
+    {
+     "prize": "$30",
+     "left": "2,862"
+    }
+   ]
+  },
+  {
+   "number": "1736",
+   "name": "High 5",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$155,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$155,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,500",
+     "left": "2"
+    },
+    {
+     "prize": "$500",
+     "left": "428"
+    },
+    {
+     "prize": "$250",
+     "left": "169"
+    },
+    {
+     "prize": "$100",
+     "left": "905"
+    }
+   ]
+  },
+  {
+   "number": "1735",
+   "name": "Six Figures",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$600,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$600,000",
+     "left": "2"
+    },
+    {
+     "prize": "$6,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "69"
+    },
+    {
+     "prize": "$600",
+     "left": "1,630"
+    },
+    {
+     "prize": "$300",
+     "left": "423"
+    },
+    {
+     "prize": "$200",
+     "left": "1,534"
+    }
+   ]
+  },
+  {
+   "number": "1734",
+   "name": "3s a Charm",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$300,000",
+     "left": "4"
+    },
+    {
+     "prize": "$30,000",
+     "left": "5"
+    },
+    {
+     "prize": "$3,000",
+     "left": "255"
+    },
+    {
+     "prize": "$1,500",
+     "left": "681"
+    },
+    {
+     "prize": "$900",
+     "left": "3,780"
+    }
+   ]
+  },
+  {
+   "number": "1733",
+   "name": "20X the Cash",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$2,000",
+     "left": "0"
+    },
+    {
+     "prize": "$400",
+     "left": "2"
+    },
+    {
+     "prize": "$200",
+     "left": "52"
+    },
+    {
+     "prize": "$100",
+     "left": "321"
+    },
+    {
+     "prize": "$40",
+     "left": "3,557"
+    },
+    {
+     "prize": "$20",
+     "left": "10,987"
+    }
+   ]
+  },
+  {
+   "number": "1732",
+   "name": "50X the Cash",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$500",
+     "left": "29"
+    },
+    {
+     "prize": "$200",
+     "left": "35"
+    },
+    {
+     "prize": "$100",
+     "left": "2,276"
+    },
+    {
+     "prize": "$50",
+     "left": "4,498"
+    }
+   ]
+  },
+  {
+   "number": "1731",
+   "name": "Blingo",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "107"
+    },
+    {
+     "prize": "$200",
+     "left": "278"
+    }
+   ]
+  },
+  {
+   "number": "1730",
+   "name": "100X the Cash",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "3"
+    },
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "405"
+    },
+    {
+     "prize": "$100",
+     "left": "2,317"
+    },
+    {
+     "prize": "$50",
+     "left": "3,376"
+    }
+   ]
+  },
+  {
+   "number": "1729",
+   "name": "200X the Cash",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$20,000",
+     "left": "26"
+    },
+    {
+     "prize": "$10,000",
+     "left": "53"
+    },
+    {
+     "prize": "$4,000",
+     "left": "329"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,327"
+    },
+    {
+     "prize": "$400",
+     "left": "7,930"
+    }
+   ]
+  },
+  {
+   "number": "1728",
+   "name": "Sham-rockin\u2019 Surprize",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$1,700",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,700",
+     "left": "0"
+    },
+    {
+     "prize": "$300",
+     "left": "2"
+    },
+    {
+     "prize": "$100",
+     "left": "64"
+    },
+    {
+     "prize": "$30",
+     "left": "457"
+    },
+    {
+     "prize": "$20",
+     "left": "328"
+    },
+    {
+     "prize": "$17",
+     "left": "4,385"
+    }
+   ]
+  },
+  {
+   "number": "1727",
+   "name": "Four Leaf Frenzy",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$17,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$17,000",
+     "left": "6"
+    },
+    {
+     "prize": "$4,000",
+     "left": "3"
+    },
+    {
+     "prize": "$400",
+     "left": "30"
+    },
+    {
+     "prize": "$100",
+     "left": "316"
+    },
+    {
+     "prize": "$80",
+     "left": "2,787"
+    },
+    {
+     "prize": "$40",
+     "left": "1,417"
+    }
+   ]
+  },
+  {
+   "number": "1726",
+   "name": "Lucky Luck",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$70,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$70,000",
+     "left": "1"
+    },
+    {
+     "prize": "$17,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,700",
+     "left": "11"
+    },
+    {
+     "prize": "$300",
+     "left": "90"
+    },
+    {
+     "prize": "$170",
+     "left": "1,309"
+    },
+    {
+     "prize": "$100",
+     "left": "446"
+    }
+   ]
+  },
+  {
+   "number": "1725",
+   "name": "All About Money",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "7"
+    },
+    {
+     "prize": "$500",
+     "left": "292"
+    },
+    {
+     "prize": "$200",
+     "left": "567"
+    },
+    {
+     "prize": "$100",
+     "left": "6,381"
+    }
+   ]
+  },
+  {
+   "number": "1724",
+   "name": "Lady Luck Available on iLottery",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$7,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "468"
+    },
+    {
+     "prize": "$700",
+     "left": "3,718"
+    },
+    {
+     "prize": "$300",
+     "left": "6,330"
+    },
+    {
+     "prize": "$100",
+     "left": "75,764"
+    }
+   ]
+  },
+  {
+   "number": "1723",
+   "name": "The Hunt for $3,000,000",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$300,000",
+     "left": "4"
+    },
+    {
+     "prize": "$15,000",
+     "left": "9"
+    },
+    {
+     "prize": "$5,000",
+     "left": "167"
+    },
+    {
+     "prize": "$1,500",
+     "left": "318"
+    },
+    {
+     "prize": "$750",
+     "left": "7,923"
+    }
+   ]
+  },
+  {
+   "number": "1721",
+   "name": "BETTY BOOP\u2122",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$14,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$14,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,400",
+     "left": "5"
+    },
+    {
+     "prize": "$400",
+     "left": "38"
+    },
+    {
+     "prize": "$100",
+     "left": "286"
+    },
+    {
+     "prize": "$50",
+     "left": "717"
+    },
+    {
+     "prize": "$40",
+     "left": "7,796"
+    }
+   ]
+  },
+  {
+   "number": "1719",
+   "name": "Fast $1,000",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "19",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "19"
+    },
+    {
+     "prize": "$5,000",
+     "left": "12"
+    },
+    {
+     "prize": "$1,000",
+     "left": "18,106"
+    },
+    {
+     "prize": "$150",
+     "left": "2,017"
+    },
+    {
+     "prize": "$100",
+     "left": "30,673"
+    },
+    {
+     "prize": "$50",
+     "left": "51,007"
+    }
+   ]
+  },
+  {
+   "number": "1718",
+   "name": "$1,000,000 Winnings",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$4,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "461"
+    },
+    {
+     "prize": "$400",
+     "left": "6,016"
+    },
+    {
+     "prize": "$200",
+     "left": "1,935"
+    }
+   ]
+  },
+  {
+   "number": "1717",
+   "name": "$5,000,000 Lion\u2019s Share",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$5,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$5,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$250,000",
+     "left": "3"
+    },
+    {
+     "prize": "$75,000",
+     "left": "3"
+    },
+    {
+     "prize": "$25,000",
+     "left": "9"
+    },
+    {
+     "prize": "$5,000",
+     "left": "621"
+    }
+   ]
+  },
+  {
+   "number": "1716",
+   "name": "Nutcracker Cash",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$200",
+     "left": "12"
+    },
+    {
+     "prize": "$100",
+     "left": "644"
+    },
+    {
+     "prize": "$50",
+     "left": "1,070"
+    },
+    {
+     "prize": "$40",
+     "left": "986"
+    },
+    {
+     "prize": "$20",
+     "left": "8,901"
+    }
+   ]
+  },
+  {
+   "number": "1714",
+   "name": "Candy Cane Count-Up",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "4"
+    },
+    {
+     "prize": "$3,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "41"
+    },
+    {
+     "prize": "$300",
+     "left": "203"
+    },
+    {
+     "prize": "$100",
+     "left": "601"
+    },
+    {
+     "prize": "$50",
+     "left": "7,223"
+    }
+   ]
+  },
+  {
+   "number": "1713",
+   "name": "NATIONAL LAMPOON\u2019S CHRISTMAS VACATION",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "1"
+    },
+    {
+     "prize": "$25,000",
+     "left": "2"
+    },
+    {
+     "prize": "$2,500",
+     "left": "13"
+    },
+    {
+     "prize": "$500",
+     "left": "235"
+    },
+    {
+     "prize": "$250",
+     "left": "3,428"
+    },
+    {
+     "prize": "$100",
+     "left": "2,632"
+    }
+   ]
+  },
+  {
+   "number": "1711",
+   "name": "Jingle Jangle Jackpot",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$25,000",
+     "left": "8"
+    },
+    {
+     "prize": "$5,000",
+     "left": "16"
+    },
+    {
+     "prize": "$1,000",
+     "left": "825"
+    },
+    {
+     "prize": "$400",
+     "left": "2,924"
+    },
+    {
+     "prize": "$250",
+     "left": "14,821"
+    }
+   ]
+  },
+  {
+   "number": "1709",
+   "name": "Pick Your Potion",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$13,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$13,000",
+     "left": "3"
+    },
+    {
+     "prize": "$800",
+     "left": "5"
+    },
+    {
+     "prize": "$400",
+     "left": "85"
+    },
+    {
+     "prize": "$100",
+     "left": "566"
+    },
+    {
+     "prize": "$80",
+     "left": "1,272"
+    },
+    {
+     "prize": "$40",
+     "left": "7,314"
+    }
+   ]
+  },
+  {
+   "number": "1708",
+   "name": "Witches Brew Bucks",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$500",
+     "left": "18"
+    },
+    {
+     "prize": "$200",
+     "left": "294"
+    },
+    {
+     "prize": "$100",
+     "left": "999"
+    },
+    {
+     "prize": "$75",
+     "left": "2,000"
+    }
+   ]
+  },
+  {
+   "number": "1707",
+   "name": "Lucky 13",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "3"
+    },
+    {
+     "prize": "$13,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,300",
+     "left": "12"
+    },
+    {
+     "prize": "$500",
+     "left": "563"
+    },
+    {
+     "prize": "$130",
+     "left": "12,806"
+    },
+    {
+     "prize": "$100",
+     "left": "7,733"
+    }
+   ]
+  },
+  {
+   "number": "1706",
+   "name": "GAME OF THRONES\u2122 Available on iLottery",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "560"
+    },
+    {
+     "prize": "$500",
+     "left": "2,462"
+    },
+    {
+     "prize": "$300",
+     "left": "2,174"
+    },
+    {
+     "prize": "$200",
+     "left": "27,342"
+    }
+   ]
+  },
+  {
+   "number": "1705",
+   "name": "$3,000,000 Golden Ticket",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$300,000",
+     "left": "3"
+    },
+    {
+     "prize": "$30,000",
+     "left": "7"
+    },
+    {
+     "prize": "$3,000",
+     "left": "420"
+    },
+    {
+     "prize": "$1,000",
+     "left": "941"
+    },
+    {
+     "prize": "$600",
+     "left": "8,110"
+    }
+   ]
+  },
+  {
+   "number": "1704",
+   "name": "UNO",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2"
+    },
+    {
+     "prize": "$400",
+     "left": "1"
+    },
+    {
+     "prize": "$100",
+     "left": "127"
+    },
+    {
+     "prize": "$40",
+     "left": "1,613"
+    },
+    {
+     "prize": "$20",
+     "left": "1,420"
+    }
+   ]
+  },
+  {
+   "number": "1703",
+   "name": "S\u2019more Crossword",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$500",
+     "left": "43"
+    },
+    {
+     "prize": "$150",
+     "left": "163"
+    },
+    {
+     "prize": "$100",
+     "left": "702"
+    },
+    {
+     "prize": "$50",
+     "left": "2,446"
+    }
+   ]
+  },
+  {
+   "number": "1702",
+   "name": "Power $500",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "0"
+    },
+    {
+     "prize": "$500",
+     "left": "636"
+    },
+    {
+     "prize": "$100",
+     "left": "192"
+    },
+    {
+     "prize": "$50",
+     "left": "2,314"
+    }
+   ]
+  },
+  {
+   "number": "1701",
+   "name": "$500,000 Bonus Crossword",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "262"
+    },
+    {
+     "prize": "$500",
+     "left": "3,474"
+    }
+   ]
+  },
+  {
+   "number": "1700",
+   "name": "All Cash",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$50,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "182"
+    },
+    {
+     "prize": "$500",
+     "left": "401"
+    },
+    {
+     "prize": "$200",
+     "left": "2,002"
+    }
+   ]
+  },
+  {
+   "number": "1698",
+   "name": "Giant Bucks",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "13"
+    },
+    {
+     "prize": "$500",
+     "left": "1,079"
+    },
+    {
+     "prize": "$300",
+     "left": "2,042"
+    },
+    {
+     "prize": "$100",
+     "left": "18,344"
+    }
+   ]
+  },
+  {
+   "number": "1697",
+   "name": "Jumbo Bucks",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "150"
+    },
+    {
+     "prize": "$500",
+     "left": "4,246"
+    },
+    {
+     "prize": "$200",
+     "left": "955"
+    },
+    {
+     "prize": "$150",
+     "left": "5,503"
+    }
+   ]
+  },
+  {
+   "number": "1696",
+   "name": "Mega Bucks",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$300,000",
+     "left": "4"
+    },
+    {
+     "prize": "$30,000",
+     "left": "9"
+    },
+    {
+     "prize": "$3,000",
+     "left": "942"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4,481"
+    },
+    {
+     "prize": "$500",
+     "left": "7,229"
+    }
+   ]
+  },
+  {
+   "number": "1695",
+   "name": "Cash To Go",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$400",
+     "left": "3"
+    },
+    {
+     "prize": "$100",
+     "left": "178"
+    },
+    {
+     "prize": "$50",
+     "left": "330"
+    },
+    {
+     "prize": "$40",
+     "left": "1,253"
+    },
+    {
+     "prize": "$20",
+     "left": "2,222"
+    }
+   ]
+  },
+  {
+   "number": "1694",
+   "name": "Ca$h Overload Crossword",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "6"
+    },
+    {
+     "prize": "$500",
+     "left": "85"
+    },
+    {
+     "prize": "$200",
+     "left": "367"
+    },
+    {
+     "prize": "$150",
+     "left": "390"
+    }
+   ]
+  },
+  {
+   "number": "1693",
+   "name": "Keys and Cash Available on iLottery",
+   "price": "$5",
+   "new": false,
+   "top_prize": "VEHICLE",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "VEHICLE",
+     "left": "6"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "14"
+    },
+    {
+     "prize": "$500",
+     "left": "542"
+    },
+    {
+     "prize": "$300",
+     "left": "1,709"
+    },
+    {
+     "prize": "$100",
+     "left": "3,004"
+    }
+   ]
+  },
+  {
+   "number": "1692",
+   "name": "Big Cash Payout",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "369"
+    },
+    {
+     "prize": "$500",
+     "left": "175"
+    },
+    {
+     "prize": "$200",
+     "left": "798"
+    }
+   ]
+  },
+  {
+   "number": "1690",
+   "name": "Crossword Bonus Cash",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$300",
+     "left": "110"
+    },
+    {
+     "prize": "$150",
+     "left": "293"
+    },
+    {
+     "prize": "$100",
+     "left": "587"
+    },
+    {
+     "prize": "$50",
+     "left": "4,349"
+    }
+   ]
+  },
+  {
+   "number": "1687",
+   "name": "Instant $1,000,000 Jackpot",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$50,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "534"
+    },
+    {
+     "prize": "$500",
+     "left": "123"
+    },
+    {
+     "prize": "$300",
+     "left": "187"
+    }
+   ]
+  },
+  {
+   "number": "1684",
+   "name": "CLUE",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "11"
+    },
+    {
+     "prize": "$500",
+     "left": "3,444"
+    },
+    {
+     "prize": "$200",
+     "left": "1,593"
+    },
+    {
+     "prize": "$100",
+     "left": "6,640"
+    }
+   ]
+  },
+  {
+   "number": "1683",
+   "name": "Red Hot 5s",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "96"
+    },
+    {
+     "prize": "$500",
+     "left": "1,072"
+    },
+    {
+     "prize": "$200",
+     "left": "743"
+    },
+    {
+     "prize": "$150",
+     "left": "2,540"
+    }
+   ]
+  },
+  {
+   "number": "1682",
+   "name": "$160 Million Cash Blowout",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$150,000",
+     "left": "4"
+    },
+    {
+     "prize": "$30,000",
+     "left": "9"
+    },
+    {
+     "prize": "$3,000",
+     "left": "20"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,530"
+    },
+    {
+     "prize": "$500",
+     "left": "4,079"
+    }
+   ]
+  },
+  {
+   "number": "1674",
+   "name": "$100 or $1,000",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$1,000",
+   "top_prize_left": "22,976",
+   "prizes": [
+    {
+     "prize": "$1,000",
+     "left": "22,976"
+    },
+    {
+     "prize": "$100",
+     "left": "311,754"
+    }
+   ]
+  },
+  {
+   "number": "1671",
+   "name": "Bonus Star Bingo",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$3,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "6"
+    },
+    {
+     "prize": "$300",
+     "left": "51"
+    },
+    {
+     "prize": "$150",
+     "left": "189"
+    },
+    {
+     "prize": "$100",
+     "left": "983"
+    }
+   ]
+  },
+  {
+   "number": "1669",
+   "name": "$1 Million Moneybag Crossword",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "714"
+    },
+    {
+     "prize": "$500",
+     "left": "527"
+    }
+   ]
+  },
+  {
+   "number": "1668",
+   "name": "MONOPOLY  Own It All",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$5,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$5,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$500,000",
+     "left": "5"
+    },
+    {
+     "prize": "$250,000",
+     "left": "2"
+    },
+    {
+     "prize": "$50,000",
+     "left": "5"
+    },
+    {
+     "prize": "$10,000",
+     "left": "188"
+    },
+    {
+     "prize": "$5,000",
+     "left": "675"
+    }
+   ]
+  },
+  {
+   "number": "1652",
+   "name": "Double Your Dollars",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "67"
+    },
+    {
+     "prize": "$400",
+     "left": "1,074"
+    },
+    {
+     "prize": "$200",
+     "left": "462"
+    },
+    {
+     "prize": "$100",
+     "left": "2,016"
+    },
+    {
+     "prize": "$50",
+     "left": "3,860"
+    }
+   ]
+  },
+  {
+   "number": "1627",
+   "name": "20X the Money",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2"
+    },
+    {
+     "prize": "$400",
+     "left": "31"
+    },
+    {
+     "prize": "$200",
+     "left": "501"
+    },
+    {
+     "prize": "$100",
+     "left": "3,056"
+    }
+   ]
+  },
+  {
+   "number": "1610",
+   "name": "Sleigh Ride",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "0"
+    },
+    {
+     "prize": "$3,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "16"
+    },
+    {
+     "prize": "$300",
+     "left": "201"
+    },
+    {
+     "prize": "$100",
+     "left": "1,550"
+    },
+    {
+     "prize": "$50",
+     "left": "4,491"
+    }
+   ]
+  },
+  {
+   "number": "1605",
+   "name": "Ghost$ and Goblin$",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "0"
+    },
+    {
+     "prize": "$500",
+     "left": "2"
+    },
+    {
+     "prize": "$100",
+     "left": "140"
+    },
+    {
+     "prize": "$40",
+     "left": "461"
+    },
+    {
+     "prize": "$20",
+     "left": "2,300"
+    },
+    {
+     "prize": "$10",
+     "left": "20,953"
+    }
+   ]
+  },
+  {
+   "number": "1596",
+   "name": "It\u2019s Your Lucky Day Available on iLottery",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2"
+    },
+    {
+     "prize": "$500",
+     "left": "149"
+    },
+    {
+     "prize": "$200",
+     "left": "358"
+    },
+    {
+     "prize": "$100",
+     "left": "2,064"
+    }
+   ]
+  },
+  {
+   "number": "1592",
+   "name": "Gus\u00ae",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$200,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$200,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$400",
+     "left": "222"
+    },
+    {
+     "prize": "$200",
+     "left": "1,126"
+    },
+    {
+     "prize": "$100",
+     "left": "5,138"
+    }
+   ]
+  },
+  {
+   "number": "1584",
+   "name": "Multiplier Mania",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "12"
+    },
+    {
+     "prize": "$200",
+     "left": "1,047"
+    },
+    {
+     "prize": "$100",
+     "left": "1,718"
+    },
+    {
+     "prize": "$50",
+     "left": "2,287"
+    },
+    {
+     "prize": "$40",
+     "left": "6,186"
+    }
+   ]
+  },
+  {
+   "number": "1582",
+   "name": "The Best Dad Ever",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "8"
+    },
+    {
+     "prize": "$400",
+     "left": "50"
+    },
+    {
+     "prize": "$200",
+     "left": "645"
+    },
+    {
+     "prize": "$100",
+     "left": "2,316"
+    }
+   ]
+  },
+  {
+   "number": "1579",
+   "name": "$20,000 Lucky Win",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "11"
+    },
+    {
+     "prize": "$500",
+     "left": "10"
+    },
+    {
+     "prize": "$200",
+     "left": "87"
+    },
+    {
+     "prize": "$100",
+     "left": "798"
+    },
+    {
+     "prize": "$50",
+     "left": "4,937"
+    }
+   ]
+  },
+  {
+   "number": "1578",
+   "name": "Cash Craze Double Doubler",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "4"
+    },
+    {
+     "prize": "$5,000",
+     "left": "10"
+    },
+    {
+     "prize": "$1,000",
+     "left": "8"
+    },
+    {
+     "prize": "$500",
+     "left": "273"
+    },
+    {
+     "prize": "$200",
+     "left": "2,911"
+    },
+    {
+     "prize": "$100",
+     "left": "7,123"
+    }
+   ]
+  },
+  {
+   "number": "1577",
+   "name": "The Best Mom Ever",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2"
+    },
+    {
+     "prize": "$400",
+     "left": "40"
+    },
+    {
+     "prize": "$200",
+     "left": "526"
+    },
+    {
+     "prize": "$100",
+     "left": "1,962"
+    }
+   ]
+  },
+  {
+   "number": "1573",
+   "name": "333",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$333",
+     "left": "131"
+    },
+    {
+     "prize": "$100",
+     "left": "412"
+    },
+    {
+     "prize": "$90",
+     "left": "2,620"
+    },
+    {
+     "prize": "$60",
+     "left": "4,397"
+    }
+   ]
+  },
+  {
+   "number": "1572",
+   "name": "$50,000 Count Up",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$3,000",
+     "left": "19"
+    },
+    {
+     "prize": "$1,000",
+     "left": "115"
+    },
+    {
+     "prize": "$300",
+     "left": "216"
+    },
+    {
+     "prize": "$100",
+     "left": "3,217"
+    },
+    {
+     "prize": "$50",
+     "left": "10,984"
+    }
+   ]
+  },
+  {
+   "number": "1571",
+   "name": "Hello 50",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "97"
+    },
+    {
+     "prize": "$200",
+     "left": "453"
+    },
+    {
+     "prize": "$100",
+     "left": "1,443"
+    }
+   ]
+  },
+  {
+   "number": "1569",
+   "name": "Shamrock Green",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "0"
+    },
+    {
+     "prize": "$400",
+     "left": "1"
+    },
+    {
+     "prize": "$100",
+     "left": "52"
+    },
+    {
+     "prize": "$40",
+     "left": "169"
+    },
+    {
+     "prize": "$30",
+     "left": "479"
+    },
+    {
+     "prize": "$17",
+     "left": "6,055"
+    }
+   ]
+  },
+  {
+   "number": "1568",
+   "name": "Leprechaun Loot",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "6"
+    },
+    {
+     "prize": "$200",
+     "left": "162"
+    },
+    {
+     "prize": "$100",
+     "left": "583"
+    },
+    {
+     "prize": "$50",
+     "left": "1,996"
+    },
+    {
+     "prize": "$30",
+     "left": "3,964"
+    }
+   ]
+  },
+  {
+   "number": "1567",
+   "name": "Four Leaf Fortune",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "6"
+    },
+    {
+     "prize": "$500",
+     "left": "122"
+    },
+    {
+     "prize": "$200",
+     "left": "335"
+    },
+    {
+     "prize": "$100",
+     "left": "3,423"
+    },
+    {
+     "prize": "$50",
+     "left": "9,639"
+    }
+   ]
+  },
+  {
+   "number": "1566",
+   "name": "Cash",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$500",
+     "left": "138"
+    },
+    {
+     "prize": "$250",
+     "left": "878"
+    },
+    {
+     "prize": "$100",
+     "left": "3,888"
+    }
+   ]
+  },
+  {
+   "number": "1565",
+   "name": "THE WIZARD OF OZ\u2122",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "182"
+    },
+    {
+     "prize": "$500",
+     "left": "914"
+    },
+    {
+     "prize": "$200",
+     "left": "2,418"
+    },
+    {
+     "prize": "$100",
+     "left": "20,587"
+    }
+   ]
+  },
+  {
+   "number": "1564",
+   "name": "Perfect Match",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "0"
+    },
+    {
+     "prize": "$500",
+     "left": "7"
+    },
+    {
+     "prize": "$100",
+     "left": "158"
+    },
+    {
+     "prize": "$40",
+     "left": "396"
+    },
+    {
+     "prize": "$20",
+     "left": "4,571"
+    },
+    {
+     "prize": "$15",
+     "left": "5,388"
+    }
+   ]
+  },
+  {
+   "number": "1563",
+   "name": "My Lucky Valentine",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$14,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$14,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "13"
+    },
+    {
+     "prize": "$200",
+     "left": "157"
+    },
+    {
+     "prize": "$100",
+     "left": "575"
+    },
+    {
+     "prize": "$50",
+     "left": "2,490"
+    }
+   ]
+  },
+  {
+   "number": "1561",
+   "name": "Love 2 Win",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$400",
+     "left": "65"
+    },
+    {
+     "prize": "$200",
+     "left": "161"
+    },
+    {
+     "prize": "$100",
+     "left": "1,490"
+    }
+   ]
+  },
+  {
+   "number": "1560",
+   "name": "$1,000,000 Power Payday",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$100,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,527"
+    },
+    {
+     "prize": "$500",
+     "left": "3,601"
+    },
+    {
+     "prize": "$200",
+     "left": "11,106"
+    }
+   ]
+  },
+  {
+   "number": "1559",
+   "name": "$5 Million Money Maker",
+   "price": "$50",
+   "new": false,
+   "top_prize": "$5,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$5,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500,000",
+     "left": "1"
+    },
+    {
+     "prize": "$25,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "29"
+    },
+    {
+     "prize": "$5,000",
+     "left": "60"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,227"
+    }
+   ]
+  },
+  {
+   "number": "1558",
+   "name": "Fast Ca$h",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$500",
+     "left": "2"
+    },
+    {
+     "prize": "$100",
+     "left": "428"
+    },
+    {
+     "prize": "$40",
+     "left": "688"
+    },
+    {
+     "prize": "$20",
+     "left": "3,670"
+    },
+    {
+     "prize": "$10",
+     "left": "22,991"
+    }
+   ]
+  },
+  {
+   "number": "1557",
+   "name": "All About the Benjamins",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "313"
+    },
+    {
+     "prize": "$200",
+     "left": "874"
+    },
+    {
+     "prize": "$100",
+     "left": "23,347"
+    }
+   ]
+  },
+  {
+   "number": "1556",
+   "name": "$500,000 Crossword Mania",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "246"
+    },
+    {
+     "prize": "$500",
+     "left": "459"
+    }
+   ]
+  },
+  {
+   "number": "1554",
+   "name": "Gnome for the Holidays",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$400",
+     "left": "10"
+    },
+    {
+     "prize": "$100",
+     "left": "20"
+    },
+    {
+     "prize": "$40",
+     "left": "2,183"
+    },
+    {
+     "prize": "$20",
+     "left": "6,196"
+    },
+    {
+     "prize": "$15",
+     "left": "24,929"
+    }
+   ]
+  },
+  {
+   "number": "1553",
+   "name": "Gingerbread Dough",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "16"
+    },
+    {
+     "prize": "$500",
+     "left": "169"
+    },
+    {
+     "prize": "$200",
+     "left": "966"
+    },
+    {
+     "prize": "$100",
+     "left": "2,545"
+    },
+    {
+     "prize": "$40",
+     "left": "6,804"
+    }
+   ]
+  },
+  {
+   "number": "1552",
+   "name": "Naughty or Nice",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "5"
+    },
+    {
+     "prize": "$3,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "163"
+    },
+    {
+     "prize": "$300",
+     "left": "640"
+    },
+    {
+     "prize": "$100",
+     "left": "4,250"
+    },
+    {
+     "prize": "$50",
+     "left": "12,560"
+    }
+   ]
+  },
+  {
+   "number": "1551",
+   "name": "Ho Ho Whole Lotta $500s",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "11"
+    },
+    {
+     "prize": "$500",
+     "left": "2,962"
+    },
+    {
+     "prize": "$200",
+     "left": "514"
+    },
+    {
+     "prize": "$100",
+     "left": "2,804"
+    }
+   ]
+  },
+  {
+   "number": "1550",
+   "name": "Snow Much Fun",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "3"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "46"
+    },
+    {
+     "prize": "$500",
+     "left": "209"
+    },
+    {
+     "prize": "$400",
+     "left": "344"
+    },
+    {
+     "prize": "$200",
+     "left": "1,335"
+    }
+   ]
+  },
+  {
+   "number": "1549",
+   "name": "$1,000,000 Merry and Bright",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "277"
+    },
+    {
+     "prize": "$500",
+     "left": "893"
+    },
+    {
+     "prize": "$400",
+     "left": "801"
+    }
+   ]
+  },
+  {
+   "number": "1547",
+   "name": "MONOPOLY 20X",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "19"
+    },
+    {
+     "prize": "$400",
+     "left": "43"
+    },
+    {
+     "prize": "$200",
+     "left": "472"
+    },
+    {
+     "prize": "$100",
+     "left": "1,303"
+    }
+   ]
+  },
+  {
+   "number": "1546",
+   "name": "MONOPOLY 50X",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "38"
+    },
+    {
+     "prize": "$500",
+     "left": "624"
+    },
+    {
+     "prize": "$200",
+     "left": "78"
+    },
+    {
+     "prize": "$100",
+     "left": "783"
+    }
+   ]
+  },
+  {
+   "number": "1545",
+   "name": "MONOPOLY 100X",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$300,000",
+     "left": "3"
+    },
+    {
+     "prize": "$3,000",
+     "left": "353"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2,993"
+    },
+    {
+     "prize": "$500",
+     "left": "3,951"
+    },
+    {
+     "prize": "$400",
+     "left": "499"
+    }
+   ]
+  },
+  {
+   "number": "1544",
+   "name": "Boo Buck$",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$2,500",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1"
+    },
+    {
+     "prize": "$400",
+     "left": "44"
+    },
+    {
+     "prize": "$200",
+     "left": "35"
+    },
+    {
+     "prize": "$100",
+     "left": "90"
+    },
+    {
+     "prize": "$40",
+     "left": "720"
+    }
+   ]
+  },
+  {
+   "number": "1543",
+   "name": "Monster Money",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$13,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$13,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "11"
+    },
+    {
+     "prize": "$200",
+     "left": "180"
+    },
+    {
+     "prize": "$100",
+     "left": "646"
+    },
+    {
+     "prize": "$50",
+     "left": "2,375"
+    }
+   ]
+  },
+  {
+   "number": "1540",
+   "name": "WILLY WONKA GOLDEN TICKET\u2122",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "96"
+    },
+    {
+     "prize": "$500",
+     "left": "1,087"
+    },
+    {
+     "prize": "$200",
+     "left": "4,343"
+    },
+    {
+     "prize": "$100",
+     "left": "8,377"
+    }
+   ]
+  },
+  {
+   "number": "1539",
+   "name": "Ca$h Incline",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$200",
+     "left": "604"
+    },
+    {
+     "prize": "$100",
+     "left": "1,689"
+    },
+    {
+     "prize": "$50",
+     "left": "3,534"
+    },
+    {
+     "prize": "$30",
+     "left": "7,735"
+    }
+   ]
+  },
+  {
+   "number": "1536",
+   "name": "Solid Gold",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "23"
+    },
+    {
+     "prize": "$500",
+     "left": "199"
+    },
+    {
+     "prize": "$200",
+     "left": "744"
+    },
+    {
+     "prize": "$100",
+     "left": "4,277"
+    }
+   ]
+  },
+  {
+   "number": "1535",
+   "name": "$1,000,000 Extreme Green",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "804"
+    },
+    {
+     "prize": "$500",
+     "left": "1,853"
+    },
+    {
+     "prize": "$400",
+     "left": "1,748"
+    }
+   ]
+  },
+  {
+   "number": "1534",
+   "name": "Hot Ticket",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500",
+     "left": "2"
+    },
+    {
+     "prize": "$100",
+     "left": "51"
+    },
+    {
+     "prize": "$40",
+     "left": "205"
+    },
+    {
+     "prize": "$20",
+     "left": "1,036"
+    },
+    {
+     "prize": "$15",
+     "left": "7,608"
+    }
+   ]
+  },
+  {
+   "number": "1533",
+   "name": "Bonus Buck$",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "10"
+    },
+    {
+     "prize": "$200",
+     "left": "71"
+    },
+    {
+     "prize": "$100",
+     "left": "552"
+    },
+    {
+     "prize": "$50",
+     "left": "3,013"
+    },
+    {
+     "prize": "$30",
+     "left": "5,233"
+    }
+   ]
+  },
+  {
+   "number": "1532",
+   "name": "On the Money",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "12"
+    },
+    {
+     "prize": "$500",
+     "left": "407"
+    },
+    {
+     "prize": "$200",
+     "left": "2,274"
+    },
+    {
+     "prize": "$100",
+     "left": "5,140"
+    }
+   ]
+  },
+  {
+   "number": "1531",
+   "name": "Show Me $500,000",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "54"
+    },
+    {
+     "prize": "$500",
+     "left": "200"
+    },
+    {
+     "prize": "$200",
+     "left": "970"
+    },
+    {
+     "prize": "$100",
+     "left": "5,101"
+    }
+   ]
+  },
+  {
+   "number": "1530",
+   "name": "$3,000,000 Payout",
+   "price": "$30",
+   "new": false,
+   "top_prize": "$3,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$3,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$300,000",
+     "left": "4"
+    },
+    {
+     "prize": "$30,000",
+     "left": "8"
+    },
+    {
+     "prize": "$3,000",
+     "left": "348"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1,868"
+    },
+    {
+     "prize": "$500",
+     "left": "2,237"
+    }
+   ]
+  },
+  {
+   "number": "1529",
+   "name": "Bee Lucky",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500",
+     "left": "3"
+    },
+    {
+     "prize": "$100",
+     "left": "185"
+    },
+    {
+     "prize": "$50",
+     "left": "777"
+    },
+    {
+     "prize": "$25",
+     "left": "2,310"
+    },
+    {
+     "prize": "$10",
+     "left": "20,887"
+    }
+   ]
+  },
+  {
+   "number": "1528",
+   "name": "Scoop Up Some Cash",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "6",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "19"
+    },
+    {
+     "prize": "$200",
+     "left": "428"
+    },
+    {
+     "prize": "$100",
+     "left": "2,009"
+    },
+    {
+     "prize": "$50",
+     "left": "5,181"
+    }
+   ]
+  },
+  {
+   "number": "1527",
+   "name": "Triple 333",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "3"
+    },
+    {
+     "prize": "$3,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "56"
+    },
+    {
+     "prize": "$300",
+     "left": "206"
+    },
+    {
+     "prize": "$100",
+     "left": "787"
+    },
+    {
+     "prize": "$90",
+     "left": "2,858"
+    }
+   ]
+  },
+  {
+   "number": "1526",
+   "name": "Digging for Treasure",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "4"
+    },
+    {
+     "prize": "$5,000",
+     "left": "8"
+    },
+    {
+     "prize": "$1,000",
+     "left": "29"
+    },
+    {
+     "prize": "$500",
+     "left": "470"
+    },
+    {
+     "prize": "$200",
+     "left": "2,440"
+    },
+    {
+     "prize": "$100",
+     "left": "12,340"
+    }
+   ]
+  },
+  {
+   "number": "1525",
+   "name": "Feelin\u2019 Like a Million Bucks",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "77"
+    },
+    {
+     "prize": "$500",
+     "left": "281"
+    },
+    {
+     "prize": "$400",
+     "left": "105"
+    }
+   ]
+  },
+  {
+   "number": "1524",
+   "name": "Wild Win",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$500",
+     "left": "3"
+    },
+    {
+     "prize": "$100",
+     "left": "271"
+    },
+    {
+     "prize": "$40",
+     "left": "755"
+    },
+    {
+     "prize": "$20",
+     "left": "2,420"
+    },
+    {
+     "prize": "$10",
+     "left": "14,890"
+    }
+   ]
+  },
+  {
+   "number": "1523",
+   "name": "7-11-21\u00ae LIVE!",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$21,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$21,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "7"
+    },
+    {
+     "prize": "$500",
+     "left": "83"
+    },
+    {
+     "prize": "$100",
+     "left": "746"
+    },
+    {
+     "prize": "$50",
+     "left": "4,067"
+    },
+    {
+     "prize": "$30",
+     "left": "5,552"
+    }
+   ]
+  },
+  {
+   "number": "1522",
+   "name": "The Hunt for Cash",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "4"
+    },
+    {
+     "prize": "$5,000",
+     "left": "8"
+    },
+    {
+     "prize": "$1,000",
+     "left": "19"
+    },
+    {
+     "prize": "$500",
+     "left": "382"
+    },
+    {
+     "prize": "$200",
+     "left": "1,394"
+    },
+    {
+     "prize": "$100",
+     "left": "6,955"
+    }
+   ]
+  },
+  {
+   "number": "1521",
+   "name": "Bigger Money Bingo",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "68"
+    },
+    {
+     "prize": "$500",
+     "left": "130"
+    },
+    {
+     "prize": "$250",
+     "left": "156"
+    }
+   ]
+  },
+  {
+   "number": "1519",
+   "name": "2 for $1",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "2"
+    },
+    {
+     "prize": "$500",
+     "left": "7"
+    },
+    {
+     "prize": "$100",
+     "left": "221"
+    },
+    {
+     "prize": "$40",
+     "left": "687"
+    },
+    {
+     "prize": "$20",
+     "left": "4,684"
+    },
+    {
+     "prize": "$10",
+     "left": "12,206"
+    }
+   ]
+  },
+  {
+   "number": "1518",
+   "name": "Cash Craze",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "19"
+    },
+    {
+     "prize": "$200",
+     "left": "79"
+    },
+    {
+     "prize": "$100",
+     "left": "646"
+    },
+    {
+     "prize": "$50",
+     "left": "6,009"
+    }
+   ]
+  },
+  {
+   "number": "1517",
+   "name": "Bolt Bucks",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$3,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "6"
+    },
+    {
+     "prize": "$300",
+     "left": "147"
+    },
+    {
+     "prize": "$150",
+     "left": "611"
+    },
+    {
+     "prize": "$100",
+     "left": "2,180"
+    }
+   ]
+  },
+  {
+   "number": "1516",
+   "name": "The Money Game",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "87"
+    },
+    {
+     "prize": "$200",
+     "left": "522"
+    },
+    {
+     "prize": "$100",
+     "left": "1,896"
+    }
+   ]
+  },
+  {
+   "number": "1515",
+   "name": "Mining for Millions",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "58"
+    },
+    {
+     "prize": "$500",
+     "left": "203"
+    },
+    {
+     "prize": "$400",
+     "left": "230"
+    }
+   ]
+  },
+  {
+   "number": "1514",
+   "name": "MONOPOLY 10X\u00ae",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$200",
+     "left": "193"
+    },
+    {
+     "prize": "$100",
+     "left": "701"
+    },
+    {
+     "prize": "$40",
+     "left": "3,217"
+    },
+    {
+     "prize": "$20",
+     "left": "18,220"
+    }
+   ]
+  },
+  {
+   "number": "1507",
+   "name": "Color Block Crossword",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "26"
+    },
+    {
+     "prize": "$150",
+     "left": "803"
+    },
+    {
+     "prize": "$100",
+     "left": "1,294"
+    },
+    {
+     "prize": "$50",
+     "left": "5,436"
+    },
+    {
+     "prize": "$30",
+     "left": "20,564"
+    }
+   ]
+  },
+  {
+   "number": "1498",
+   "name": "Wild Ca$h Multiplier",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "3"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$3,000",
+     "left": "7"
+    },
+    {
+     "prize": "$1,000",
+     "left": "86"
+    },
+    {
+     "prize": "$300",
+     "left": "351"
+    },
+    {
+     "prize": "$100",
+     "left": "1,619"
+    }
+   ]
+  },
+  {
+   "number": "1493",
+   "name": "$500 Cash Money",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$250,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$250,000",
+     "left": "1"
+    },
+    {
+     "prize": "$5,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500",
+     "left": "1,307"
+    },
+    {
+     "prize": "$100",
+     "left": "128"
+    },
+    {
+     "prize": "$50",
+     "left": "3,575"
+    },
+    {
+     "prize": "$20",
+     "left": "8,022"
+    }
+   ]
+  },
+  {
+   "number": "1492",
+   "name": "$500,000 Mega Crossword*",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$500,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "2"
+    },
+    {
+     "prize": "$50,000",
+     "left": "4"
+    },
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "340"
+    },
+    {
+     "prize": "$500",
+     "left": "659"
+    }
+   ]
+  },
+  {
+   "number": "1430",
+   "name": "Snowball Buck$",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "9"
+    },
+    {
+     "prize": "$500",
+     "left": "68"
+    },
+    {
+     "prize": "$200",
+     "left": "445"
+    },
+    {
+     "prize": "$100",
+     "left": "2,268"
+    },
+    {
+     "prize": "$40",
+     "left": "7,089"
+    }
+   ]
+  },
+  {
+   "number": "1419",
+   "name": "Rocket Crossword",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$6,000",
+     "left": "1"
+    },
+    {
+     "prize": "$3,000",
+     "left": "2"
+    },
+    {
+     "prize": "$2,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "2"
+    },
+    {
+     "prize": "$600",
+     "left": "17"
+    }
+   ]
+  },
+  {
+   "number": "1410",
+   "name": "9s in a Line",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$9,000",
+   "top_prize_left": "4",
+   "prizes": [
+    {
+     "prize": "$9,000",
+     "left": "4"
+    },
+    {
+     "prize": "$900",
+     "left": "4"
+    },
+    {
+     "prize": "$300",
+     "left": "372"
+    },
+    {
+     "prize": "$150",
+     "left": "765"
+    },
+    {
+     "prize": "$100",
+     "left": "366"
+    },
+    {
+     "prize": "$90",
+     "left": "4,879"
+    }
+   ]
+  },
+  {
+   "number": "1372",
+   "name": "Reindeer Games",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$5,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$300",
+     "left": "5"
+    },
+    {
+     "prize": "$150",
+     "left": "18"
+    },
+    {
+     "prize": "$100",
+     "left": "360"
+    },
+    {
+     "prize": "$60",
+     "left": "334"
+    },
+    {
+     "prize": "$50",
+     "left": "1,742"
+    }
+   ]
+  },
+  {
+   "number": "1371",
+   "name": "Frosty the Doughman",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$20,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$20,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "7"
+    },
+    {
+     "prize": "$500",
+     "left": "107"
+    },
+    {
+     "prize": "$200",
+     "left": "658"
+    },
+    {
+     "prize": "$100",
+     "left": "2,603"
+    },
+    {
+     "prize": "$40",
+     "left": "6,925"
+    }
+   ]
+  },
+  {
+   "number": "1370",
+   "name": "Sleigh Bell$",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "3"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "430"
+    },
+    {
+     "prize": "$200",
+     "left": "704"
+    },
+    {
+     "prize": "$100",
+     "left": "2,453"
+    }
+   ]
+  },
+  {
+   "number": "1369",
+   "name": "Cash Kringle",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "3"
+    },
+    {
+     "prize": "$500",
+     "left": "195"
+    },
+    {
+     "prize": "$200",
+     "left": "820"
+    },
+    {
+     "prize": "$100",
+     "left": "7,469"
+    }
+   ]
+  },
+  {
+   "number": "1367",
+   "name": "Merry Millionaire",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "2"
+    },
+    {
+     "prize": "$100,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "407"
+    },
+    {
+     "prize": "$500",
+     "left": "1,184"
+    },
+    {
+     "prize": "$400",
+     "left": "145"
+    }
+   ]
+  },
+  {
+   "number": "1363",
+   "name": "Jack O' Lantern Jackpot",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "1"
+    },
+    {
+     "prize": "$500",
+     "left": "12"
+    },
+    {
+     "prize": "$250",
+     "left": "34"
+    },
+    {
+     "prize": "$100",
+     "left": "1,617"
+    },
+    {
+     "prize": "$50",
+     "left": "4,039"
+    }
+   ]
+  },
+  {
+   "number": "1336",
+   "name": "My First Million",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "0"
+    },
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "236"
+    },
+    {
+     "prize": "$500",
+     "left": "349"
+    },
+    {
+     "prize": "$200",
+     "left": "1,301"
+    }
+   ]
+  },
+  {
+   "number": "1334",
+   "name": "$2 MONOPOLY\u2122",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$25,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$25,000",
+     "left": "1"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$500",
+     "left": "4"
+    },
+    {
+     "prize": "$250",
+     "left": "82"
+    },
+    {
+     "prize": "$100",
+     "left": "1,035"
+    },
+    {
+     "prize": "$50",
+     "left": "5,162"
+    }
+   ]
+  },
+  {
+   "number": "1331",
+   "name": "$10 MONOPOLY\u2122",
+   "price": "$10",
+   "new": false,
+   "top_prize": "$300,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$300,000",
+     "left": "2"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$1,000",
+     "left": "214"
+    },
+    {
+     "prize": "$500",
+     "left": "530"
+    },
+    {
+     "prize": "$400",
+     "left": "431"
+    },
+    {
+     "prize": "$200",
+     "left": "8,462"
+    }
+   ]
+  },
+  {
+   "number": "1328",
+   "name": "Extreme 8s",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$50,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "1"
+    },
+    {
+     "prize": "$8,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "16"
+    },
+    {
+     "prize": "$800",
+     "left": "50"
+    },
+    {
+     "prize": "$300",
+     "left": "132"
+    },
+    {
+     "prize": "$100",
+     "left": "656"
+    }
+   ]
+  },
+  {
+   "number": "1326",
+   "name": "Bingo Squared",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "5"
+    },
+    {
+     "prize": "$5,000",
+     "left": "4"
+    },
+    {
+     "prize": "$1,000",
+     "left": "12"
+    },
+    {
+     "prize": "$500",
+     "left": "63"
+    },
+    {
+     "prize": "$250",
+     "left": "58"
+    }
+   ]
+  },
+  {
+   "number": "1323",
+   "name": "10X the Bucks",
+   "price": "$2",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "48"
+    },
+    {
+     "prize": "$400",
+     "left": "149"
+    },
+    {
+     "prize": "$100",
+     "left": "1,916"
+    },
+    {
+     "prize": "$50",
+     "left": "4,354"
+    },
+    {
+     "prize": "$40",
+     "left": "5,597"
+    }
+   ]
+  },
+  {
+   "number": "1317",
+   "name": "Bingo",
+   "price": "$3",
+   "new": false,
+   "top_prize": "$60,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$60,000",
+     "left": "2"
+    },
+    {
+     "prize": "$3,000",
+     "left": "6"
+    },
+    {
+     "prize": "$1,000",
+     "left": "57"
+    },
+    {
+     "prize": "$300",
+     "left": "380"
+    },
+    {
+     "prize": "$150",
+     "left": "151"
+    },
+    {
+     "prize": "$100",
+     "left": "906"
+    }
+   ]
+  },
+  {
+   "number": "1314",
+   "name": "Big Money Millionaire",
+   "price": "$20",
+   "new": false,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "1"
+    },
+    {
+     "prize": "$100,000",
+     "left": "1"
+    },
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "27"
+    },
+    {
+     "prize": "$500",
+     "left": "991"
+    },
+    {
+     "prize": "$400",
+     "left": "430"
+    }
+   ]
+  },
+  {
+   "number": "1313",
+   "name": "Lucky Numbers",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "0"
+    },
+    {
+     "prize": "$5,000",
+     "left": "3"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5"
+    },
+    {
+     "prize": "$400",
+     "left": "113"
+    },
+    {
+     "prize": "$200",
+     "left": "242"
+    },
+    {
+     "prize": "$100",
+     "left": "1,751"
+    }
+   ]
+  },
+  {
+   "number": "1301",
+   "name": "Winning Vault",
+   "price": "$5",
+   "new": false,
+   "top_prize": "$100,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$100,000",
+     "left": "2"
+    },
+    {
+     "prize": "$5,000",
+     "left": "0"
+    },
+    {
+     "prize": "$1,000",
+     "left": "4"
+    },
+    {
+     "prize": "$500",
+     "left": "152"
+    },
+    {
+     "prize": "$200",
+     "left": "430"
+    },
+    {
+     "prize": "$100",
+     "left": "1,257"
+    }
+   ]
+  },
+  {
+   "number": "1280",
+   "name": "Quick Cash",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "0",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "0"
+    },
+    {
+     "prize": "$400",
+     "left": "11"
+    },
+    {
+     "prize": "$100",
+     "left": "402"
+    },
+    {
+     "prize": "$40",
+     "left": "2,105"
+    },
+    {
+     "prize": "$20",
+     "left": "7,817"
+    },
+    {
+     "prize": "$10",
+     "left": "15,777"
+    }
+   ]
+  },
+  {
+   "number": "1270",
+   "name": "$$$",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "2",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "2"
+    },
+    {
+     "prize": "$1,000",
+     "left": "7"
+    },
+    {
+     "prize": "$300",
+     "left": "13"
+    },
+    {
+     "prize": "$100",
+     "left": "85"
+    },
+    {
+     "prize": "$90",
+     "left": "481"
+    },
+    {
+     "prize": "$60",
+     "left": "924"
+    }
+   ]
+  },
+  {
+   "number": "1264",
+   "name": "9s In A Line",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$9,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$9,000",
+     "left": "1"
+    },
+    {
+     "prize": "$900",
+     "left": "5"
+    },
+    {
+     "prize": "$300",
+     "left": "19"
+    },
+    {
+     "prize": "$100",
+     "left": "67"
+    },
+    {
+     "prize": "$90",
+     "left": "1,489"
+    },
+    {
+     "prize": "$30",
+     "left": "3,024"
+    }
+   ]
+  },
+  {
+   "number": "1258",
+   "name": "Road to Riches",
+   "price": "$1",
+   "new": false,
+   "top_prize": "$10,000",
+   "top_prize_left": "1",
+   "prizes": [
+    {
+     "prize": "$10,000",
+     "left": "1"
+    },
+    {
+     "prize": "$600",
+     "left": "13"
+    },
+    {
+     "prize": "$100",
+     "left": "434"
+    },
+    {
+     "prize": "$60",
+     "left": "1,407"
+    },
+    {
+     "prize": "$30",
+     "left": "4,918"
+    },
+    {
+     "prize": "$20",
+     "left": "5,517"
+    }
+   ]
+  }
+ ]
+}

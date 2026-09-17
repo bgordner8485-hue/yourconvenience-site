@@ -1,0 +1,42 @@
+name: Lottery data
+on:
+  schedule:
+    - cron: "20 * * * *"   # hourly, a few minutes after the usual draw times
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: store-bot }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Winning numbers + scratch-off prizes
+        run: python automation/lottery_data.py
+      - name: ScratchinLottoTV episodes
+        run: python automation/youtube_feed.py
+      - name: Lottery reports from Drive (payouts etc.)
+        run: python automation/reports_ingest.py
+        env:
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+      - name: Rebuild pages
+        run: python automation/build_site.py
+      - name: Save changes
+        id: save
+        run: |
+          git config user.name "store-bot"; git config user.email "store-bot@users.noreply.github.com"
+          git add public data
+          if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT; exit 0; fi
+          echo "changed=true" >> $GITHUB_OUTPUT
+          git commit -m "Lottery data refresh" && git push
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml

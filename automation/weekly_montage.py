@@ -138,13 +138,16 @@ def main():
     print(f"Built {out_mp4} — {len(winners)} winners, {money(total)}, {dur:.1f}s, song: {song['title']}")
     if a.no_post:
         return
+    channels = {k: v for k, v in CFG["postiz"]["montage_channels"].items() if v and not v.startswith("PASTE_")}
+    if not os.environ.get("POSTIZ_API_KEY") or not channels:
+        print("Postiz not set up yet (API key or channel ids missing) — video built but not posted."); return
     week = dt.date.today().strftime("%b %d")
     title = f"{money(total)} in Winners This Week! @ Your Convenience 🎉 #Shorts"
     text = (f"🍀 This week's winners at {CFG['store_name']}! {len(winners)} winning tickets, {money(total)} total "
             f"(week of {week}). Congratulations to everyone who cashed in! 🎉\n\n"
             f"🎵 Music: \"{song['title']}\" by Rust & Rail\n📍 {CFG['store_address']}\n{CFG['hashtags']}")
     media = postiz_upload(out_mp4)
-    postiz_post(CFG["postiz"]["montage_channels"], media, text, title=title)
+    postiz_post(channels, media, text, title=title)
     state["montage_count"] = state.get("montage_count", 0) + 1
     save_json(STATE_JSON, state)
 

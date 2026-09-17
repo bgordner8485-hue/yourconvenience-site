@@ -61,6 +61,8 @@ def main():
             gmb = (f"Another {amt} winning ticket{game} sold at our {info['store']} store! Congratulations! "
                    f"See all our recent winners on our website.")
             try:
+                if not os.environ.get("POSTIZ_API_KEY"):
+                    print("  (Postiz not set up yet — website only)"); continue
                 media = postiz_upload(out)
                 postiz_post(CFG["postiz"]["winner_channels"], media, text, captions={"gmb": gmb})
             except Exception as e:  # keep the website update even if social fails

@@ -1,0 +1,42 @@
+name: Sync winners
+on:
+  schedule:
+    - cron: "*/20 11-23,0-4 * * *"   # every 20 min, ~7am–midnight Eastern
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Load ALL past winners onto the website without posting to social"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: store-bot }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python automation/winners_sync.py
+        env:
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+          BACKFILL: ${{ inputs.backfill }}
+      - name: Save changes
+        id: save
+        run: |
+          git config user.name "store-bot"; git config user.email "store-bot@users.noreply.github.com"
+          git add public data
+          if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT; exit 0; fi
+          git diff --cached --name-only | grep -q '^public/' && echo "changed=true" >> $GITHUB_OUTPUT || echo "changed=false" >> $GITHUB_OUTPUT
+          git commit -m "New winner(s)" && git push
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml

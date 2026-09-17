@@ -1,0 +1,17 @@
+{
+  "hours": "Mon–Fri 6am–Midnight<br>Saturday 7am–Midnight<br>Sunday 8am–Midnight",
+  "deals": [
+    {
+      "title": "Edit me: Deal #1",
+      "details": "Change these in public/site.json — they show up on the site automatically."
+    },
+    {
+      "title": "Edit me: Deal #2",
+      "details": "Example: 2 for $5 energy drinks."
+    },
+    {
+      "title": "Edit me: Deal #3",
+      "details": "Example: $1 off any cigar pack."
+    }
+  ]
+}

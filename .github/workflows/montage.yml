@@ -1,0 +1,26 @@
+name: Weekly winners montage
+on:
+  schedule:
+    - cron: "0 23 * * 0"   # Sundays 7pm Eastern (6pm in winter)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: store-bot }
+jobs:
+  montage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r requirements.txt
+      - run: python automation/weekly_montage.py
+        env:
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with: { name: montage, path: out/montage.mp4 }
+      - run: |
+          git config user.name "store-bot"; git config user.email "store-bot@users.noreply.github.com"
+          git add data; git diff --cached --quiet || (git commit -m "Montage posted" && git push)

@@ -62,14 +62,27 @@ def fetch_numbers():
         nums_m = re.search(r"Winning Numbers?:\s*([0-9 ]+)", desc)
         numbers = nums_m.group(1).split() if nums_m else []
         extras = {}
-        for key, pat in (("wild_ball", r"WB:\s*(\d+)"), ("powerball", r"Powerball:\s*(\d+)"),
-                         ("power_play", r"Power Play:\s*(\d+)"), ("mega_ball", r"Mega Ball:\s*(\d+)"),
-                         ("megaplier", r"Megaplier:\s*(\d+)"), ("cash_ball", r"Cash Ball:\s*(\d+)"),
-                         ("bonus", r"Bonus(?: Ball)?:\s*(\d+)")):
+        for key, pat in (("wild_ball", r"\bWB:\s*(\d+)"),
+                         ("powerball", r"\b(?:PB|Powerball):\s*(\d+)"),
+                         ("power_play", r"\b(?:PP|Power Play):\s*(\d+)"),
+                         ("mega_ball", r"\b(?:MB|Mega Ball):\s*(\d+)"),
+                         ("megaplier", r"\b(?:MP|Megaplier):\s*(\d+)"),
+                         ("cash_ball", r"\b(?:CB|Cash Ball):\s*(\d+)"),
+                         ("bonus", r"\b(?:Mill Ball|Bonus(?: Ball)?|Lucky Ball):\s*(\d+)")):
             mm = re.search(pat, desc, re.I)
             if mm:
                 extras[key] = mm.group(1)
-        jack = re.search(r"jackpot for (\d{2}/\d{2}/\d{4}) is \$([\d,\.]+\s*\w*)", desc, re.I)
+        # the feed repeats the extra balls at the end of the main number list — trim them
+        tail = [extras[k] for k in ("powerball", "mega_ball", "cash_ball", "bonus") if k in extras]
+        tail += [extras[k] for k in ("power_play", "megaplier") if k in extras]
+        while tail and numbers and numbers[-len(tail):] == tail:
+            numbers = numbers[:-len(tail)]
+            break
+        for k in ("powerball", "mega_ball", "cash_ball", "bonus"):
+            if k in extras and numbers and numbers[-1] == extras[k]:
+                numbers = numbers[:-1]
+        jack = (re.search(r"jackpot for (\d{2}/\d{2}/\d{4}) is \$([\d,\.]+\s*[\w ]*)", desc, re.I)
+                or re.search(r"Est\. Annuity for (\d{2}/\d{2}/\d{4}) is \$([\d,\.]+\s*[\w ]*)", desc, re.I))
         draws.append({
             "game": label, "slug": slugify(label), "date": date, "draw": draw_time,
             "numbers": numbers, **extras,

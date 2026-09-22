@@ -1,64 +1,33 @@
 {
-<<<<<<< Updated upstream
- "updated": "2026-09-22T18:55:37+00:00",
- "source": "photos",
- "since": "2026-02-02",
- "all_time": {
-  "count": 536,
-  "total": 132755.0,
-  "biggest": 2500.0,
-  "average": 247.68
- },
- "last_7": {
-  "count": 25,
-  "total": 8000.0,
-  "biggest": 1000.0,
-  "average": 320.0
- },
- "last_30": {
-  "count": 83,
-  "total": 19955.0,
-  "biggest": 1000.0,
-  "average": 240.42
- },
- "last_365": {
-  "count": 536,
-  "total": 132755.0,
-  "biggest": 2500.0,
-  "average": 247.68
- },
- "per_week_average": 4005.54,
-=======
- "updated": "2026-09-22T18:55:32+00:00",
+ "updated": "2026-09-22T18:56:00+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 560,
-  "total": 168744.0,
+  "count": 564,
+  "total": 170294.0,
   "biggest": 2500.0,
-  "average": 301.33
+  "average": 301.94
  },
  "last_7": {
-  "count": 21,
-  "total": 7950.0,
+  "count": 25,
+  "total": 9500.0,
   "biggest": 2500.0,
-  "average": 378.57
+  "average": 380.0
  },
  "last_30": {
-  "count": 79,
-  "total": 19905.0,
+  "count": 83,
+  "total": 21455.0,
   "biggest": 2500.0,
-  "average": 251.96
+  "average": 258.49
  },
  "last_365": {
-  "count": 560,
-  "total": 168744.0,
+  "count": 564,
+  "total": 170294.0,
   "biggest": 2500.0,
-  "average": 301.33
+  "average": 301.94
  },
- "per_week_average": 4668.25,
+ "per_week_average": 4715.01,
  "full_since": "2026-02-02",
->>>>>>> Stashed changes
  "biggest_win": {
   "date": "2026-09-15",
   "amount": 2500.0,
@@ -75,11 +44,7 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-<<<<<<< Updated upstream
-   "count": 13
-=======
-   "count": 40
->>>>>>> Stashed changes
+   "count": 41
   },
   {
    "tier": "$500\u2013$999",
@@ -97,12 +62,8 @@
  "by_game": [
   {
    "game": "Scratch-off",
-<<<<<<< Updated upstream
-   "count": 531,
-   "total": 127241.0
-=======
-   "count": 521,
-   "total": 118191.0
+   "count": 525,
+   "total": 119741.0
   },
   {
    "game": "Pick 4 Evening",
@@ -138,7 +99,6 @@
    "game": "$2,500 FESTIVE FRENZY",
    "count": 1,
    "total": 2500.0
->>>>>>> Stashed changes
   },
   {
    "game": "PICK 4",
@@ -179,13 +139,8 @@
  "by_month": [
   {
    "month": "2026-09",
-<<<<<<< Updated upstream
-   "total": 12340.0,
+   "total": 13840.0,
    "count": 50
-=======
-   "total": 12290.0,
-   "count": 46
->>>>>>> Stashed changes
   },
   {
    "month": "2026-08",
@@ -230,7 +185,7 @@
   },
   {
    "day": "Tuesday",
-   "count": 84
+   "count": 88
   },
   {
    "day": "Wednesday",

@@ -117,6 +117,14 @@ def main():
                     for d in {r["date"] for r in rows}), key=lambda x: x[1])
 
     week, month, year = window(rows, 7), window(rows, 30), window(rows, 365)
+
+    # The portal feed only reports large prizes; the photos are ticket-by-ticket.
+    # Months before the photos start would read as near-empty, so mark where the
+    # complete record begins and average the weekly figure over that window only.
+    photo_dates = [r["date"] for r in rows if r["source"] == "photo"]
+    full_since = min(photo_dates) if photo_dates else first
+    full_rows = [r for r in rows if r["date"] >= full_since]
+    full_days = max((today - full_since).days, 1)
     stats = {
         "updated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "source": "portal+photos" if any(r["source"] == "portal" for r in rows) else "photos",
@@ -125,14 +133,16 @@ def main():
         "last_7": summarise(week),
         "last_30": summarise(month),
         "last_365": summarise(year),
-        "per_week_average": round(sum(r["amount"] for r in rows) / (days_live / 7), 2),
+        "per_week_average": round(sum(r["amount"] for r in full_rows) / (full_days / 7), 2),
+        "full_since": full_since.isoformat(),
         "biggest_win": max(rows, key=lambda r: r["amount"]) | {} if rows else None,
         "best_day": {"date": best_day[0].isoformat(), "total": round(best_day[1], 2)},
         "by_tier": [{"tier": label, "count": tiers.get(label, 0)} for _, label in TIERS],
         "by_game": sorted(({"game": g, **v, "total": round(v["total"], 2)}
                            for g, v in by_game.items()), key=lambda x: -x["total"])[:15],
         "by_month": [{"month": m, "total": round(by_month[m], 2), "count": month_counts[m]}
-                     for m in sorted(by_month, reverse=True)[:18]],
+                     for m in sorted(by_month, reverse=True)[:18]
+                     if m >= full_since.strftime("%Y-%m")],
         "by_weekday": [{"day": d, "count": weekday.get(d, 0)} for d in
                        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]],
         "portal_through": portal.get("through"),

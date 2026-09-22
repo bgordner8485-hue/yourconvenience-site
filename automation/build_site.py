@@ -230,9 +230,18 @@ def stats_page():
     day_rows = "".join(
         f'<tr><td>{esc(d["day"])}</td><td style="width:60%"><span class="bar" style="width:'
         f'{round(100 * d["count"] / peak)}%"></span></td><td><b>{d["count"]}</b></td></tr>' for d in days)
-    source = ("Figures come from the Pennsylvania Lottery retailer system, updated daily."
+    source = ("Figures come from the Pennsylvania Lottery's own retailer records plus the "
+              "winning tickets we photograph at the counter, updated daily."
               if st.get("source") == "portal+photos" else
               "Figures are counted from the winning tickets we've photographed at the counter.")
+    full_since = st.get("full_since")
+    month_note = ""
+    if full_since and full_since[:7] > st["since"][:7]:
+        fs = dt.date.fromisoformat(full_since).strftime("%B %Y")
+        month_note = (f'<p class="note">Ticket-by-ticket records start in {esc(fs)}. '
+                      f'Before that we can only count the large prizes the Lottery reports, '
+                      f'so those months are left out of this table — they are still in the '
+                      f'totals above.</p>')
 
     body = f"""<header class="pagehead"><div class="wrap">
   <span class="eyebrow">The numbers</span>
@@ -254,6 +263,7 @@ def stats_page():
 
   <h2 style="font-size:24px;margin:34px 0 12px">Month by month</h2>
   <table><thead><tr><th>Month</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{month_rows}</tbody></table>
+  {month_note}
 
   <h2 style="font-size:24px;margin:34px 0 12px">By game</h2>
   <table><thead><tr><th>Game</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{game_rows}</tbody></table>

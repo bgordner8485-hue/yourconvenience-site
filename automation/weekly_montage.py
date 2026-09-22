@@ -97,6 +97,42 @@ def build(winners, music, music_start, out_mp4, work):
     subprocess.run(cmd, check=True)
     return total, duration
 
+AUDIO_EXT = (".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg", ".aiff", ".wma")
+
+def song_catalog(svc):
+    """Every Rust & Rail track in the configured Drive song folders (one level of subfolders)."""
+    folders = list(CFG["montage"].get("music_folder_ids") or [])
+    start = CFG["montage"].get("music_start", 30)
+    seen_folders, songs, seen = set(), [], set()
+    while folders:
+        fid = folders.pop(0)
+        if fid in seen_folders:
+            continue
+        seen_folders.add(fid)
+        try:
+            files = list_files_any(svc, fid)
+        except Exception as e:
+            print(f"  song folder {fid}: {e}")
+            continue
+        for f in files:
+            if f.get("mimeType") == "application/vnd.google-apps.folder":
+                if len(seen_folders) < 25:
+                    folders.append(f["id"])
+                continue
+            name = f["name"]
+            if not (name.lower().endswith(AUDIO_EXT) or str(f.get("mimeType", "")).startswith("audio/")):
+                continue
+            title = re.sub(r"\.[^.]+$", "", name)
+            title = re.sub(r"^\s*\d{1,2}[\s._-]+", "", title).strip()
+            key = title.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            songs.append({"title": title, "drive_id": f["id"], "start": start})
+    songs.sort(key=lambda s: s["title"].lower())
+    return songs
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-post", action="store_true")
@@ -119,13 +155,16 @@ def main():
         winners = sorted(sorted(winners, key=lambda w: -w["amount"])[:max_n], key=lambda w: w["date"])
 
     state = load_json(STATE_JSON, {})
-    songs = CFG["montage"]["music"]
-    song = songs[state.get("montage_count", 0) % len(songs)]
     out_dir = ROOT / "out"; out_dir.mkdir(exist_ok=True)
     out_mp4 = out_dir / "montage.mp4"
     with tempfile.TemporaryDirectory() as td:
         work = Path(td)
         svc = None if (a.local and a.music) else drive()
+        songs = song_catalog(svc) if svc else []
+        if not songs:
+            songs = CFG["montage"]["music"]          # fallback: the hand-listed tracks
+        print(f"{len(songs)} Rust & Rail track(s) available")
+        song = songs[state.get("montage_count", 0) % len(songs)]
         for w in winners:  # use the full-res originals when we can
             if a.local:
                 w["_path"] = ROOT / "public" / w["image"].lstrip("/")

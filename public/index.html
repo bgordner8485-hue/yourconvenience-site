@@ -137,10 +137,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
   </div>
 </div></section>
 
-<section id="deals"><div class="wrap">
-  <div class="sec-head"><div><h2>This week's deals</h2><p>Stop in — specials change every week.</p></div></div>
-  <div class="cards" id="dealCards"></div>
-</div></section>
 
 <section class="alt" id="stores"><div class="wrap">
   <div class="sec-head"><div><h2>Our stores</h2></div></div>
@@ -215,7 +211,6 @@ fetch('/winners.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
 }).catch(render);
 fetch('/site.json',{cache:'no-store'}).then(r=>r.json()).then(s=>{
   if(s.hours)hoursSW.innerHTML=s.hours;
-  dealCards.innerHTML=(s.deals||[]).map(d=>`<div class="card deal"><div class="ic">🔥</div><h3>${d.title}</h3><p>${d.details}</p></div>`).join('')||'<div class="empty">Ask at the counter for this week\'s specials.</div>';
 }).catch(()=>{});
 
 fetch('/numbers.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{

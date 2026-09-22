@@ -23,7 +23,7 @@
     "min_winners": 2,
     "seconds_per_winner": 2.6,
     "max_seconds": 58,
-    "music_rotation_note": "Rust & Rail tracks from the 'Lucky Enough' Drive folder. start = seconds into the song to begin (pick the chorus). Rotates weekly.",
+    "music_rotation_note": "Every Rust & Rail track found in the Drive song folders below is used, rotating one per week. 'music' is only a fallback if Drive is unreachable. music_start = seconds into the song to begin.",
     "music": [
       {
         "title": "Lucky Enough",
@@ -50,7 +50,14 @@
         "drive_id": "1YhUaY25C_e8dpcI6OkK_BVc4ZChV96f8",
         "start": 30
       }
-    ]
+    ],
+    "music_folder_ids": [
+      "1qffCOC8VkD4y9y2g_e9X7toKCclJCayl",
+      "1LkYmYBfaBTI2TrQ2NLkVpU4xukXItp31",
+      "1qlftbvmgnLS1CDuoFxp04dNoPSzXjKAB",
+      "15xY_89tLUWPJqyi3PSnAlMCJjSpI7bxk"
+    ],
+    "music_start": 30
   },
-  "drive_reports_folder_id": "PASTE_LOTTERY_REPORTS_FOLDER_ID"
+  "drive_reports_folder_id": "1NH_lS77Zn-36skRdBzrK9bjD07iD0ffc"
 }

@@ -1,0 +1,171 @@
+{
+ "updated": "2026-09-22T01:23:17+00:00",
+ "source": "photos",
+ "since": "2026-02-02",
+ "all_time": {
+  "count": 532,
+  "total": 131205.0,
+  "biggest": 2500.0,
+  "average": 246.63
+ },
+ "last_7": {
+  "count": 21,
+  "total": 6450.0,
+  "biggest": 1000.0,
+  "average": 307.14
+ },
+ "last_30": {
+  "count": 79,
+  "total": 18405.0,
+  "biggest": 1000.0,
+  "average": 232.97
+ },
+ "last_365": {
+  "count": 532,
+  "total": 131205.0,
+  "biggest": 2500.0,
+  "average": 246.63
+ },
+ "per_week_average": 3975.91,
+ "biggest_win": {
+  "date": "2026-06-28",
+  "amount": 2500.0,
+  "game": ""
+ },
+ "best_day": {
+  "date": "2026-04-10",
+  "total": 6100.0
+ },
+ "by_tier": [
+  {
+   "tier": "$10,000+",
+   "count": 0
+  },
+  {
+   "tier": "$1,000\u2013$9,999",
+   "count": 12
+  },
+  {
+   "tier": "$500\u2013$999",
+   "count": 74
+  },
+  {
+   "tier": "$100\u2013$499",
+   "count": 446
+  },
+  {
+   "tier": "Under $100",
+   "count": 0
+  }
+ ],
+ "by_game": [
+  {
+   "game": "Scratch-off",
+   "count": 524,
+   "total": 125391.0
+  },
+  {
+   "game": "PICK 4",
+   "count": 1,
+   "total": 2500.0
+  },
+  {
+   "game": "Match 6",
+   "count": 1,
+   "total": 1014.0
+  },
+  {
+   "game": "Mega Bucks",
+   "count": 1,
+   "total": 1000.0
+  },
+  {
+   "game": "Powerball",
+   "count": 1,
+   "total": 500.0
+  },
+  {
+   "game": "Week For Life",
+   "count": 1,
+   "total": 500.0
+  },
+  {
+   "game": "Winnet",
+   "count": 3,
+   "total": 300.0
+  }
+ ],
+ "by_month": [
+  {
+   "month": "2026-09",
+   "total": 10790.0,
+   "count": 46
+  },
+  {
+   "month": "2026-08",
+   "total": 21615.0,
+   "count": 88
+  },
+  {
+   "month": "2026-07",
+   "total": 19010.0,
+   "count": 92
+  },
+  {
+   "month": "2026-06",
+   "total": 22250.0,
+   "count": 96
+  },
+  {
+   "month": "2026-05",
+   "total": 10460.0,
+   "count": 49
+  },
+  {
+   "month": "2026-04",
+   "total": 14130.0,
+   "count": 59
+  },
+  {
+   "month": "2026-03",
+   "total": 14900.0,
+   "count": 40
+  },
+  {
+   "month": "2026-02",
+   "total": 18050.0,
+   "count": 62
+  }
+ ],
+ "by_weekday": [
+  {
+   "day": "Monday",
+   "count": 98
+  },
+  {
+   "day": "Tuesday",
+   "count": 80
+  },
+  {
+   "day": "Wednesday",
+   "count": 71
+  },
+  {
+   "day": "Thursday",
+   "count": 67
+  },
+  {
+   "day": "Friday",
+   "count": 126
+  },
+  {
+   "day": "Saturday",
+   "count": 24
+  },
+  {
+   "day": "Sunday",
+   "count": 66
+  }
+ ],
+ "portal_through": null
+}

@@ -26,8 +26,8 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 def shell(title, desc, body, canonical, extra_head="", active=""):
-    nav = [("/numbers", "Winning Numbers"), ("/scratch-offs", "Scratch-Offs"),
-           ("/#winners", "Our Winners"), ("/scratchinlottotv", "ScratchinLottoTV"),
+    nav = [("/#winners", "Winners"), ("/stats", "The Numbers"), ("/numbers", "Winning Numbers"),
+           ("/scratch-offs", "Scratch-Offs"), ("/scratchinlottotv", "ScratchinLottoTV"),
            ("/blog", "Blog"), ("/#stores", "Stores")]
     links = "".join(f'<li><a href="{h}"{" style=color:var(--gold)" if h==active else ""}>{t}</a></li>' for h, t in nav)
     return f"""<!doctype html>
@@ -186,6 +186,91 @@ document.querySelectorAll('#t th[data-k]').forEach(th=>{{let asc=false;th.onclic
         "@ Your Convenience in South Williamsport, PA.",
         body, "/scratch-offs", active="/scratch-offs"))
 
+
+# ---------------- winner stats ----------------
+def money(n, cents=False):
+    return f"${n:,.2f}" if cents else f"${n:,.0f}"
+
+
+def stats_page():
+    st = load("stats.json", {})
+    if not st:
+        return
+    at, w7, w30, w365 = st["all_time"], st["last_7"], st["last_30"], st["last_365"]
+    since = dt.date.fromisoformat(st["since"]).strftime("%B %Y")
+    big = st["biggest_win"]
+    bigdate = dt.date.fromisoformat(big["date"]).strftime("%b %-d, %Y")
+    bestday = dt.date.fromisoformat(st["best_day"]["date"]).strftime("%b %-d, %Y")
+
+    def tile(value, label, sub=""):
+        return (f'<div class="tile"><div class="tilev">{esc(value)}</div>'
+                f'<div class="tilel">{esc(label)}</div>'
+                + (f'<div class="tiles">{esc(sub)}</div>' if sub else '') + '</div>')
+
+    tiles = "".join([
+        tile(money(at["total"]), "paid out to our customers", f"since {since}"),
+        tile(f'{at["count"]:,}', "winning tickets sold", f'{money(at["average"])} average win'),
+        tile(money(st["per_week_average"]), "paid out in an average week"),
+        tile(money(at["biggest"]), "biggest single win", f'{big["game"] or "Scratch-off"} · {bigdate}'),
+    ])
+    recent = "".join([
+        tile(money(w7["total"]), "last 7 days", f'{w7["count"]} winners'),
+        tile(money(w30["total"]), "last 30 days", f'{w30["count"]} winners'),
+        tile(money(w365["total"]), "last 12 months", f'{w365["count"]} winners'),
+        tile(money(st["best_day"]["total"]), "best single day", bestday),
+    ])
+    tier_rows = "".join(f'<tr><td>{esc(t["tier"])}</td><td><b>{t["count"]:,}</b></td></tr>'
+                        for t in st["by_tier"] if t["count"])
+    month_rows = "".join(
+        f'<tr><td>{dt.date.fromisoformat(m["month"] + "-01").strftime("%B %Y")}</td>'
+        f'<td>{m["count"]}</td><td><b>{money(m["total"])}</b></td></tr>' for m in st["by_month"])
+    game_rows = "".join(f'<tr><td>{esc(g["game"])}</td><td>{g["count"]}</td>'
+                        f'<td><b>{money(g["total"])}</b></td></tr>' for g in st["by_game"])
+    days = st["by_weekday"]; peak = max(d["count"] for d in days) or 1
+    day_rows = "".join(
+        f'<tr><td>{esc(d["day"])}</td><td style="width:60%"><span class="bar" style="width:'
+        f'{round(100 * d["count"] / peak)}%"></span></td><td><b>{d["count"]}</b></td></tr>' for d in days)
+    source = ("Figures come from the Pennsylvania Lottery retailer system, updated daily."
+              if st.get("source") == "portal+photos" else
+              "Figures are counted from the winning tickets we've photographed at the counter.")
+
+    body = f"""<header class="pagehead"><div class="wrap">
+  <span class="eyebrow">The numbers</span>
+  <h1>{esc(money(at["total"]))} <span>paid out</span></h1>
+  <p>Every winning ticket sold at {esc(STORE)} since {esc(since)} — counted, totalled and kept honest.
+  {esc(source)}</p>
+</div></header>
+<section><div class="wrap">
+  <div class="tiles">{tiles}</div>
+  <h2 style="font-size:28px;margin:38px 0 14px">Lately</h2>
+  <div class="tiles">{recent}</div>
+
+  <div class="two-col">
+    <div><h2 style="font-size:24px;margin:34px 0 12px">How the wins break down</h2>
+      <table><thead><tr><th>Prize range</th><th>Tickets</th></tr></thead><tbody>{tier_rows}</tbody></table></div>
+    <div><h2 style="font-size:24px;margin:34px 0 12px">Which day hits most</h2>
+      <table><thead><tr><th>Day</th><th></th><th>Wins</th></tr></thead><tbody>{day_rows}</tbody></table></div>
+  </div>
+
+  <h2 style="font-size:24px;margin:34px 0 12px">Month by month</h2>
+  <table><thead><tr><th>Month</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{month_rows}</tbody></table>
+
+  <h2 style="font-size:24px;margin:34px 0 12px">By game</h2>
+  <table><thead><tr><th>Game</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{game_rows}</tbody></table>
+
+  <div class="note">Every figure on this page is a ticket actually sold and paid at our counter. It says nothing
+  about your odds on the next one — the Lottery's odds are the Lottery's odds. Play for fun, spend what you can
+  afford to lose, and if it stops being fun, call 1-800-GAMBLER.</div>
+  <p><a class="btn" href="/#winners">See the tickets →</a></p>
+</div></section>
+{videos_section()}"""
+    write("stats", shell(
+        f'{money(at["total"])} in Lottery Winners Sold | @ Your Convenience',
+        f'@ Your Convenience in South Williamsport has sold {at["count"]:,} winning Pennsylvania Lottery '
+        f'tickets worth {money(at["total"])} since {since}. Full breakdown by month, game and prize size.',
+        body, "/stats", active="/stats"))
+
+
 # ---------------- ScratchinLottoTV ----------------
 def videos_section(limit=3):
     vids = load("videos.json", {}).get("videos", [])[:limit]
@@ -286,7 +371,7 @@ def blog_pages(posts):
     return posts
 
 def feeds(posts, games):
-    urls = ["/", "/numbers", "/scratch-offs", "/scratchinlottotv", "/blog"]
+    urls = ["/", "/stats", "/numbers", "/scratch-offs", "/scratchinlottotv", "/blog"]
     urls += [f"/numbers/{g}" for g in games]
     urls += [f'/blog/{p["slug"]}' for p in posts]
     body = "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)
@@ -308,6 +393,7 @@ def main():
     prizes = load("prizes.json", {}).get("games", [])
     if prizes:
         prizes_page(prizes)
+    stats_page()
     channel_page()
     posts = blog_pages(read_posts())
     feeds(posts, slugs)

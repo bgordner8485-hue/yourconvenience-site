@@ -28,6 +28,10 @@ jobs:
           GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
           POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
           BACKFILL: ${{ inputs.backfill }}
+      - name: Store stats (winners + totals)
+        run: python automation/stats.py
+      - name: Rebuild pages
+        run: python automation/build_site.py
       - name: Save changes
         id: save
         run: |

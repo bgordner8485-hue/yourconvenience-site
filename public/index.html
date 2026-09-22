@@ -83,7 +83,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">@ Your <b>Convenience</b></a>
-  <ul><li><a href="/numbers">Winning Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="#winners">Our Winners</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="#stores">Stores</a></li></ul>
+  <ul><li><a href="/numbers">Winning Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="#winners">Our Winners</a></li><li><a href="/stats">The Numbers</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="#stores">Stores</a></li></ul>
   <a class="call" href="tel:+15709747351">📞 (570) 974-7351</a>
 </div></nav>
 
@@ -99,9 +99,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
     <small>paid out in winning tickets this week</small>
     <div class="row">
       <div><b id="weekCount">0</b><small>winners this week</small></div>
-      <div><b id="allTotal">$0</b><small>on our winners wall</small></div>
+      <div><b id="allTotal">$0</b><small>in winners, all time</small></div>
       <div id="paidBox" hidden><b id="paidOut">$0</b><small id="paidLabel">paid out at the counter</small></div>
     </div>
+    <a href="/stats" style="display:inline-block;margin-top:14px;color:var(--gold);font-weight:700;text-decoration:none;font-size:14px">See every number we track →</a>
   </div>
 </div></header>
 
@@ -114,7 +115,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 </div></section>
 <section id="winners"><div class="wrap">
   <div class="sec-head">
-    <div><h2>🎉 Winners sold here</h2><p>Updated automatically every time we sell a winner.</p></div>
+    <div><h2>🎉 Winners sold here</h2><p>Updated automatically every time we sell a winner. <a href="/stats"><b>Every number we track →</b></a></p></div>
     <div class="filters" id="filters">
       <button class="chip on" data-f="all">All</button>
       <button class="chip" data-f="week">This week</button>
@@ -208,6 +209,11 @@ fetch('/winners.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const wk=all.filter(w=>new Date(w.date)>=weekAgo);
   weekTotal.textContent=fmt(wk.reduce((s,w)=>s+w.amount,0));weekCount.textContent=wk.length;
   allTotal.textContent=fmt(all.reduce((s,w)=>s+w.amount,0));render();
+  fetch('/stats.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(st=>{
+    if(!st||!st.all_time)return;
+    allTotal.textContent=fmt(st.all_time.total);
+    if(st.last_7&&st.last_7.total>0){weekTotal.textContent=fmt(st.last_7.total);weekCount.textContent=st.last_7.count;}
+  }).catch(()=>{});
 }).catch(render);
 fetch('/site.json',{cache:'no-store'}).then(r=>r.json()).then(s=>{
   if(s.hours)hoursSW.innerHTML=s.hours;

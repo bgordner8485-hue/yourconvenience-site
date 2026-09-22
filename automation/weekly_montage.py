@@ -97,6 +97,21 @@ def build(winners, music, music_start, out_mp4, work):
     subprocess.run(cmd, check=True)
     return total, duration
 
+def clean_song_title(filename):
+    """'03_After_Everyone_Goes_Home_2026-07-23T215433.mp3' -> 'After Everyone Goes Home'."""
+    t = re.sub(r"\.[^.]+$", "", filename)                       # drop the extension
+    t = re.sub(r"\d{4}-\d{2}-\d{2}[T _-]?\d{0,6}", " ", t)      # export timestamps
+    t = re.sub(r"[_]+", " ", t)
+    t = re.sub(r"(?i)\b(final|master|mastered|mixdown|mix|v\d+|take\s*\d+|"
+               r"wav|mp3|export|render|copy|\d{1,3}kbps)\b", " ", t)
+    t = re.sub(r"^\s*\d{1,2}[\s.\-]+(?=\D)", "", t)            # leading track number
+    t = re.sub(r"\(\s*\d+\s*\)", " ", t)                       # '(1)' duplicate marker
+    t = re.sub(r"[\s\-]+$", "", re.sub(r"\s+", " ", t)).strip(" -_")
+    if t and t == t.lower():
+        t = " ".join(w.capitalize() for w in t.split())
+    return t or filename
+
+
 AUDIO_EXT = (".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg", ".aiff", ".wma")
 
 def song_catalog(svc):
@@ -122,8 +137,7 @@ def song_catalog(svc):
             name = f["name"]
             if not (name.lower().endswith(AUDIO_EXT) or str(f.get("mimeType", "")).startswith("audio/")):
                 continue
-            title = re.sub(r"\.[^.]+$", "", name)
-            title = re.sub(r"^\s*\d{1,2}[\s._-]+", "", title).strip()
+            title = clean_song_title(name)
             key = title.lower()
             if key in seen:
                 continue

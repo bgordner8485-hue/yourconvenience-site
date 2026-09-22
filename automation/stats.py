@@ -47,7 +47,7 @@ def clean_game(name):
     n = re.sub(r"(?<=[A-Za-z])(?=\d)", " ", n)              # Pick4 -> Pick 4
     n = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", n)              # 6winner -> 6 winner
     n = re.sub(r"[_\-]+", " ", n)
-    n = re.sub(r"(?i)\b(winner|winners|winning|ticket)\b", " ", n)
+    n = re.sub(r"(?i)\b(win+e?[rt]s?|winning|tickets?|scratcher)\b", " ", n)   # winner, winnet, winers...
     n = re.sub(r"\s+", " ", n).strip()
     key = re.sub(r"[^a-z0-9]", "", n.lower())
     if key in GAME_FIX:

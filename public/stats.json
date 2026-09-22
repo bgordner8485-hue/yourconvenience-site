@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22T01:23:17+00:00",
+ "updated": "2026-09-22T01:35:41+00:00",
  "source": "photos",
  "since": "2026-02-02",
  "all_time": {
@@ -61,8 +61,8 @@
  "by_game": [
   {
    "game": "Scratch-off",
-   "count": 524,
-   "total": 125391.0
+   "count": 527,
+   "total": 125691.0
   },
   {
    "game": "PICK 4",
@@ -88,11 +88,6 @@
    "game": "Week For Life",
    "count": 1,
    "total": 500.0
-  },
-  {
-   "game": "Winnet",
-   "count": 3,
-   "total": 300.0
   }
  ],
  "by_month": [

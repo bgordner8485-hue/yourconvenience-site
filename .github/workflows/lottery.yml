@@ -30,6 +30,13 @@ jobs:
         run: python automation/stats.py
       - name: Rebuild pages
         run: python automation/build_site.py
+      - name: Refuse to publish conflict markers
+        run: |
+          if grep -rIl --exclude-dir=.git -e '^<<<<<<< ' -e '^>>>>>>> ' public/ ; then
+            echo "::error::Conflict markers found in public/ — refusing to commit or deploy."
+            exit 1
+          fi
+          echo "public/ is clean."
       - name: Save changes
         id: save
         run: |

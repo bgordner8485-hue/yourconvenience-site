@@ -396,6 +396,93 @@ def feeds(posts, games):
         f'<title>{esc(STORE)} — Blog</title><link>{BASE}/blog</link>'
         f'<description>Lottery tips, winners and scratch-off news from {esc(STORE)}.</description>{items}</channel></rss>')
 
+
+def crew_page():
+    """The unlisted staff punch list. Standalone: no site nav, no canonical, noindex."""
+    cfg = CFG.get("crew_page") or {}
+    slug = cfg.get("slug")
+    if not slug:
+        return
+    data = load(f"{slug}/needs.json", {"items": [], "count": 0, "by_task": {}})
+    items = data.get("items", [])
+    order = ["Needs pricing", "Pull & face", "Needs a look"]
+    present = [t for t in order if data.get("by_task", {}).get(t)]
+    chips = "".join(
+        f'<button class="chip{" on" if i == 0 else ""}" data-f="all">All {len(items)}</button>' if i == 0 else ""
+        for i in range(1)) + "".join(
+        f'<button class="chip" data-f="{esc(t)}">{esc(t)} {data["by_task"][t]}</button>' for t in present)
+
+    cards = "".join(
+        f'<figure class="pcard" data-task="{esc(i["task_label"])}" data-id="{esc(i["id"])}">'
+        f'<button class="pdone" title="Mark done on this phone">✓</button>'
+        f'<a href="{esc(i["image"])}" target="_blank" rel="noopener">'
+        f'<img src="{esc(i["image"])}" alt="{esc(i["caption"])}" loading="lazy"></a>'
+        f'<figcaption><b>{esc(i["caption"])}</b>'
+        f'<span class="ptag t{["Needs pricing","Pull & face","Needs a look"].index(i["task_label"]) if i["task_label"] in order else 2}">'
+        f'{esc(i["task_label"])}</span>'
+        f'<small>{esc(i["added"][:10])}</small></figcaption></figure>'
+        for i in items)
+
+    updated = (data.get("updated") or "")[:16].replace("T", " ")
+    empty = '<p class="empty">Nothing on the list right now. Add photos to the <b>Needs Addressed</b> folder and they show up here within the hour.</p>'
+
+    body = f"""<header class="crewhead"><div class="wrap">
+  <span class="eyebrow">Staff only · not linked anywhere</span>
+  <h1>Needs addressed</h1>
+  <p>{len(items)} item{"" if len(items) == 1 else "s"} on the floor right now. Photos come straight from the
+  <b>Needs Addressed</b> folder in Drive — clear a photo out of the folder and it drops off this list.
+  Last checked {esc(updated)} UTC.</p>
+</div></header>
+<section><div class="wrap">
+  <div class="filters crewfilters">{chips}</div>
+  {'<div class="pgrid">' + cards + '</div>' if items else empty}
+  <p class="note">Tap a photo to see it full size. The ✓ is just a marker for you on this phone — it is not
+  shared with anyone and it clears if you switch phones or clear your browser.</p>
+</div></section>
+<script>
+const grid=document.querySelector('.pgrid');
+document.querySelectorAll('.crewfilters .chip').forEach(b=>b.onclick=()=>{{
+  document.querySelectorAll('.crewfilters .chip').forEach(c=>c.classList.remove('on'));
+  b.classList.add('on');
+  const f=b.dataset.f;
+  document.querySelectorAll('.pcard').forEach(c=>{{
+    c.style.display=(f==='all'||c.dataset.task===f)?'':'none';
+  }});
+}});
+let done={{}};
+try{{done=JSON.parse(localStorage.getItem('crewDone')||'{{}}');}}catch(e){{}}
+function paint(c){{c.classList.toggle('is-done',!!done[c.dataset.id]);}}
+document.querySelectorAll('.pcard').forEach(c=>{{
+  paint(c);
+  c.querySelector('.pdone').onclick=e=>{{
+    e.preventDefault();
+    done[c.dataset.id]=!done[c.dataset.id];
+    if(!done[c.dataset.id]) delete done[c.dataset.id];
+    try{{localStorage.setItem('crewDone',JSON.stringify(done));}}catch(e){{}}
+    paint(c);
+  }};
+}});
+</script>"""
+
+    html = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="referrer" content="no-referrer">
+<title>Needs addressed · {esc(STORE)}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="crew">
+{body}
+</body>
+</html>"""
+    write(slug, html)
+    print(f"crew page: {len(items)} item(s) at /{slug}/")
+
+
 def main():
     draws = load("numbers.json", {}).get("draws", [])
     games = numbers_pages(draws) if draws else []
@@ -404,6 +491,7 @@ def main():
     if prizes:
         prizes_page(prizes)
     stats_page()
+    crew_page()
     channel_page()
     posts = blog_pages(read_posts())
     feeds(posts, slugs)

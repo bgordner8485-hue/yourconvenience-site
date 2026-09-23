@@ -59,5 +59,10 @@
     ],
     "music_start": 30
   },
-  "drive_reports_folder_id": "1NH_lS77Zn-36skRdBzrK9bjD07iD0ffc"
+  "drive_reports_folder_id": "1NH_lS77Zn-36skRdBzrK9bjD07iD0ffc",
+  "crew_page": {
+    "note": "Unlisted staff punch list. Not in the nav, not in the sitemap, and deliberately NOT named in robots.txt (that file is public and would advertise the path). The page itself sends noindex,nofollow.",
+    "slug": "crew-65c95ef6cd098895",
+    "drive_folder_id": "1Y47Be8AG9TND-y502Zf51XGYe7D7WPbW"
+  }
 }

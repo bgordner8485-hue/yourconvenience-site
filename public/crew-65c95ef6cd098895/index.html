@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="referrer" content="no-referrer">
+<title>Needs addressed · @ Your Convenience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="crew">
+<header class="crewhead"><div class="wrap">
+  <span class="eyebrow">Staff only · not linked anywhere</span>
+  <h1>Needs addressed</h1>
+  <p>0 items on the floor right now. Photos come straight from the
+  <b>Needs Addressed</b> folder in Drive — clear a photo out of the folder and it drops off this list.
+  Last checked  UTC.</p>
+</div></header>
+<section><div class="wrap">
+  <div class="filters crewfilters"><button class="chip on" data-f="all">All 0</button></div>
+  <p class="empty">Nothing on the list right now. Add photos to the <b>Needs Addressed</b> folder and they show up here within the hour.</p>
+  <p class="note">Tap a photo to see it full size. The ✓ is just a marker for you on this phone — it is not
+  shared with anyone and it clears if you switch phones or clear your browser.</p>
+</div></section>
+<script>
+const grid=document.querySelector('.pgrid');
+document.querySelectorAll('.crewfilters .chip').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.crewfilters .chip').forEach(c=>c.classList.remove('on'));
+  b.classList.add('on');
+  const f=b.dataset.f;
+  document.querySelectorAll('.pcard').forEach(c=>{
+    c.style.display=(f==='all'||c.dataset.task===f)?'':'none';
+  });
+});
+let done={};
+try{done=JSON.parse(localStorage.getItem('crewDone')||'{}');}catch(e){}
+function paint(c){c.classList.toggle('is-done',!!done[c.dataset.id]);}
+document.querySelectorAll('.pcard').forEach(c=>{
+  paint(c);
+  c.querySelector('.pdone').onclick=e=>{
+    e.preventDefault();
+    done[c.dataset.id]=!done[c.dataset.id];
+    if(!done[c.dataset.id]) delete done[c.dataset.id];
+    try{localStorage.setItem('crewDone',JSON.stringify(done));}catch(e){}
+    paint(c);
+  };
+});
+</script>
+</body>
+</html>

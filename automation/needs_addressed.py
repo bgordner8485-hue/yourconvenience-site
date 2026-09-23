@@ -27,6 +27,15 @@ TASKS = [
     ("face",    "Pull & face",   r"\b(pull|face|facing|front|fill|restock|stock|empty|gap)\b"),
 ]
 
+def subfolders(svc, folder_id):
+    """Immediate subfolders — their names become the task labels."""
+    q = (f"'{folder_id}' in parents and mimeType = 'application/vnd.google-apps.folder' "
+         f"and trashed=false")
+    r = svc.files().list(q=q, fields="files(id,name)", pageSize=100,
+                         supportsAllDrives=True, includeItemsFromAllDrives=True).execute()
+    return r.get("files", [])
+
+
 def classify(name):
     # Underscores are word characters, so "no_price" would hide "price" from \b.
     low = re.sub(r"[_\-]+", " ", re.sub(r"\.[^.]+$", "", name)).lower()
@@ -57,33 +66,43 @@ def main():
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     svc = drive()
     try:
-        files = list_images(svc, FOLDER)
+        files = [(f, None) for f in list_images(svc, FOLDER)]
+        for sub in subfolders(svc, FOLDER):
+            files += [(f, sub["name"]) for f in list_images(svc, sub["id"])]
     except Exception as e:
         print(f"Could not read the Needs Addressed folder: {e}")
         print("Is it shared with the store-bot service account as Viewer?")
         return
 
     items, keep = [], set()
-    for f in sorted(files, key=lambda f: f["createdTime"]):
+    for f, folder_label in sorted(files, key=lambda t: t[0]["createdTime"]):
         out = outdir / f"{f['id']}.jpg"
-        keep.add(out.name)
-        if not out.exists():                      # only fetch photos we don't have
+        thumb = outdir / f"{f['id']}_t.jpg"
+        keep.update({out.name, thumb.name})
+        if not (out.exists() and thumb.exists()):   # only fetch photos we don't have
             try:
                 with tempfile.TemporaryDirectory() as td:
                     raw = Path(td) / "raw"
                     download(svc, f["id"], raw)
                     img = ImageOps.exif_transpose(Image.open(raw)).convert("RGB")
-                    img.thumbnail((1400, 1400))
-                    img.save(out, "JPEG", quality=82, optimize=True)
+                    full = img.copy(); full.thumbnail((1400, 1400))
+                    full.save(out, "JPEG", quality=82, optimize=True)
+                    # The grid shows these small; serving 1400px there is 10x the bytes.
+                    small = img.copy(); small.thumbnail((500, 500))
+                    small.save(thumb, "JPEG", quality=72, optimize=True)
                 print(f"  + {f['name']}")
             except Exception as e:
                 print(f"  skip (could not read photo): {f['name']} — {e}")
-                keep.discard(out.name)
+                keep.difference_update({out.name, thumb.name})
                 continue
-        key, label = classify(f["name"])
+        if folder_label:                       # the Drive subfolder is the crew's own label
+            key, label = re.sub(r"\W+", "-", folder_label.lower()).strip("-"), folder_label
+        else:
+            key, label = classify(f["name"])
         items.append({"id": f["id"], "added": f["createdTime"], "task": key,
                       "task_label": label, "caption": caption(f["name"]),
-                      "image": f"/{SLUG}/photos/{out.name}"})
+                      "image": f"/{SLUG}/photos/{out.name}",
+                      "thumb": f"/{SLUG}/photos/{thumb.name}"})
 
     # Mirror: drop photos that are no longer in the Drive folder.
     removed = 0

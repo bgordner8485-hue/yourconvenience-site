@@ -406,22 +406,26 @@ def crew_page():
     data = load(f"{slug}/needs.json", {"items": [], "count": 0, "by_task": {}})
     items = data.get("items", [])
     order = ["Needs pricing", "Pull & face", "Needs a look"]
-    present = [t for t in order if data.get("by_task", {}).get(t)]
-    chips = "".join(
-        f'<button class="chip{" on" if i == 0 else ""}" data-f="all">All {len(items)}</button>' if i == 0 else ""
-        for i in range(1)) + "".join(
-        f'<button class="chip" data-f="{esc(t)}">{esc(t)} {data["by_task"][t]}</button>' for t in present)
+    groups = list(data.get("by_task", {}).keys())
+    present = [t for t in order if data.get("by_task", {}).get(t)] or groups
+    # One group means every chip says the same thing — don't waste a row on it.
+    chips = ("" if len(groups) < 2 else
+             f'<button class="chip on" data-f="all">All {len(items)}</button>' + "".join(
+                 f'<button class="chip" data-f="{esc(t)}">{esc(t)} {data["by_task"][t]}</button>'
+                 for t in present))
 
     cards = "".join(
         f'<figure class="pcard" data-task="{esc(i["task_label"])}" data-id="{esc(i["id"])}">'
+        f'<span class="pnum">{n}</span>'
         f'<button class="pdone" title="Mark done on this phone">✓</button>'
         f'<a href="{esc(i["image"])}" target="_blank" rel="noopener">'
-        f'<img src="{esc(i["image"])}" alt="{esc(i["caption"])}" loading="lazy"></a>'
-        f'<figcaption><b>{esc(i["caption"])}</b>'
-        f'<span class="ptag t{["Needs pricing","Pull & face","Needs a look"].index(i["task_label"]) if i["task_label"] in order else 2}">'
-        f'{esc(i["task_label"])}</span>'
-        f'<small>{esc(i["added"][:10])}</small></figcaption></figure>'
-        for i in items)
+        f'<img src="{esc(i.get("thumb") or i["image"])}" alt="{esc(i["caption"])}" loading="lazy"></a>'
+        f'<figcaption>'
+        + (f'<b>{esc(i["caption"])}</b>' if i["caption"] != "Photo" else "")
+        + (f'<span class="ptag t{order.index(i["task_label"]) if i["task_label"] in order else 2}">'
+           f'{esc(i["task_label"])}</span>' if len(groups) > 1 else "")
+        + f'<small>{esc(i["added"][:10])}</small></figcaption></figure>'
+        for n, i in enumerate(items, 1))
 
     updated = (data.get("updated") or "")[:16].replace("T", " ")
     empty = '<p class="empty">Nothing on the list right now. Add photos to the <b>Needs Addressed</b> folder and they show up here within the hour.</p>'

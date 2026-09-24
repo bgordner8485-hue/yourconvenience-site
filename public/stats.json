@@ -1,32 +1,32 @@
 {
- "updated": "2026-09-24T15:07:33+00:00",
+ "updated": "2026-09-24T15:36:02+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 570,
-  "total": 171094.0,
+  "count": 574,
+  "total": 171544.0,
   "biggest": 2500.0,
-  "average": 300.16
+  "average": 298.86
  },
  "last_7": {
-  "count": 22,
-  "total": 5950.0,
+  "count": 26,
+  "total": 6400.0,
   "biggest": 1000.0,
-  "average": 270.45
+  "average": 246.15
  },
  "last_30": {
-  "count": 80,
-  "total": 20505.0,
+  "count": 84,
+  "total": 20955.0,
   "biggest": 2500.0,
-  "average": 256.31
+  "average": 249.46
  },
  "last_365": {
-  "count": 570,
-  "total": 171094.0,
+  "count": 574,
+  "total": 171544.0,
   "biggest": 2500.0,
-  "average": 300.16
+  "average": 298.86
  },
- "per_week_average": 4698.65,
+ "per_week_average": 4712.11,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 455
+   "count": 459
   },
   {
    "tier": "Under $100",
@@ -62,8 +62,8 @@
  "by_game": [
   {
    "game": "Scratch-off",
-   "count": 531,
-   "total": 120541.0
+   "count": 535,
+   "total": 120991.0
   },
   {
    "game": "Pick 4 Evening",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-09",
-   "total": 14640.0,
-   "count": 56
+   "total": 15090.0,
+   "count": 60
   },
   {
    "month": "2026-08",
@@ -193,7 +193,7 @@
   },
   {
    "day": "Thursday",
-   "count": 70
+   "count": 74
   },
   {
    "day": "Friday",

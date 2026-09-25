@@ -1,6 +1,54 @@
 {
   "winners": [
     {
+      "id": "1rFFlSZJ6Bf1rX94taZAhe0zIzdNI1BhI",
+      "date": "2026-09-25T20:58:00.534Z",
+      "image": "/winners/1rFFlSZJ6Bf1rX94taZAhe0zIzdNI1BhI.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1t9QnGBb2Gbtgps7OkOIE2Kcj76SciC9Y",
+      "date": "2026-09-25T20:57:31.685Z",
+      "image": "/winners/1t9QnGBb2Gbtgps7OkOIE2Kcj76SciC9Y.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1pXZEOsZ3jQdSqSCozAjV9jG8CgWc8lMN",
+      "date": "2026-09-25T20:57:19.395Z",
+      "image": "/winners/1pXZEOsZ3jQdSqSCozAjV9jG8CgWc8lMN.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1rJpUoRgn63Gqgv8Nv1YVcOZ5rS8OkLST",
+      "date": "2026-09-25T20:57:06.204Z",
+      "image": "/winners/1rJpUoRgn63Gqgv8Nv1YVcOZ5rS8OkLST.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1jZR21hL32QQt9-xh03bVde8rpXZKk2yp",
+      "date": "2026-09-25T20:56:52.628Z",
+      "image": "/winners/1jZR21hL32QQt9-xh03bVde8rpXZKk2yp.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1_K5S_6of2Dx0T1_QR1SWpum70J-vmXoe",
+      "date": "2026-09-25T20:56:32.497Z",
+      "image": "/winners/1_K5S_6of2Dx0T1_QR1SWpum70J-vmXoe.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
       "id": "1HGjQkCtWvMbjzCWaYn78tllm9Mbfag1l",
       "date": "2026-09-25T12:39:28.739Z",
       "image": "/winners/1HGjQkCtWvMbjzCWaYn78tllm9Mbfag1l.jpg",

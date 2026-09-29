@@ -94,3 +94,29 @@ body.crew{background:var(--paper)}
 .pnum{position:absolute;top:8px;left:8px;z-index:2;min-width:24px;height:24px;padding:0 7px;
   border-radius:99px;background:rgba(13,27,42,.62);color:#fff;font-size:12px;font-weight:700;
   display:flex;align-items:center;justify-content:center}
+
+/* ---- lucky numbers ---- */
+.gen{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:6px 0 4px}
+.genrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.genrow label{font-weight:700;font-size:14px}
+.genrow select{padding:10px 12px;border:1px solid var(--line);border-radius:9px;
+  font:inherit;font-size:15px;background:#fff;color:var(--ink);min-width:190px}
+.gen .btn{border:none;border-radius:999px;padding:11px 20px;font:inherit;font-weight:700;
+  font-size:15px;background:var(--gold);color:var(--ink);cursor:pointer}
+.gen .btn:hover{filter:brightness(1.06)}
+.gen .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:600}
+.gen .btn.ghost:hover{color:var(--ink);border-color:var(--gold);filter:none}
+.picks{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.picks .balls{margin-top:0}
+.verdict{background:#fffaed;border-left:3px solid var(--gold);border-radius:0 9px 9px 0;
+  padding:12px 15px;font-weight:600;margin:16px 0}
+.tablewrap{overflow-x:auto;margin:14px 0}
+table.freq{width:100%;border-collapse:collapse;font-size:14.5px;min-width:620px}
+table.freq th{background:var(--navy);color:#fff;text-align:left;padding:11px 13px;
+  font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+table.freq td{padding:11px 13px;border-bottom:1px solid var(--line);background:var(--card)}
+table.freq tr:nth-child(even) td{background:#fbfaf6}
+table.freq .ok{color:#127a4d}
+table.freq .warn{color:#b3401a}
+table.freq .dim{color:var(--muted);font-style:italic}
+.lede{color:var(--muted);max-width:62ch}

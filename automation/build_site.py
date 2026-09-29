@@ -1,6 +1,6 @@
 """Generate the data-driven pages: winning numbers (all games + per game),
 scratch-off prizes remaining, the ScratchinLottoTV page, the blog, sitemap and RSS."""
-import datetime as dt, html, json, re, shutil
+import datetime as dt, html, json, math, re, shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,8 +27,8 @@ def esc(s):
 
 def shell(title, desc, body, canonical, extra_head="", active=""):
     nav = [("/#winners", "Winners"), ("/stats", "The Numbers"), ("/numbers", "Winning Numbers"),
-           ("/scratch-offs", "Scratch-Offs"), ("/scratchinlottotv", "ScratchinLottoTV"),
-           ("/blog", "Blog"), ("/#stores", "Stores")]
+           ("/lucky-numbers", "Lucky Numbers"), ("/scratch-offs", "Scratch-Offs"),
+           ("/scratchinlottotv", "ScratchinLottoTV"), ("/blog", "Blog"), ("/#stores", "Stores")]
     links = "".join(f'<li><a href="{h}"{" style=color:var(--gold)" if h==active else ""}>{t}</a></li>' for h, t in nav)
     return f"""<!doctype html>
 <html lang="en">
@@ -487,6 +487,173 @@ document.querySelectorAll('.pcard').forEach(c=>{{
     print(f"crew page: {len(items)} item(s) at /{slug}/")
 
 
+
+# Official ranges, taken from each game's page on palottery.pa.gov.
+# picks, low, high, and the bonus ball as (label, low, high) where there is one.
+GAME_RULES = {
+    "Powerball":            (5, 1, 69, ("Powerball", 1, 26)),
+    "Mega Millions":        (5, 1, 70, ("Mega Ball", 1, 24)),
+    "Match 6":              (6, 1, 49, None),
+    "Cash 5":               (5, 1, 43, None),
+    "Millionaire for Life": (5, 1, 58, ("Millionaire Ball", 1, 5)),
+    "Treasure Hunt":        (5, 1, 30, None),
+}
+
+
+def _chi2_sf(x, k):
+    """Upper tail of the chi-square distribution — the probability that pure
+    chance produces a spread at least this uneven."""
+    s, xx = k / 2.0, x / 2.0
+    if xx <= 0:
+        return 1.0
+    if xx < s + 1:                                  # series for the lower tail
+        term = 1.0 / s; total = term; n = 0
+        while abs(term) > 1e-14 * abs(total) and n < 10000:
+            n += 1; term *= xx / (s + n); total += term
+        return 1.0 - total * math.exp(-xx + s * math.log(xx) - math.lgamma(s))
+    tiny = 1e-300                                   # continued fraction for the upper tail
+    b = xx + 1 - s; c = 1 / tiny; d = 1 / b; h = d
+    for i in range(1, 10000):
+        an = -i * (i - s); b += 2
+        d = an * d + b
+        if abs(d) < tiny: d = tiny
+        c = b + an / c
+        if abs(c) < tiny: c = tiny
+        d = 1 / d; delta = d * c; h *= delta
+        if abs(delta - 1) < 1e-14: break
+    return h * math.exp(-xx + s * math.log(xx) - math.lgamma(s))
+
+
+def number_frequencies():
+    """Per-game hit counts plus a goodness-of-fit test against pure randomness."""
+    draws = load("numbers.json", {"draws": []}).get("draws", [])
+    rows = {}
+    for d in draws:
+        rows.setdefault(d.get("game"), []).append(d)
+    out = {}
+    for game, (picks, lo, hi, bonus) in GAME_RULES.items():
+        rs = rows.get(game, [])
+        counts = {n: 0 for n in range(lo, hi + 1)}
+        for r in rs:
+            for n in r.get("numbers", []):
+                if str(n).isdigit() and lo <= int(n) <= hi:
+                    counts[int(n)] += 1
+        pool = hi - lo + 1
+        expected = (len(rs) * picks / pool) if rs else 0
+        chi = sum((counts[n] - expected) ** 2 / expected for n in counts) if expected else 0
+        p = _chi2_sf(chi, pool - 1) if expected else 1.0
+        ranked = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+        out[game] = {
+            "picks": picks, "low": lo, "high": hi,
+            "bonus": {"label": bonus[0], "low": bonus[1], "high": bonus[2]} if bonus else None,
+            "draws": len(rs), "expected": round(expected, 2),
+            "counts": counts, "hot": ranked[:6], "cold": ranked[-6:][::-1],
+            "chi2": round(chi, 1), "p": round(p, 3), "random": p > 0.05,
+        }
+    return out
+
+
+def lucky_page():
+    freq = number_frequencies()
+    tested = {g: v for g, v in freq.items() if v["draws"] >= 20}
+    all_random = all(v["random"] for v in tested.values()) if tested else True
+
+    opts = "".join(f'<option value="{esc(g)}">{esc(g)}</option>' for g in GAME_RULES)
+    verdict = (f"Every game we have enough draws to test came back looking exactly like "
+               f"random chance. Not one of them failed." if all_random else
+               "One or more games are worth a second look — see the table below.")
+
+    rowsHTML = ""
+    for g, v in freq.items():
+        if v["draws"] < 20:
+            rowsHTML += (f'<tr><td>{esc(g)}</td><td>{v["draws"]}</td>'
+                         f'<td colspan="4" class="dim">too few draws yet to test</td></tr>')
+            continue
+        hot = ", ".join(f"{n} ({c})" for n, c in v["hot"][:3])
+        cold = ", ".join(f"{n} ({c})" for n, c in v["cold"][:3])
+        rowsHTML += (f'<tr><td>{esc(g)}</td><td>{v["draws"]}</td><td>{v["expected"]}</td>'
+                     f'<td>{esc(hot)}</td><td>{esc(cold)}</td>'
+                     f'<td><b class="{"ok" if v["random"] else "warn"}">p = {v["p"]}</b></td></tr>')
+
+    body = f"""<header class="pagehead"><div class="wrap">
+  <h1>Lucky Numbers</h1>
+  <p class="lede">A quick pick for any Pennsylvania draw game, and an honest look at which
+  numbers have come up most — including whether that actually means anything.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="gen">
+    <div class="genrow">
+      <label for="game">Game</label>
+      <select id="game">{opts}</select>
+      <button class="btn" id="go" type="button">Generate</button>
+      <button class="btn ghost" id="more" type="button">Another 5 lines</button>
+    </div>
+    <div id="picks" class="picks"></div>
+    <p class="note">Numbers come from your own device's secure random generator — the same
+    kind of randomness the drawing machines aim for. We don't store them.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Do "hot numbers" work?</h2>
+  <p class="lede">Short answer: no, and we can show it rather than just say it.</p>
+  <p>Every ball has the same chance every single draw. A ball has no memory of last week.
+  But over a small number of draws some numbers <em>will</em> land more often than others
+  purely by chance — and that accident is what gets sold as a "system."</p>
+  <p>So we ran the test. For each game we compared how often every number actually came up
+  against how often it should if the draws were perfectly random, using a chi-square
+  goodness-of-fit test. The <b>p-value</b> is the probability that pure chance alone would
+  produce a spread at least this uneven. Above 0.05 and there is nothing unusual to explain.</p>
+  <p class="verdict">{esc(verdict)}</p>
+  <div class="tablewrap"><table class="freq">
+    <thead><tr><th>Game</th><th>Draws</th><th>Expected per number</th>
+      <th>Most drawn</th><th>Least drawn</th><th>Random?</th></tr></thead>
+    <tbody>{rowsHTML}</tbody>
+  </table></div>
+  <p class="note">Counts come from the draws we have on file from the official Pennsylvania
+  Lottery feed, so the window is short — a few months, not decades. That is exactly why a
+  number can look "hot" and mean nothing at all. Play the numbers you like.</p>
+</div></section>
+
+<script>
+const RULES = {json.dumps({g: {"picks": v[0], "low": v[1], "high": v[2],
+                               "bonus": ({"label": v[3][0], "low": v[3][1], "high": v[3][2]} if v[3] else None)}
+                           for g, v in GAME_RULES.items()})};
+function rnd(lo, hi) {{                       // unbiased pick in [lo,hi]
+  const range = hi - lo + 1, max = Math.floor(0xFFFFFFFF / range) * range;
+  const a = new Uint32Array(1);
+  let v; do {{ crypto.getRandomValues(a); v = a[0]; }} while (v >= max);
+  return lo + (v % range);
+}}
+function line(rule) {{
+  const set = new Set();
+  while (set.size < rule.picks) set.add(rnd(rule.low, rule.high));
+  const main = [...set].sort((a, b) => a - b);
+  return {{ main, bonus: rule.bonus ? rnd(rule.bonus.low, rule.bonus.high) : null,
+           bonusLabel: rule.bonus ? rule.bonus.label : null }};
+}}
+function render(lines) {{
+  document.getElementById('picks').innerHTML = lines.map(l =>
+    '<div class="balls">' +
+    l.main.map(n => '<span class="ball">' + n + '</span>').join('') +
+    (l.bonus !== null ? '<span class="ball red" title="' + l.bonusLabel + '">' + l.bonus + '</span>' : '') +
+    '</div>').join('');
+}}
+const pick = n => Array.from({{length: n}}, () => line(RULES[document.getElementById('game').value]));
+document.getElementById('go').onclick = () => render(pick(1));
+document.getElementById('more').onclick = () => render(pick(5));
+document.getElementById('game').onchange = () => render(pick(1));
+render(pick(1));
+</script>"""
+    write("lucky-numbers", shell(
+        "Lucky Numbers", "Free quick-pick number generator for every PA draw game, plus an "
+        "honest look at whether hot and cold numbers mean anything.",
+        body, "/lucky-numbers", active="/lucky-numbers"))
+    print(f"lucky numbers page: {len(freq)} games, "
+          f"{sum(v['draws'] for v in freq.values())} draws analysed")
+
+
 def main():
     draws = load("numbers.json", {}).get("draws", [])
     games = numbers_pages(draws) if draws else []
@@ -495,6 +662,7 @@ def main():
     if prizes:
         prizes_page(prizes)
     stats_page()
+    lucky_page()
     crew_page()
     channel_page()
     posts = blog_pages(read_posts())

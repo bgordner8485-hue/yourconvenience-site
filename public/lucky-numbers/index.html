@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lucky Numbers</title>
+<meta name="description" content="Free quick-pick number generator for every PA draw game, plus an honest look at whether hot and cold numbers mean anything.">
+<link rel="canonical" href="https://www.atyourconveniencestores.com/lucky-numbers">
+<meta property="og:title" content="Lucky Numbers"><meta property="og:description" content="Free quick-pick number generator for every PA draw game, plus an honest look at whether hot and cold numbers mean anything.">
+<meta property="og:url" content="https://www.atyourconveniencestores.com/lucky-numbers"><meta property="og:type" content="website">
+<link rel="alternate" type="application/rss+xml" title="@ Your Convenience blog" href="https://www.atyourconveniencestores.com/rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="/">@ Your <b>Convenience</b></a>
+  <ul><li><a href="/#winners">Winners</a></li><li><a href="/stats">The Numbers</a></li><li><a href="/numbers">Winning Numbers</a></li><li><a href="/lucky-numbers" style=color:var(--gold)>Lucky Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="/#stores">Stores</a></li></ul>
+  <a class="call" href="tel:+15709747351">📞 (570) 974-7351</a>
+</div></nav>
+<header class="pagehead"><div class="wrap">
+  <h1>Lucky Numbers</h1>
+  <p class="lede">A quick pick for any Pennsylvania draw game, and an honest look at which
+  numbers have come up most — including whether that actually means anything.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="gen">
+    <div class="genrow">
+      <label for="game">Game</label>
+      <select id="game"><option value="Powerball">Powerball</option><option value="Mega Millions">Mega Millions</option><option value="Match 6">Match 6</option><option value="Cash 5">Cash 5</option><option value="Millionaire for Life">Millionaire for Life</option><option value="Treasure Hunt">Treasure Hunt</option></select>
+      <button class="btn" id="go" type="button">Generate</button>
+      <button class="btn ghost" id="more" type="button">Another 5 lines</button>
+    </div>
+    <div id="picks" class="picks"></div>
+    <p class="note">Numbers come from your own device's secure random generator — the same
+    kind of randomness the drawing machines aim for. We don't store them.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Do "hot numbers" work?</h2>
+  <p class="lede">Short answer: no, and we can show it rather than just say it.</p>
+  <p>Every ball has the same chance every single draw. A ball has no memory of last week.
+  But over a small number of draws some numbers <em>will</em> land more often than others
+  purely by chance — and that accident is what gets sold as a "system."</p>
+  <p>So we ran the test. For each game we compared how often every number actually came up
+  against how often it should if the draws were perfectly random, using a chi-square
+  goodness-of-fit test. The <b>p-value</b> is the probability that pure chance alone would
+  produce a spread at least this uneven. Above 0.05 and there is nothing unusual to explain.</p>
+  <p class="verdict">Every game we have enough draws to test came back looking exactly like random chance. Not one of them failed.</p>
+  <div class="tablewrap"><table class="freq">
+    <thead><tr><th>Game</th><th>Draws</th><th>Expected per number</th>
+      <th>Most drawn</th><th>Least drawn</th><th>Random?</th></tr></thead>
+    <tbody><tr><td>Powerball</td><td>19</td><td colspan="4" class="dim">too few draws yet to test</td></tr><tr><td>Mega Millions</td><td>12</td><td colspan="4" class="dim">too few draws yet to test</td></tr><tr><td>Match 6</td><td>43</td><td>5.27</td><td>17 (10), 12 (9), 36 (9)</td><td>47 (1), 23 (1), 49 (2)</td><td><b class="ok">p = 0.545</b></td></tr><tr><td>Cash 5</td><td>43</td><td>5.0</td><td>38 (11), 31 (10), 34 (10)</td><td>26 (1), 23 (2), 16 (2)</td><td><b class="ok">p = 0.488</b></td></tr><tr><td>Millionaire for Life</td><td>43</td><td>3.71</td><td>7 (8), 25 (7), 40 (7)</td><td>48 (1), 47 (1), 31 (1)</td><td><b class="ok">p = 0.945</b></td></tr><tr><td>Treasure Hunt</td><td>43</td><td>7.17</td><td>1 (16), 12 (10), 18 (9)</td><td>20 (4), 22 (5), 21 (5)</td><td><b class="ok">p = 0.889</b></td></tr></tbody>
+  </table></div>
+  <p class="note">Counts come from the draws we have on file from the official Pennsylvania
+  Lottery feed, so the window is short — a few months, not decades. That is exactly why a
+  number can look "hot" and mean nothing at all. Play the numbers you like.</p>
+</div></section>
+
+<script>
+const RULES = {"Powerball": {"picks": 5, "low": 1, "high": 69, "bonus": {"label": "Powerball", "low": 1, "high": 26}}, "Mega Millions": {"picks": 5, "low": 1, "high": 70, "bonus": {"label": "Mega Ball", "low": 1, "high": 24}}, "Match 6": {"picks": 6, "low": 1, "high": 49, "bonus": null}, "Cash 5": {"picks": 5, "low": 1, "high": 43, "bonus": null}, "Millionaire for Life": {"picks": 5, "low": 1, "high": 58, "bonus": {"label": "Millionaire Ball", "low": 1, "high": 5}}, "Treasure Hunt": {"picks": 5, "low": 1, "high": 30, "bonus": null}};
+function rnd(lo, hi) {                       // unbiased pick in [lo,hi]
+  const range = hi - lo + 1, max = Math.floor(0xFFFFFFFF / range) * range;
+  const a = new Uint32Array(1);
+  let v; do { crypto.getRandomValues(a); v = a[0]; } while (v >= max);
+  return lo + (v % range);
+}
+function line(rule) {
+  const set = new Set();
+  while (set.size < rule.picks) set.add(rnd(rule.low, rule.high));
+  const main = [...set].sort((a, b) => a - b);
+  return { main, bonus: rule.bonus ? rnd(rule.bonus.low, rule.bonus.high) : null,
+           bonusLabel: rule.bonus ? rule.bonus.label : null };
+}
+function render(lines) {
+  document.getElementById('picks').innerHTML = lines.map(l =>
+    '<div class="balls">' +
+    l.main.map(n => '<span class="ball">' + n + '</span>').join('') +
+    (l.bonus !== null ? '<span class="ball red" title="' + l.bonusLabel + '">' + l.bonus + '</span>' : '') +
+    '</div>').join('');
+}
+const pick = n => Array.from({length: n}, () => line(RULES[document.getElementById('game').value]));
+document.getElementById('go').onclick = () => render(pick(1));
+document.getElementById('more').onclick = () => render(pick(5));
+document.getElementById('game').onchange = () => render(pick(1));
+render(pick(1));
+</script>
+<footer><div class="wrap">
+  <div><b style="color:#fff">@ Your Convenience</b><br>1900 Riverside Drive, South Williamsport, PA 17702 · (570) 974-7351
+    <div class="fine">Winning numbers and prize data are posted here for convenience and are unofficial —
+    always confirm with the Pennsylvania Lottery before claiming a prize. Must be 18+ to play; 21+ for tobacco and vape.
+    Please play responsibly — if you or someone you know has a gambling problem, call 1-800-GAMBLER.</div></div>
+  <div><a href="/blog">Blog</a> · <a href="/scratchinlottotv">ScratchinLottoTV</a> · © 2026</div>
+</div></footer>
+</body></html>

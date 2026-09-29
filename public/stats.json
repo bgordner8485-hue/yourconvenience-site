@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28T23:22:10+00:00",
+ "updated": "2026-09-29T01:58:24+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
@@ -9,10 +9,10 @@
   "average": 297.01
  },
  "last_7": {
-  "count": 31,
-  "total": 6250.0,
+  "count": 27,
+  "total": 5600.0,
   "biggest": 1000.0,
-  "average": 201.61
+  "average": 207.41
  },
  "last_30": {
   "count": 85,
@@ -26,7 +26,7 @@
   "biggest": 2500.0,
   "average": 297.01
  },
- "per_week_average": 4715.26,
+ "per_week_average": 4695.54,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",

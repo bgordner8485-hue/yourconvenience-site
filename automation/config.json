@@ -8,12 +8,12 @@
   "postiz": {
     "api_base": "https://api.postiz.com/public/v1",
     "winner_channels": {
-      "facebook": "PASTE_YOURCONVENIENCE_FACEBOOK_ID",
+      "facebook": "cmulym5oo08lcrt0y72yy7u8s",
       "instagram": "PASTE_YOURCONVENIENCE_INSTAGRAM_ID",
       "gmb": "PASTE_YOURCONVENIENCE_GOOGLE_BUSINESS_ID"
     },
     "montage_channels": {
-      "facebook": "PASTE_YOURCONVENIENCE_FACEBOOK_ID",
+      "facebook": "cmulym5oo08lcrt0y72yy7u8s",
       "instagram": "PASTE_YOURCONVENIENCE_INSTAGRAM_ID",
       "tiktok": "PASTE_YOURCONVENIENCE_TIKTOK_ID",
       "youtube": "PASTE_YOURCONVENIENCE_YOUTUBE_ID"

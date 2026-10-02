@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-01T23:13:25+00:00",
+ "updated": "2026-10-02T01:12:20+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 599,
-  "total": 177194.0,
+  "count": 601,
+  "total": 177844.0,
   "biggest": 2500.0,
-  "average": 295.82
+  "average": 295.91
  },
  "last_7": {
-  "count": 29,
-  "total": 6100.0,
+  "count": 27,
+  "total": 6300.0,
   "biggest": 500.0,
-  "average": 210.34
+  "average": 233.33
  },
  "last_30": {
-  "count": 85,
-  "total": 20740.0,
+  "count": 87,
+  "total": 21390.0,
   "biggest": 2500.0,
-  "average": 244.0
+  "average": 245.86
  },
  "last_365": {
-  "count": 599,
-  "total": 177194.0,
+  "count": 601,
+  "total": 177844.0,
   "biggest": 2500.0,
-  "average": 295.82
+  "average": 295.91
  },
- "per_week_average": 4739.35,
+ "per_week_average": 4738.57,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 79
+   "count": 80
   },
   {
    "tier": "$100\u2013$499",
-   "count": 479
+   "count": 480
   },
   {
    "tier": "Under $100",
@@ -91,6 +91,11 @@
    "total": 3053.0
   },
   {
+   "game": "Scratch Off",
+   "count": 10,
+   "total": 2650.0
+  },
+  {
    "game": "MONOPOLY SECRET VAULT",
    "count": 1,
    "total": 2500.0
@@ -104,11 +109,6 @@
    "game": "PICK 4",
    "count": 1,
    "total": 2500.0
-  },
-  {
-   "game": "Scratch Off",
-   "count": 8,
-   "total": 2000.0
   },
   {
    "game": "SNAKE, RATTLE AND ROLL",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-10",
-   "total": 850.0,
-   "count": 3
+   "total": 1500.0,
+   "count": 5
   },
   {
    "month": "2026-09",
@@ -198,7 +198,7 @@
   },
   {
    "day": "Thursday",
-   "count": 77
+   "count": 79
   },
   {
    "day": "Friday",

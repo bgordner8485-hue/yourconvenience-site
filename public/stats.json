@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-04T15:33:45+00:00",
+ "updated": "2026-10-04T18:46:58+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 603,
-  "total": 178694.0,
+  "count": 604,
+  "total": 179694.0,
   "biggest": 2500.0,
-  "average": 296.34
+  "average": 297.51
  },
  "last_7": {
-  "count": 21,
-  "total": 5600.0,
-  "biggest": 750.0,
-  "average": 266.67
+  "count": 22,
+  "total": 6600.0,
+  "biggest": 1000.0,
+  "average": 300.0
  },
  "last_30": {
-  "count": 86,
-  "total": 21740.0,
+  "count": 87,
+  "total": 22740.0,
   "biggest": 2500.0,
-  "average": 252.79
+  "average": 261.38
  },
  "last_365": {
-  "count": 603,
-  "total": 178694.0,
+  "count": 604,
+  "total": 179694.0,
   "biggest": 2500.0,
-  "average": 296.34
+  "average": 297.51
  },
- "per_week_average": 4724.11,
+ "per_week_average": 4752.8,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -44,7 +44,7 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-   "count": 41
+   "count": 42
   },
   {
    "tier": "$500\u2013$999",
@@ -86,6 +86,11 @@
    "total": 4000.0
   },
   {
+   "game": "Scratch Off",
+   "count": 12,
+   "total": 3750.0
+  },
+  {
    "game": "PICK 4",
    "count": 2,
    "total": 3250.0
@@ -94,11 +99,6 @@
    "game": "Match 6",
    "count": 3,
    "total": 3053.0
-  },
-  {
-   "game": "Scratch Off",
-   "count": 11,
-   "total": 2750.0
   },
   {
    "game": "MONOPOLY SECRET VAULT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-10",
-   "total": 2350.0,
-   "count": 7
+   "total": 3350.0,
+   "count": 8
   },
   {
    "month": "2026-09",
@@ -210,7 +210,7 @@
   },
   {
    "day": "Sunday",
-   "count": 69
+   "count": 70
   }
  ],
  "portal_through": "2026-09-19"

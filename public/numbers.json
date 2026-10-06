@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T18:28:57+00:00",
+ "updated": "2026-10-06T00:49:50+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -31,6 +31,20 @@
    "wild_ball": "0"
   },
   {
+   "game": "PICK 5",
+   "slug": "pick-5",
+   "date": "10/05/2026",
+   "draw": "Evening",
+   "numbers": [
+    "6",
+    "4",
+    "9",
+    "6",
+    "8"
+   ],
+   "wild_ball": "7"
+  },
+  {
    "game": "PICK 4",
    "slug": "pick-4",
    "date": "10/05/2026",
@@ -42,6 +56,19 @@
     "3"
    ],
    "wild_ball": "0"
+  },
+  {
+   "game": "PICK 4",
+   "slug": "pick-4",
+   "date": "10/05/2026",
+   "draw": "Evening",
+   "numbers": [
+    "9",
+    "7",
+    "3",
+    "7"
+   ],
+   "wild_ball": "7"
   },
   {
    "game": "PICK 3",
@@ -56,6 +83,18 @@
    "wild_ball": "0"
   },
   {
+   "game": "PICK 3",
+   "slug": "pick-3",
+   "date": "10/05/2026",
+   "draw": "Evening",
+   "numbers": [
+    "4",
+    "2",
+    "6"
+   ],
+   "wild_ball": "7"
+  },
+  {
    "game": "PICK 2",
    "slug": "pick-2",
    "date": "10/05/2026",
@@ -65,6 +104,48 @@
     "1"
    ],
    "wild_ball": "0"
+  },
+  {
+   "game": "PICK 2",
+   "slug": "pick-2",
+   "date": "10/05/2026",
+   "draw": "Evening",
+   "numbers": [
+    "1",
+    "2"
+   ],
+   "wild_ball": "7"
+  },
+  {
+   "game": "Match 6",
+   "slug": "match-6",
+   "date": "10/05/2026",
+   "draw": "",
+   "numbers": [
+    "2",
+    "18",
+    "21",
+    "22",
+    "46",
+    "49"
+   ],
+   "next_jackpot": "$560,000",
+   "next_draw": "10/06/2026"
+  },
+  {
+   "game": "Cash 5",
+   "slug": "cash-5",
+   "date": "10/05/2026",
+   "draw": "",
+   "numbers": [
+    "9",
+    "10",
+    "11",
+    "22",
+    "23"
+   ],
+   "next_jackpot": "$350,000",
+   "next_draw": "10/06/2026"
   },
   {
    "game": "Treasure Hunt",

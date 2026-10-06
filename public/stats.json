@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-06T00:56:02+00:00",
+ "updated": "2026-10-06T07:03:23+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 610,
-  "total": 180444.0,
+  "count": 614,
+  "total": 181094.0,
   "biggest": 2500.0,
-  "average": 295.81
+  "average": 294.94
  },
  "last_7": {
-  "count": 23,
-  "total": 6100.0,
+  "count": 27,
+  "total": 6750.0,
   "biggest": 1000.0,
-  "average": 265.22
+  "average": 250.0
  },
  "last_30": {
-  "count": 93,
-  "total": 23490.0,
+  "count": 97,
+  "total": 24140.0,
   "biggest": 2500.0,
-  "average": 252.58
+  "average": 248.87
  },
  "last_365": {
-  "count": 609,
-  "total": 179444.0,
+  "count": 613,
+  "total": 180094.0,
   "biggest": 2500.0,
-  "average": 294.65
+  "average": 293.79
  },
- "per_week_average": 4735.5,
+ "per_week_average": 4754.0,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 487
+   "count": 491
   },
   {
    "tier": "Under $100",
@@ -62,8 +62,8 @@
  "by_game": [
   {
    "game": "Scratch-off",
-   "count": 552,
-   "total": 124641.0
+   "count": 554,
+   "total": 125091.0
   },
   {
    "game": "Pick 4 Evening",
@@ -77,8 +77,8 @@
   },
   {
    "game": "Scratch Off",
-   "count": 18,
-   "total": 4500.0
+   "count": 20,
+   "total": 4700.0
   },
   {
    "game": "MILLIONAIRE LOADING",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-10",
-   "total": 4100.0,
-   "count": 14
+   "total": 4750.0,
+   "count": 18
   },
   {
    "month": "2026-09",
@@ -190,7 +190,7 @@
   },
   {
    "day": "Tuesday",
-   "count": 98
+   "count": 102
   },
   {
    "day": "Wednesday",

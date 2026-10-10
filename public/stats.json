@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-10T22:33:00+00:00",
+ "updated": "2026-10-10T23:34:56+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 625,
-  "total": 184244.0,
+  "count": 628,
+  "total": 185094.0,
   "biggest": 2500.0,
-  "average": 294.79
+  "average": 294.74
  },
  "last_7": {
-  "count": 22,
-  "total": 5550.0,
+  "count": 25,
+  "total": 6400.0,
   "biggest": 1000.0,
-  "average": 252.27
+  "average": 256.0
  },
  "last_30": {
-  "count": 100,
-  "total": 26490.0,
+  "count": 103,
+  "total": 27340.0,
   "biggest": 2500.0,
-  "average": 264.9
+  "average": 265.44
  },
  "last_365": {
-  "count": 624,
-  "total": 183244.0,
+  "count": 627,
+  "total": 184094.0,
   "biggest": 2500.0,
-  "average": 293.66
+  "average": 293.61
  },
- "per_week_average": 4766.13,
+ "per_week_average": 4789.93,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 83
+   "count": 84
   },
   {
    "tier": "$100\u2013$499",
-   "count": 499
+   "count": 501
   },
   {
    "tier": "Under $100",
@@ -72,8 +72,8 @@
   },
   {
    "game": "Scratch Off",
-   "count": 30,
-   "total": 7350.0
+   "count": 33,
+   "total": 8200.0
   },
   {
    "game": "JACKPOT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-10",
-   "total": 7900.0,
-   "count": 29
+   "total": 8750.0,
+   "count": 32
   },
   {
    "month": "2026-09",
@@ -206,7 +206,7 @@
   },
   {
    "day": "Saturday",
-   "count": 35
+   "count": 38
   },
   {
    "day": "Sunday",

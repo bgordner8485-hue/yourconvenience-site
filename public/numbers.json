@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:00:18+00:00",
+ "updated": "2026-10-13T03:34:58+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -17,6 +17,21 @@
    "next_draw": "10/13/2026"
   },
   {
+   "game": "Powerball",
+   "slug": "powerball",
+   "date": "10/12/2026",
+   "draw": "",
+   "numbers": [
+    "22",
+    "28",
+    "38",
+    "51",
+    "69"
+   ],
+   "powerball": "9",
+   "power_play": "3"
+  },
+  {
    "game": "PICK 5",
    "slug": "pick-5",
    "date": "10/12/2026",
@@ -29,6 +44,20 @@
     "2"
    ],
    "wild_ball": "3"
+  },
+  {
+   "game": "PICK 5",
+   "slug": "pick-5",
+   "date": "10/12/2026",
+   "draw": "Evening",
+   "numbers": [
+    "8",
+    "8",
+    "3",
+    "0",
+    "6"
+   ],
+   "wild_ball": "7"
   },
   {
    "game": "PICK 4",
@@ -44,6 +73,19 @@
    "wild_ball": "3"
   },
   {
+   "game": "PICK 4",
+   "slug": "pick-4",
+   "date": "10/12/2026",
+   "draw": "Evening",
+   "numbers": [
+    "0",
+    "6",
+    "7",
+    "7"
+   ],
+   "wild_ball": "7"
+  },
+  {
    "game": "PICK 3",
    "slug": "pick-3",
    "date": "10/12/2026",
@@ -56,6 +98,18 @@
    "wild_ball": "3"
   },
   {
+   "game": "PICK 3",
+   "slug": "pick-3",
+   "date": "10/12/2026",
+   "draw": "Evening",
+   "numbers": [
+    "1",
+    "6",
+    "5"
+   ],
+   "wild_ball": "7"
+  },
+  {
    "game": "PICK 2",
    "slug": "pick-2",
    "date": "10/12/2026",
@@ -65,6 +119,62 @@
     "1"
    ],
    "wild_ball": "3"
+  },
+  {
+   "game": "PICK 2",
+   "slug": "pick-2",
+   "date": "10/12/2026",
+   "draw": "Evening",
+   "numbers": [
+    "2",
+    "5"
+   ],
+   "wild_ball": "7"
+  },
+  {
+   "game": "Millionaire for Life",
+   "slug": "millionaire-for-life",
+   "date": "10/12/2026",
+   "draw": "",
+   "numbers": [
+    "16",
+    "40",
+    "43",
+    "51",
+    "54"
+   ],
+   "bonus": "1"
+  },
+  {
+   "game": "Match 6",
+   "slug": "match-6",
+   "date": "10/12/2026",
+   "draw": "",
+   "numbers": [
+    "11",
+    "12",
+    "27",
+    "31",
+    "35",
+    "38"
+   ],
+   "next_jackpot": "$800,000",
+   "next_draw": "10/13/2026"
+  },
+  {
+   "game": "Cash 5",
+   "slug": "cash-5",
+   "date": "10/12/2026",
+   "draw": "",
+   "numbers": [
+    "4",
+    "11",
+    "27",
+    "28",
+    "29"
+   ],
+   "next_jackpot": "$200,000",
+   "next_draw": "10/13/2026"
   },
   {
    "game": "Treasure Hunt",

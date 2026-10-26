@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T01:11:29+00:00",
+ "updated": "2026-10-26T06:15:11+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -15,6 +15,24 @@
    ],
    "next_jackpot": "$26,000",
    "next_draw": "10/26/2026"
+  },
+  {
+   "game": "Powerball Xs & Os",
+   "slug": "powerball-xs-os",
+   "date": "10/25/2026",
+   "draw": "",
+   "numbers": [
+    "5",
+    "8",
+    "9",
+    "12",
+    "17",
+    "22",
+    "24",
+    "28"
+   ],
+   "next_jackpot": "$2,000,000",
+   "next_draw": "11/01/2026"
   },
   {
    "game": "PICK 5",
@@ -115,6 +133,20 @@
     "5"
    ],
    "wild_ball": "5"
+  },
+  {
+   "game": "Millionaire for Life",
+   "slug": "millionaire-for-life",
+   "date": "10/25/2026",
+   "draw": "",
+   "numbers": [
+    "7",
+    "30",
+    "35",
+    "37",
+    "58"
+   ],
+   "bonus": "2"
   },
   {
    "game": "Match 6",

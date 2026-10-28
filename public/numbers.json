@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T03:27:32+00:00",
+ "updated": "2026-10-28T04:26:35+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -142,7 +142,9 @@
     "45",
     "67"
    ],
-   "mega_ball": "3"
+   "mega_ball": "3",
+   "next_jackpot": "$463,000,000",
+   "next_draw": "10/30/2026"
   },
   {
    "game": "Match 6",

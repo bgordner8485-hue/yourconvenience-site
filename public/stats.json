@@ -1,32 +1,32 @@
 {
- "updated": "2026-10-30T00:48:30+00:00",
+ "updated": "2026-10-30T01:04:56+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 749,
-  "total": 212659.0,
+  "count": 750,
+  "total": 213159.0,
   "biggest": 2500.0,
-  "average": 283.92
+  "average": 284.21
  },
  "last_7": {
-  "count": 62,
-  "total": 15840.0,
+  "count": 63,
+  "total": 16340.0,
   "biggest": 1000.0,
-  "average": 255.48
+  "average": 259.37
  },
  "last_30": {
-  "count": 158,
-  "total": 37465.0,
+  "count": 159,
+  "total": 37965.0,
   "biggest": 1000.0,
-  "average": 237.12
+  "average": 238.77
  },
  "last_365": {
-  "count": 747,
-  "total": 210659.0,
+  "count": 748,
+  "total": 211159.0,
   "biggest": 2500.0,
-  "average": 282.01
+  "average": 282.3
  },
- "per_week_average": 5149.77,
+ "per_week_average": 5162.73,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,7 +48,7 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 97
+   "count": 98
   },
   {
    "tier": "$100\u2013$499",
@@ -131,16 +131,16 @@
    "total": 1500.0
   },
   {
-   "game": "Mega Bucks",
-   "count": 1,
+   "game": "Powerball",
+   "count": 2,
    "total": 1000.0
   }
  ],
  "by_month": [
   {
    "month": "2026-10",
-   "total": 36315.0,
-   "count": 153
+   "total": 36815.0,
+   "count": 154
   },
   {
    "month": "2026-09",
@@ -202,7 +202,7 @@
   },
   {
    "day": "Friday",
-   "count": 163
+   "count": 164
   },
   {
    "day": "Saturday",

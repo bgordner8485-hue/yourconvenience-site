@@ -1,6 +1,71 @@
 {
- "updated": "2026-10-30T17:21:31+00:00",
+ "updated": "2026-10-30T18:23:12+00:00",
  "draws": [
+  {
+   "game": "Treasure Hunt",
+   "slug": "treasure-hunt",
+   "date": "10/30/2026",
+   "draw": "",
+   "numbers": [
+    "1",
+    "7",
+    "8",
+    "18",
+    "21"
+   ],
+   "next_jackpot": "$12,000",
+   "next_draw": "10/31/2026"
+  },
+  {
+   "game": "PICK 5",
+   "slug": "pick-5",
+   "date": "10/30/2026",
+   "draw": "Day",
+   "numbers": [
+    "4",
+    "9",
+    "0",
+    "6",
+    "0"
+   ],
+   "wild_ball": "0"
+  },
+  {
+   "game": "PICK 4",
+   "slug": "pick-4",
+   "date": "10/30/2026",
+   "draw": "Day",
+   "numbers": [
+    "6",
+    "2",
+    "9",
+    "9"
+   ],
+   "wild_ball": "0"
+  },
+  {
+   "game": "PICK 3",
+   "slug": "pick-3",
+   "date": "10/30/2026",
+   "draw": "Day",
+   "numbers": [
+    "1",
+    "3",
+    "8"
+   ],
+   "wild_ball": "0"
+  },
+  {
+   "game": "PICK 2",
+   "slug": "pick-2",
+   "date": "10/30/2026",
+   "draw": "Day",
+   "numbers": [
+    "1",
+    "5"
+   ],
+   "wild_ball": "0"
+  },
   {
    "game": "Treasure Hunt",
    "slug": "treasure-hunt",

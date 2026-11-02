@@ -1,6 +1,210 @@
 {
- "updated": "2026-11-02T11:21:44+00:00",
+ "updated": "2026-11-02T12:27:55+00:00",
  "games": [
+  {
+   "number": "1814",
+   "name": "Santa is Coming Second-Chance Eligible",
+   "price": "$1",
+   "new": true,
+   "top_prize": "$2,500",
+   "top_prize_left": "10",
+   "prizes": [
+    {
+     "prize": "$2,500",
+     "left": "10"
+    },
+    {
+     "prize": "$500",
+     "left": "20"
+    },
+    {
+     "prize": "$250",
+     "left": "25"
+    },
+    {
+     "prize": "$100",
+     "left": "782"
+    },
+    {
+     "prize": "$50",
+     "left": "1,444"
+    },
+    {
+     "prize": "$25",
+     "left": "24,877"
+    }
+   ]
+  },
+  {
+   "number": "1812",
+   "name": "Jingle All the Way Second-Chance Eligible",
+   "price": "$3",
+   "new": true,
+   "top_prize": "$25,000",
+   "top_prize_left": "5",
+   "prizes": [
+    {
+     "prize": "$25,000",
+     "left": "5"
+    },
+    {
+     "prize": "$3,000",
+     "left": "20"
+    },
+    {
+     "prize": "$1,000",
+     "left": "160"
+    },
+    {
+     "prize": "$300",
+     "left": "321"
+    },
+    {
+     "prize": "$100",
+     "left": "1,393"
+    },
+    {
+     "prize": "$50",
+     "left": "7,285"
+    }
+   ]
+  },
+  {
+   "number": "1810",
+   "name": "North Pole Payout Second-Chance Eligible",
+   "price": "$10",
+   "new": true,
+   "top_prize": "$350,000",
+   "top_prize_left": "8",
+   "prizes": [
+    {
+     "prize": "$350,000",
+     "left": "8"
+    },
+    {
+     "prize": "$10,000",
+     "left": "30"
+    },
+    {
+     "prize": "$1,000",
+     "left": "340"
+    },
+    {
+     "prize": "$500",
+     "left": "390"
+    },
+    {
+     "prize": "$250",
+     "left": "5,408"
+    },
+    {
+     "prize": "$150",
+     "left": "41,639"
+    }
+   ]
+  },
+  {
+   "number": "1809",
+   "name": "Merry & Bright Second-Chance Eligible",
+   "price": "$30",
+   "new": true,
+   "top_prize": "$500,000",
+   "top_prize_left": "7",
+   "prizes": [
+    {
+     "prize": "$500,000",
+     "left": "7"
+    },
+    {
+     "prize": "$25,000",
+     "left": "20"
+    },
+    {
+     "prize": "$5,000",
+     "left": "45"
+    },
+    {
+     "prize": "$1,000",
+     "left": "5,315"
+    },
+    {
+     "prize": "$500",
+     "left": "24,981"
+    },
+    {
+     "prize": "$200",
+     "left": "12,356"
+    }
+   ]
+  },
+  {
+   "number": "1808",
+   "name": "Let it Snow Second-Chance Eligible",
+   "price": "$30",
+   "new": true,
+   "top_prize": "$1,000,000",
+   "top_prize_left": "3",
+   "prizes": [
+    {
+     "prize": "$1,000,000",
+     "left": "3"
+    },
+    {
+     "prize": "$250,000",
+     "left": "6"
+    },
+    {
+     "prize": "$25,000",
+     "left": "12"
+    },
+    {
+     "prize": "$2,500",
+     "left": "615"
+    },
+    {
+     "prize": "$900",
+     "left": "14,879"
+    },
+    {
+     "prize": "$450",
+     "left": "16,578"
+    }
+   ]
+  },
+  {
+   "number": "1807",
+   "name": "Festive $5,000 Second-Chance Eligible",
+   "price": "$50",
+   "new": true,
+   "top_prize": "$5,000",
+   "top_prize_left": "8,640",
+   "prizes": [
+    {
+     "prize": "$5,000",
+     "left": "8,640"
+    },
+    {
+     "prize": "$500",
+     "left": "3,985"
+    },
+    {
+     "prize": "$250",
+     "left": "23,330"
+    },
+    {
+     "prize": "$150",
+     "left": "20,183"
+    },
+    {
+     "prize": "$100",
+     "left": "206,625"
+    },
+    {
+     "prize": "$75",
+     "left": "141,098"
+    }
+   ]
+  },
   {
    "number": "1806",
    "name": "Cash Grab",
@@ -39,7 +243,7 @@
    "number": "1805",
    "name": "Ghostbusters\u2122 Second-Chance Eligible",
    "price": "$2",
-   "new": true,
+   "new": false,
    "top_prize": "$10,000",
    "top_prize_left": "15",
    "prizes": [
@@ -73,7 +277,7 @@
    "number": "1804",
    "name": "Fat Stacks",
    "price": "$5",
-   "new": true,
+   "new": false,
    "top_prize": "$250,000",
    "top_prize_left": "4",
    "prizes": [
@@ -107,7 +311,7 @@
    "number": "1803",
    "name": "Candy-Coated Ca$h Available on iLottery",
    "price": "$10",
-   "new": true,
+   "new": false,
    "top_prize": "$500,000",
    "top_prize_left": "4",
    "prizes": [
@@ -141,7 +345,7 @@
    "number": "1802",
    "name": "GAME SHOW EXPERIENCE Second-Chance Eligible Available on iLottery",
    "price": "$30",
-   "new": true,
+   "new": false,
    "top_prize": "$1,000,000",
    "top_prize_left": "4",
    "prizes": [

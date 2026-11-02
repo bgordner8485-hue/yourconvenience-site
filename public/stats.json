@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-02T18:04:03+00:00",
+ "updated": "2026-11-02T18:24:21+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 783,
-  "total": 219799.0,
+  "count": 784,
+  "total": 221299.0,
   "biggest": 2500.0,
-  "average": 280.71
+  "average": 282.27
  },
  "last_7": {
   "count": 68,
@@ -21,12 +21,12 @@
   "average": 228.36
  },
  "last_365": {
-  "count": 781,
-  "total": 217799.0,
+  "count": 782,
+  "total": 219299.0,
   "biggest": 2500.0,
-  "average": 278.87
+  "average": 280.43
  },
- "per_week_average": 5276.26,
+ "per_week_average": 5314.72,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -44,7 +44,7 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-   "count": 47
+   "count": 48
   },
   {
    "tier": "$500\u2013$999",
@@ -67,8 +67,8 @@
   },
   {
    "game": "Scratch Off",
-   "count": 180,
-   "total": 40650.0
+   "count": 177,
+   "total": 37650.0
   },
   {
    "game": "Pick 4 Evening",
@@ -79,6 +79,11 @@
    "game": "JACKPOT",
    "count": 5,
    "total": 5000.0
+  },
+  {
+   "game": "SNAKE, RATTLE AND ROLL",
+   "count": 4,
+   "total": 4000.0
   },
   {
    "game": "MILLIONAIRE LOADING",
@@ -111,11 +116,6 @@
    "total": 2500.0
   },
   {
-   "game": "SNAKE, RATTLE AND ROLL",
-   "count": 2,
-   "total": 2000.0
-  },
-  {
    "game": "MONOPOLY OWN IT ALL",
    "count": 2,
    "total": 2000.0
@@ -126,14 +126,14 @@
    "total": 2000.0
   },
   {
-   "game": "$1,500,000 SUPER STAR",
+   "game": "Keno",
    "count": 1,
    "total": 1500.0
   },
   {
-   "game": "Powerball",
-   "count": 2,
-   "total": 1000.0
+   "game": "$1,500,000 SUPER STAR",
+   "count": 1,
+   "total": 1500.0
   }
  ],
  "by_month": [
@@ -149,8 +149,8 @@
   },
   {
    "month": "2026-09",
-   "total": 19890.0,
-   "count": 82
+   "total": 21390.0,
+   "count": 83
   },
   {
    "month": "2026-08",
@@ -199,7 +199,7 @@
   },
   {
    "day": "Wednesday",
-   "count": 103
+   "count": 104
   },
   {
    "day": "Thursday",
@@ -218,5 +218,5 @@
    "count": 91
   }
  ],
- "portal_through": "2026-09-19"
+ "portal_through": "2026-10-27"
 }

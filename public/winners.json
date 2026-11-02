@@ -1,6 +1,22 @@
 {
   "winners": [
     {
+      "id": "1pHjQS6dcJbSywvDoV8_R3vPQbds64itz",
+      "date": "2026-11-02T14:40:14.131Z",
+      "image": "/winners/1pHjQS6dcJbSywvDoV8_R3vPQbds64itz.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Scratch Off"
+    },
+    {
+      "id": "17PoVgFsgx92W8HkIr3g6xvcYRYLM3jDg",
+      "date": "2026-11-02T14:07:43.569Z",
+      "image": "/winners/17PoVgFsgx92W8HkIr3g6xvcYRYLM3jDg.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Scratch Off"
+    },
+    {
       "id": "1nUeyIJ8CR0jTU02V6fVMS0PEWKZPGsUb",
       "date": "2026-11-02T12:12:23.317Z",
       "image": "/winners/1nUeyIJ8CR0jTU02V6fVMS0PEWKZPGsUb.jpg",

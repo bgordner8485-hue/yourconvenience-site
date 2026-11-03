@@ -1,0 +1,11 @@
+{
+  "_help": "Store TV settings. Each TV opens /tv?screen=NAME. 'screens' changes how often each thing shows per round (winners = how many winner slides, the rest are chances 0-1 or counts). 'ads' are your own pictures/videos: put the file in public/tv/ads/ and list it here with which screens show it (or 'all').",
+  "screens": {
+    "register": {"winners": 8, "stats": 1, "jackpots": 1, "week": 1, "month": 0.5, "ads": 1},
+    "entrance": {"winners": 6, "stats": 1, "jackpots": 1, "week": 1, "month": 1, "ads": 1, "minAmount": 300},
+    "coolers":  {"winners": 3, "stats": 1, "jackpots": 0, "week": 1, "month": 0.5, "ads": 4},
+    "coffee":   {"winners": 3, "stats": 1, "jackpots": 1, "week": 1, "month": 0.5, "ads": 4},
+    "music":    {"winners": 2, "stats": 0, "jackpots": 0, "week": 1, "month": 1, "ads": 6}
+  },
+  "ads": []
+}

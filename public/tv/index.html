@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>@ Your Convenience — Store TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+/* Store TV: open /tv?screen=register (or entrance, coolers, coffee, music) full-screen on each TV.
+   Everything it shows comes from the same files the website uses, so it updates itself. */
+:root{--navy:#10233d;--navy2:#162f52;--gold:#ffc83d;--white:#fff;--muted:#cfd8e6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:var(--navy);color:var(--white);overflow:hidden;cursor:none;font-family:Inter,system-ui,sans-serif}
+#stage{position:fixed;inset:0;display:grid;place-items:center}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;display:flex;align-items:center;justify-content:center}
+.slide.on{opacity:1}
+.stripes{background:repeating-linear-gradient(135deg,var(--navy) 0 60px,#132a49 60px 90px)}
+.big{font-family:'Archivo Black',sans-serif;line-height:1.02;letter-spacing:.5px}
+.gold{color:var(--gold)}
+.bar{position:fixed;left:0;right:0;bottom:0;height:7vh;background:#000;border-top:.5vh solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 3vw;font-weight:800;font-size:3vh;z-index:5}
+.bar .tick{color:var(--gold)}
+/* winner */
+.win{display:grid;grid-template-columns:44% 56%;width:100%;height:93vh;align-items:center}
+.win .photo{height:80vh;display:flex;align-items:center;justify-content:center}
+.win .photo img{max-height:80vh;max-width:40vw;border-radius:2vh;border:.8vh solid var(--gold);box-shadow:0 2vh 6vh rgba(0,0,0,.6);object-fit:contain;background:#000}
+.win .txt{text-align:center;padding-right:3vw}
+.win .t1{font-size:15vh;color:var(--gold);text-shadow:0 1vh 0 #000}
+.win .amt{display:inline-block;margin:3vh 0;background:var(--gold);color:var(--navy);border-radius:4vh;padding:1vh 5vh;font-size:20vh}
+.win .game{font-size:6vh;font-weight:800;text-transform:uppercase}
+.win .when{font-size:3.6vh;color:var(--muted);margin-top:2vh;font-weight:600}
+.blurbg{position:absolute;inset:-5vh;background-size:cover;background-position:center;filter:blur(40px) brightness(.45);z-index:-1}
+/* cards */
+.card{text-align:center;height:93vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2vh}
+.card .k{font-size:7vh}.card .v{font-size:22vh}.card .s{font-size:5vh;font-weight:800;color:var(--muted)}
+.jp{display:flex;gap:6vw}.jp>div{background:rgba(255,255,255,.06);border:.4vh solid var(--gold);border-radius:3vh;padding:4vh 4vw;min-width:34vw}
+.jp .g{font-size:5vh;font-weight:800}.jp .n{font-size:11vh;color:var(--gold)}.jp .d{font-size:3vh;color:var(--muted);font-weight:600}
+/* video */
+.vid{display:grid;grid-template-columns:1fr auto 1fr;width:100%;height:93vh;align-items:center}
+.vid video{height:90vh;aspect-ratio:9/16;border-radius:2vh;background:#000;box-shadow:0 2vh 6vh rgba(0,0,0,.6)}
+.vid .side{text-align:center;padding:0 2vw}
+.vid .side .big{font-size:8vh}
+.ad img,.ad video{width:100vw;height:93vh;object-fit:contain}
+#setup{position:fixed;inset:0;display:none;place-items:center;text-align:center;font-size:3vh;cursor:default;background:var(--navy);z-index:9}
+#setup a{color:var(--gold);display:block;font-size:4vh;margin:1.4vh;font-weight:800}
+</style>
+</head><body>
+<div id="stage"></div>
+<div class="bar"><span>@ YOUR CONVENIENCE · PLAY HERE. WIN HERE.</span><span class="tick" id="tick"></span><span id="clock"></span></div>
+<div id="setup"><div><p class="big" style="font-size:6vh;margin-bottom:3vh">Which TV is this?</p>
+<a href="?screen=register">Register</a><a href="?screen=entrance">Entrance</a><a href="?screen=coolers">Coolers</a>
+<a href="?screen=coffee">Coffee</a><a href="?screen=music">Music videos</a><p style="margin-top:3vh;color:var(--muted)">Bookmark the page it opens — that's this TV's address.</p></div></div>
+<script>
+const Q=new URLSearchParams(location.search);
+const SCREEN=(Q.get('screen')||'').toLowerCase();
+const fmt=n=>'$'+Math.round(n).toLocaleString();
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const DATA={winners:[],stats:null,draws:[],montages:{},playlist:{screens:{},ads:[]}};
+const get=u=>fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);
+
+// Default mix per TV (overridable in /tv/playlist.json). Numbers = how often each kind shows.
+const DEFAULT_MIX={
+  register:{winners:8,stats:1,jackpots:1,week:1,month:0.5,ads:1},
+  entrance:{winners:6,stats:1,jackpots:1,week:1,month:1,ads:1,minAmount:300},
+  coolers: {winners:3,stats:1,jackpots:0,week:1,month:0.5,ads:4},
+  coffee:  {winners:3,stats:1,jackpots:1,week:1,month:0.5,ads:4},
+  music:   {winners:2,stats:0,jackpots:0,week:1,month:1,ads:6},
+};
+
+async function refresh(){
+  const [w,s,n,m,p]=await Promise.all([get('/winners.json'),get('/stats.json'),get('/numbers.json'),get('/videos/montages.json'),get('/tv/playlist.json')]);
+  if(w&&w.winners)DATA.winners=w.winners.slice().sort((a,b)=>new Date(b.date)-new Date(a.date));
+  if(s)DATA.stats=s; if(n&&n.draws)DATA.draws=n.draws; if(m&&m.latest)DATA.montages=m.latest; if(p)DATA.playlist=p;
+}
+function mix(){return Object.assign({},DEFAULT_MIX[SCREEN]||DEFAULT_MIX.register,(DATA.playlist.screens||{})[SCREEN]||{})}
+
+let wIdx=Math.floor(Math.random()*5),aIdx=0;
+function recentWinners(){
+  const M=mix(),week=Date.now()-7*864e5;
+  let list=DATA.winners.filter(w=>new Date(w.date)>=week&&w.amount>=(M.minAmount||0));
+  if(list.length<6)list=DATA.winners.filter(w=>w.amount>=(M.minAmount||0)).slice(0,12);
+  return list;
+}
+function ads(){return (DATA.playlist.ads||[]).filter(a=>!a.screens||a.screens.includes(SCREEN)||a.screens.includes('all'))}
+
+// Build one round of the show from the mix weights.
+function buildRound(){
+  const M=mix(),round=[],ws=recentWinners(),ad=ads();
+  const nW=Math.round(M.winners||0);
+  for(let i=0;i<nW&&ws.length;i++)round.push({kind:'winner',w:ws[(wIdx++)%ws.length]});
+  const extra=[];
+  if(M.stats&&DATA.stats&&DATA.stats.last_7)extra.push({kind:'stats'});
+  if(M.jackpots&&jackpots().length&&Math.random()<M.jackpots)extra.push({kind:'jackpots'});
+  if(DATA.montages.week&&Math.random()<(M.week||0))extra.push({kind:'video',v:DATA.montages.week,t:"THIS WEEK'S WINNERS"});
+  if(DATA.montages.month&&Math.random()<(M.month||0))extra.push({kind:'video',v:DATA.montages.month,t:"LAST MONTH'S WINNERS"});
+  for(let i=0;i<Math.round(M.ads||0)&&ad.length;i++)extra.push({kind:'ad',a:ad[(aIdx++)%ad.length]});
+  // spread the extras between the winners
+  const gap=Math.max(1,Math.floor(round.length/(extra.length||1)));
+  extra.forEach((x,i)=>round.splice(Math.min(round.length,(i+1)*gap+i),0,x));
+  if(!round.length)round.push({kind:'stats'});
+  return round;
+}
+function jackpots(){
+  const out=[];
+  for(const g of ['Powerball','Mega Millions']){const d=DATA.draws.find(x=>x.game===g&&x.next_jackpot);if(d)out.push(d)}
+  return out;
+}
+function el(html){const d=document.createElement('div');d.className='slide';d.innerHTML=html;return d}
+const stage=document.getElementById('stage');
+async function show(node,ms,onShow){
+  stage.appendChild(node);await sleep(50);node.classList.add('on');
+  const old=[...stage.children].filter(c=>c!==node);setTimeout(()=>old.forEach(o=>o.remove()),900);
+  if(onShow)await onShow(node); else await sleep(ms);
+}
+function day(d){return new Date(d).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})}
+
+async function play(item){
+  if(item.kind==='winner'){
+    const w=item.w;
+    await new Promise(r=>{const i=new Image();i.onload=i.onerror=r;i.src=w.image;});
+    return show(el(`<div class="blurbg" style="background-image:url('${w.image}')"></div>
+      <div class="win"><div class="photo"><img src="${w.image}" alt=""></div>
+      <div class="txt"><div class="t1 big">WINNER!</div><div class="amt big">${fmt(w.amount)}</div>
+      <div class="game">${w.game||'Scratch Off'}</div><div class="when">Sold right here · ${day(w.date)}</div></div></div>`),8000);
+  }
+  if(item.kind==='stats'){
+    const s=DATA.stats.last_7,m=DATA.stats.last_30;
+    return show(el(`<div class="card stripes" style="width:100%"><div class="k big">WON RIGHT HERE THIS WEEK</div>
+      <div class="v big gold">${fmt(s.total)}</div><div class="s">${s.count} winning tickets · ${m?fmt(m.total)+' in the last 30 days':''}</div></div>`),9000);
+  }
+  if(item.kind==='jackpots'){
+    return show(el(`<div class="card stripes" style="width:100%"><div class="k big">NEXT JACKPOTS</div><div class="jp">
+      ${jackpots().map(d=>`<div><div class="g">${d.game.toUpperCase()}</div><div class="n big">${d.next_jackpot.replace(/,(\d{3}),000,000$/,'.$1 BILLION').replace(/\.(\d*?)0+ BILLION$/,'.$1 BILLION').replace(/\. BILLION$/,' BILLION').replace(/,000,000$/,' MILLION')}</div><div class="d">Next drawing ${d.next_draw||''}</div></div>`).join('')}
+      </div><div class="s">Get your tickets at the counter</div></div>`),9000);
+  }
+  if(item.kind==='video'){
+    const v=item.v;
+    return show(el(`<div class="vid stripes"><div class="side"><div class="big">${item.t.split(' ').slice(0,-1).join(' ')}</div><div class="big gold" style="font-size:11vh">WINNERS</div></div>
+      <video muted playsinline autoplay preload="auto" src="${v.src}?v=${encodeURIComponent(v.built)}"></video>
+      <div class="side"><div class="big gold" style="font-size:10vh">${fmt(v.total)}</div><div class="big">WON HERE</div><div style="font-size:4vh;font-weight:800;margin-top:2vh;color:var(--muted)">${v.count} winning tickets</div></div></div>`),0,
+      async node=>{const vid=node.querySelector('video');
+        await new Promise(r=>{let done=false;const end=()=>{if(!done){done=true;r()}};
+          vid.addEventListener('ended',end);vid.addEventListener('error',end);
+          setTimeout(end,Math.max(20,(v.seconds||60)+10)*1000);vid.play().catch(end);});});
+  }
+  if(item.kind==='ad'){
+    const a=item.a,isVid=/\.(mp4|webm|mov)$/i.test(a.src);
+    if(isVid)return show(el(`<div class="ad"><video muted playsinline autoplay src="${a.src}"></video></div>`),0,
+      async node=>{const v=node.querySelector('video');await new Promise(r=>{v.onended=v.onerror=r;setTimeout(r,(a.seconds||120)*1000);v.play().catch(r)})});
+    return show(el(`<div class="ad"><img src="${a.src}" alt=""></div>`),(a.seconds||10)*1000);
+  }
+}
+
+function clock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+  const s=DATA.stats&&DATA.stats.last_7;document.getElementById('tick').textContent=s?`${fmt(s.total)} WON HERE THIS WEEK`:''}
+
+async function main(){
+  if(!SCREEN){document.getElementById('setup').style.display='grid';document.body.style.cursor='default';return}
+  try{navigator.wakeLock&&navigator.wakeLock.request('screen').catch(()=>{})}catch(e){}
+  await refresh();clock();setInterval(clock,20000);setInterval(refresh,10*60000);
+  setTimeout(()=>location.reload(),6*3600000);           // pick up page changes a few times a day
+  for(;;){for(const item of buildRound()){try{await play(item)}catch(e){await sleep(3000)}}}
+}
+main();
+</script>
+</body></html>

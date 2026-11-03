@@ -16,6 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }
+      # Winner montage videos live as GitHub Release files; copy the latest ones into the site.
+      - name: Add latest winner montages
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          mkdir -p public/videos
+          gh release download montages --pattern "*-latest.mp4" --dir public/videos --clobber \
+            || echo "No montages published yet — skipping."
       - uses: actions/upload-pages-artifact@v3
         with: { path: public }
       - uses: actions/deploy-pages@v4

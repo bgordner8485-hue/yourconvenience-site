@@ -1,26 +1,70 @@
-name: Weekly winners montage
+name: Winners montage (weekly + monthly)
 on:
   schedule:
-    - cron: "0 23 * * 0"   # Sundays 7pm Eastern (6pm in winter)
+    - cron: "0 23 * * 0"   # Sundays 7pm Eastern (6pm in winter): last 7 days
+    - cron: "0 23 1 * *"   # the 1st of every month: all of last month
   workflow_dispatch:
+    inputs:
+      period:
+        description: "Which montage to build"
+        type: choice
+        options: [week, month]
+        default: week
+      post:
+        description: "Post to Facebook etc. (untick to build + publish to the website/TVs only)"
+        type: boolean
+        default: true
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency: { group: store-bot }
 jobs:
   montage:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      built: ${{ steps.build.outputs.built }}
+    env:
+      PERIOD: ${{ inputs.period || (github.event.schedule == '0 23 1 * *' && 'month') || 'week' }}
+      MONTAGE_RELEASE_TAG: montages
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: pip install -r requirements.txt
-      - run: python automation/weekly_montage.py
+      - name: Build (and post) the ${{ env.PERIOD }} montage
+        id: build
+        run: |
+          python automation/weekly_montage.py --period "$PERIOD" ${{ inputs.post == false && '--no-post' || '' }}
+          if [ -f "out/montage-$PERIOD.mp4" ]; then echo "built=true" >> $GITHUB_OUTPUT; else echo "built=false" >> $GITHUB_OUTPUT; fi
         env:
           GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
           POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+      # The video is kept as a GitHub Release file (not in the repo, so the repo stays small).
+      # "<period>-latest.mp4" is what the website and the store TVs play; the dated copy is the archive.
+      - name: Publish video for the website + TVs
+        if: steps.build.outputs.built == 'true'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release view "$MONTAGE_RELEASE_TAG" >/dev/null 2>&1 || \
+            gh release create "$MONTAGE_RELEASE_TAG" --title "Winner montages" \
+              --notes "Weekly and monthly winner montages. Built automatically — do not delete." --latest=false
+          # smaller copy for phones and the TVs (the full-quality one already went to Facebook)
+          ffmpeg -y -loglevel error -i "out/montage-$PERIOD.mp4" -vf scale=720:-2 -c:v libx264 -preset veryfast \
+            -crf 27 -c:a aac -b:a 128k -movflags +faststart "out/$PERIOD-latest.mp4"
+          cp "out/$PERIOD-latest.mp4" "out/$PERIOD-$(date -u +%F).mp4"
+          gh release upload "$MONTAGE_RELEASE_TAG" "out/$PERIOD-latest.mp4" "out/$PERIOD-$(date -u +%F).mp4" --clobber
       - uses: actions/upload-artifact@v4
-        with: { name: montage, path: out/montage.mp4 }
-      - run: |
+        if: steps.build.outputs.built == 'true'
+        with: { name: "montage-${{ env.PERIOD }}", path: "out/montage-${{ env.PERIOD }}.mp4" }
+      - name: Save state
+        run: |
           git config user.name "store-bot"; git config user.email "store-bot@users.noreply.github.com"
-          git add data; git diff --cached --quiet || (git commit -m "Montage posted" && git push)
+          git add data public/videos/montages.json 2>/dev/null || git add data
+          git diff --cached --quiet || (git commit -m "Montage posted ($PERIOD)" && git pull --rebase && git push)
+  deploy:
+    needs: montage
+    if: needs.montage.outputs.built == 'true'
+    uses: ./.github/workflows/deploy.yml

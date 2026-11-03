@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T15:23:13+00:00",
+ "updated": "2026-11-03T16:23:12+00:00",
  "games": [
   {
    "number": "1814",
@@ -106,7 +106,7 @@
   {
    "number": "1809",
    "name": "Merry & Bright Second-Chance Eligible",
-   "price": "$30",
+   "price": "$20",
    "new": true,
    "top_prize": "$500,000",
    "top_prize_left": "7",

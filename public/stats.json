@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-04T14:22:22+00:00",
+ "updated": "2026-11-04T14:23:44+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 788,
-  "total": 221999.0,
+  "count": 789,
+  "total": 222099.0,
   "biggest": 2500.0,
-  "average": 281.72
+  "average": 281.49
  },
  "last_7": {
-  "count": 58,
-  "total": 11290.0,
+  "count": 59,
+  "total": 11390.0,
   "biggest": 500.0,
-  "average": 194.66
+  "average": 193.05
  },
  "last_30": {
-  "count": 183,
-  "total": 40805.0,
+  "count": 184,
+  "total": 40905.0,
   "biggest": 1000.0,
-  "average": 222.98
+  "average": 222.31
  },
  "last_365": {
-  "count": 786,
-  "total": 219999.0,
+  "count": 787,
+  "total": 220099.0,
   "biggest": 2500.0,
-  "average": 279.9
+  "average": 279.67
  },
- "per_week_average": 5293.88,
+ "per_week_average": 5296.43,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 638
+   "count": 639
   },
   {
    "tier": "Under $100",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 2650.0,
-   "count": 15
+   "total": 2750.0,
+   "count": 16
   },
   {
    "month": "2026-10",
@@ -199,7 +199,7 @@
   },
   {
    "day": "Wednesday",
-   "count": 104
+   "count": 105
   },
   {
    "day": "Thursday",

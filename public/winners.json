@@ -1,6 +1,46 @@
 {
   "winners": [
     {
+      "id": "1YxJ95rUXqyLUYUb31QZzM0nCk7wCqdRY",
+      "date": "2026-11-05T17:21:31.446Z",
+      "image": "/winners/1YxJ95rUXqyLUYUb31QZzM0nCk7wCqdRY.jpg",
+      "amount": 200.0,
+      "store": "South Williamsport",
+      "game": "Game Show"
+    },
+    {
+      "id": "1_KvUUzM_P3p2qF5YQaCdmFa36AfEhCd1",
+      "date": "2026-11-05T17:20:46.598Z",
+      "image": "/winners/1_KvUUzM_P3p2qF5YQaCdmFa36AfEhCd1.jpg",
+      "amount": 250.0,
+      "store": "South Williamsport",
+      "game": "Cash Money"
+    },
+    {
+      "id": "1-BNlo-282KMf9lXaj_Es1LKgebclCa0v",
+      "date": "2026-11-05T17:20:13.410Z",
+      "image": "/winners/1-BNlo-282KMf9lXaj_Es1LKgebclCa0v.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Snake, Rattle & Roll"
+    },
+    {
+      "id": "1ou96M_iFToWdlnkXFxGj05YCDJRxOzfR",
+      "date": "2026-11-05T17:19:50.775Z",
+      "image": "/winners/1ou96M_iFToWdlnkXFxGj05YCDJRxOzfR.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Merry & Bright"
+    },
+    {
+      "id": "1uNScu1HI7NqmG42lG_fhqy2HR_a1Hz6j",
+      "date": "2026-11-05T17:16:55.933Z",
+      "image": "/winners/1uNScu1HI7NqmG42lG_fhqy2HR_a1Hz6j.jpg",
+      "amount": 200.0,
+      "store": "South Williamsport",
+      "game": "Million Mega Moolah Multiplier"
+    },
+    {
       "id": "1-7IhFZySyPuonX9bghQs7KvEHdHx8IRP",
       "date": "2026-11-05T14:09:47.145Z",
       "image": "/winners/1-7IhFZySyPuonX9bghQs7KvEHdHx8IRP.jpg",

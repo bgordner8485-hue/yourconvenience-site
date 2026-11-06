@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-06T16:41:45+00:00",
+ "updated": "2026-11-06T17:02:49+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 809,
-  "total": 228099.0,
+  "count": 814,
+  "total": 229599.0,
   "biggest": 2500.0,
-  "average": 281.95
+  "average": 282.06
  },
  "last_7": {
-  "count": 59,
-  "total": 13940.0,
+  "count": 64,
+  "total": 15440.0,
   "biggest": 1000.0,
-  "average": 236.27
+  "average": 241.25
  },
  "last_30": {
-  "count": 193,
-  "total": 45405.0,
+  "count": 198,
+  "total": 46905.0,
   "biggest": 1000.0,
-  "average": 235.26
+  "average": 236.89
  },
  "last_365": {
-  "count": 806,
-  "total": 225099.0,
+  "count": 811,
+  "total": 226599.0,
   "biggest": 2500.0,
-  "average": 279.28
+  "average": 279.41
  },
- "per_week_average": 5409.81,
+ "per_week_average": 5447.72,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 105
+   "count": 106
   },
   {
    "tier": "$100\u2013$499",
-   "count": 654
+   "count": 658
   },
   {
    "tier": "Under $100",
@@ -97,8 +97,8 @@
   },
   {
    "game": "PICK 4",
-   "count": 4,
-   "total": 3450.0
+   "count": 5,
+   "total": 3850.0
   },
   {
    "game": "Match 6",
@@ -116,6 +116,11 @@
    "total": 2500.0
   },
   {
+   "game": "Merry & Bright",
+   "count": 8,
+   "total": 2100.0
+  },
+  {
    "game": "MONOPOLY OWN IT ALL",
    "count": 2,
    "total": 2000.0
@@ -126,11 +131,6 @@
    "total": 2000.0
   },
   {
-   "game": "Merry & Bright",
-   "count": 7,
-   "total": 1900.0
-  },
-  {
    "game": "Keno",
    "count": 1,
    "total": 1500.0
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 8750.0,
-   "count": 36
+   "total": 10250.0,
+   "count": 41
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 186
+   "count": 191
   },
   {
    "day": "Saturday",

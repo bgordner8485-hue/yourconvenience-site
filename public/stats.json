@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-06T13:25:34+00:00",
+ "updated": "2026-11-06T13:41:42+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 806,
-  "total": 227399.0,
+  "count": 807,
+  "total": 227899.0,
   "biggest": 2500.0,
-  "average": 282.13
+  "average": 282.4
  },
  "last_7": {
-  "count": 56,
-  "total": 13240.0,
+  "count": 57,
+  "total": 13740.0,
   "biggest": 1000.0,
-  "average": 236.43
+  "average": 241.05
  },
  "last_30": {
-  "count": 190,
-  "total": 44705.0,
+  "count": 191,
+  "total": 45205.0,
   "biggest": 1000.0,
-  "average": 235.29
+  "average": 236.68
  },
  "last_365": {
-  "count": 803,
-  "total": 224399.0,
+  "count": 804,
+  "total": 224899.0,
   "biggest": 2500.0,
-  "average": 279.45
+  "average": 279.73
  },
- "per_week_average": 5392.12,
+ "per_week_average": 5404.76,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,7 +48,7 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 104
+   "count": 105
   },
   {
    "tier": "$100\u2013$499",
@@ -126,12 +126,12 @@
    "total": 2000.0
   },
   {
-   "game": "Keno",
-   "count": 1,
-   "total": 1500.0
+   "game": "Merry & Bright",
+   "count": 5,
+   "total": 1700.0
   },
   {
-   "game": "$1,500,000 SUPER STAR",
+   "game": "Keno",
    "count": 1,
    "total": 1500.0
   }
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 8050.0,
-   "count": 33
+   "total": 8550.0,
+   "count": 34
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 183
+   "count": 184
   },
   {
    "day": "Saturday",

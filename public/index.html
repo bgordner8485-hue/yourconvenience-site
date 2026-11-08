@@ -96,10 +96,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
   </div>
   <div class="tally">
     <div class="big" id="weekTotal">$0</div>
-    <small>paid out in winning tickets this week</small>
+    <small id="weekLabel">in winning tickets on our wall this week</small>
     <div class="row">
-      <div><b id="weekCount">0</b><small>winners this week</small></div>
-      <div><b id="allTotal">$0</b><small>in winners, all time</small></div>
+      <div><b id="weekCount">0</b><small id="weekCountLabel">winners on the wall this week</small></div>
+      <div><b id="allTotal">$0</b><small>on our winners wall, all time</small></div>
       <div id="paidBox" hidden><b id="paidOut">$0</b><small id="paidLabel">paid out at the counter</small></div>
     </div>
     <a href="/stats" style="display:inline-block;margin-top:14px;color:var(--gold);font-weight:700;text-decoration:none;font-size:14px">See every number we track →</a>
@@ -204,15 +204,16 @@ function render(){
   g.innerHTML=list.slice(0,shown).map(w=>`<div class="win"><div class="img" style="background-image:url('${w.image}')" role="img" aria-label="${fmt(w.amount)} winning ticket"><span class="amt">${fmt(w.amount)}</span></div><div class="meta"><span>${w.game||'Winner'}</span><span>${new Date(w.date).toLocaleDateString('en-US',{month:'short',day:'numeric'})}${w.store?' · '+w.store:''}</span></div></div>`).join('');
   document.getElementById('moreBtn').hidden=list.length<=shown;
 }
+let counterSet=false;
 fetch('/winners.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   all=(d.winners||[]).sort((a,b)=>new Date(b.date)-new Date(a.date));
   const wk=all.filter(w=>new Date(w.date)>=weekAgo);
-  weekTotal.textContent=fmt(wk.reduce((s,w)=>s+w.amount,0));weekCount.textContent=wk.length;
+  if(!counterSet){weekTotal.textContent=fmt(wk.reduce((s,w)=>s+w.amount,0));weekCount.textContent=wk.length;}
   allTotal.textContent=fmt(all.reduce((s,w)=>s+w.amount,0));render();
   fetch('/stats.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(st=>{
     if(!st||!st.all_time)return;
     allTotal.textContent=fmt(st.all_time.total);
-    if(st.last_7&&st.last_7.total>0){weekTotal.textContent=fmt(st.last_7.total);weekCount.textContent=st.last_7.count;}
+    if(!counterSet&&st.last_7&&st.last_7.total>0){weekTotal.textContent=fmt(st.last_7.total);weekCount.textContent=st.last_7.count;}
   }).catch(()=>{});
 }).catch(render);
 fetch('/site.json',{cache:'no-store'}).then(r=>r.json()).then(s=>{
@@ -235,10 +236,20 @@ fetch('/numbers.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
       <div style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;font-weight:700;margin:4px 0 10px">${dr.date}${dr.draw?' · '+dr.draw:''}</div>
       <div style="display:flex;gap:6px;flex-wrap:wrap">${dr.numbers.map(ball).join('')}${extra}</div></a>`;}).join('');
 }).catch(()=>{});
+// What the counter really paid out: the Lottery terminal's Daily Pays total from every closing (Brad 11/9).
+// Photos are only the winners we took a picture of, so when this is here it is the headline number.
 fetch('/payouts.json',{cache:'no-store'}).then(r=>r.json()).then(p=>{
-  const days=(p.days||[]).slice(0,7); if(!days.length)return;
-  const total=days.reduce((s,d)=>s+d.amount,0);
-  paidOut.textContent=fmt(total); paidLabel.textContent='paid out at the counter (7 days)'; paidBox.hidden=false;
+  const day=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('en-CA',{timeZone:'America/New_York'})};
+  const all=(p.days||[]).filter(d=>d&&d.date&&typeof d.amount==='number');
+  const w7=all.filter(d=>d.date>day(7)), w30=all.filter(d=>d.date>day(30));
+  if(!w7.length)return;
+  if(w7.length<6){ // not a full week of closings yet: a partial total would undercount, so only show what it is
+    paidOut.textContent=fmt(w7.reduce((s,d)=>s+d.amount,0)); paidLabel.textContent='paid out at our counter on the last '+w7.length+' recorded closing'+(w7.length>1?'s':''); paidBox.hidden=false; return }
+  counterSet=true;
+  weekTotal.textContent=fmt(w7.reduce((s,d)=>s+d.amount,0)); weekLabel.textContent='paid out to winners at our counter this week';
+  const pays=w7.reduce((s,d)=>s+(d.count||0),0);
+  if(pays){weekCount.textContent=pays; weekCountLabel.textContent='winning tickets cashed this week';}
+  if(w30.length>=26){paidOut.textContent=fmt(w30.reduce((s,d)=>s+d.amount,0)); paidLabel.textContent='paid out at our counter (30 days)'; paidBox.hidden=false;}
 }).catch(()=>{});
 document.getElementById('filters').onclick=e=>{const f=e.target.dataset.f;if(!f)return;filter=f;shown=16;document.querySelectorAll('.chip[data-f]').forEach(c=>c.classList.toggle('on',c===e.target));render()};
 moreBtn.onclick=()=>{shown+=16;render()};

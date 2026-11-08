@@ -207,10 +207,22 @@ def stats_page():
                 f'<div class="tilel">{esc(label)}</div>'
                 + (f'<div class="tiles">{esc(sub)}</div>' if sub else '') + '</div>')
 
+    # Brad 11/9: "paid out" means what the counter really paid — the lottery terminal's Daily Pays. The photo/portal
+    # figures below are only the winning tickets we've shown, so they are labelled that way.
+    c = st.get("counter")
+    counter_tiles = ""
+    if c:
+        csince = dt.date.fromisoformat(c["since"]).strftime("%b %-d, %Y")
+        counter_tiles = "".join([
+            tile(money(c["total"]), "paid out at our counter", f"since {csince}"),
+            tile(f'{c["pays"]:,}' if c["pays"] else "—", "winning tickets cashed", f'{c["days"]} closing{"s" if c["days"] != 1 else ""} with a Daily Pays report'),
+            tile(money(c["last_7"]["total"]), "paid out, last 7 days", f'{c["last_7"]["pays"]} tickets cashed' if c["last_7"]["pays"] else ""),
+            tile(money(c["last_30"]["total"]), "paid out, last 30 days", f'{c["last_30"]["pays"]} tickets cashed' if c["last_30"]["pays"] else ""),
+        ])
     tiles = "".join([
-        tile(money(at["total"]), "paid out to our customers", f"since {since}"),
-        tile(f'{at["count"]:,}', "winning tickets sold", f'{money(at["average"])} average win'),
-        tile(money(st["per_week_average"]), "paid out in an average week"),
+        tile(money(at["total"]), "in prizes on our winners wall", f"since {since}"),
+        tile(f'{at["count"]:,}', "winning tickets on the wall", f'{money(at["average"])} average win'),
+        tile(money(st["per_week_average"]), "on the wall in an average week"),
         tile(money(at["biggest"]), "biggest single win", f'{big["game"] or "Scratch-off"} · {bigdate}'),
     ])
     recent = "".join([
@@ -243,13 +255,34 @@ def stats_page():
                       f'so those months are left out of this table — they are still in the '
                       f'totals above.</p>')
 
+    if c and not (c.get("complete") and c["days"] >= 7):
+        counter_tiles = (counter_tiles.replace("paid out at our counter", f'paid out on {c["days"]} recorded closing{"s" if c["days"] != 1 else ""}')
+                         .replace("paid out, last 7 days", "recorded closings, last 7 days").replace("paid out, last 30 days", "recorded closings, last 30 days"))
+    if c and c.get("complete") and c["days"] >= 7:
+        head_html = (f'<h1>{esc(money(c["total"]))} <span>paid out at our counter</span></h1>\n'
+                     f'  <p>Since {esc(csince)}, straight from the Lottery terminal\'s Daily Pays report at every closing — '
+                     f'every prize cashed at {esc(STORE)}, not just the ones we photograph.</p>')
+        counter_html = (f'<div class="tiles">{counter_tiles}</div>\n'
+                        f'  <h2 style="font-size:28px;margin:38px 0 6px">Our winners wall</h2>\n'
+                        f'  <p class="note" style="margin:0 0 14px">The winning tickets we\'ve photographed and posted since {esc(since)}. '
+                        f'{esc(source)} Not every winner gets a picture, so the counter total above is the real payout.</p>')
+    elif c:
+        head_html = (f'<h1>{esc(money(at["total"]))} <span>on our winners wall</span></h1>\n'
+                     f'  <p>Winning tickets sold at {esc(STORE)} since {esc(since)} that we\'ve photographed and posted. {esc(source)} '
+                     f'We\'ve started recording every closing\'s Daily Pays report too — once a full week is in, the real counter payout leads this page.</p>')
+        counter_html = (f'<h2 style="font-size:24px;margin:6px 0 12px">From the Lottery terminal\'s Daily Pays</h2>\n'
+                        f'  <div class="tiles">{counter_tiles}</div>\n'
+                        f'  <h2 style="font-size:28px;margin:38px 0 6px">Our winners wall</h2>')
+    else:
+        head_html = (f'<h1>{esc(money(at["total"]))} <span>on our winners wall</span></h1>\n'
+                     f'  <p>Winning tickets sold at {esc(STORE)} since {esc(since)} that we\'ve photographed and posted. {esc(source)}</p>')
+        counter_html = ""
     body = f"""<header class="pagehead"><div class="wrap">
   <span class="eyebrow">The numbers</span>
-  <h1>{esc(money(at["total"]))} <span>paid out</span></h1>
-  <p>Every winning ticket sold at {esc(STORE)} since {esc(since)} — counted, totalled and kept honest.
-  {esc(source)}</p>
+  {head_html}
 </div></header>
 <section><div class="wrap">
+  {counter_html}
   <div class="tiles">{tiles}</div>
   <h2 style="font-size:28px;margin:38px 0 14px">Lately</h2>
   <div class="tiles">{recent}</div>
@@ -262,11 +295,11 @@ def stats_page():
   </div>
 
   <h2 style="font-size:24px;margin:34px 0 12px">Month by month</h2>
-  <table><thead><tr><th>Month</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{month_rows}</tbody></table>
+  <table><thead><tr><th>Month</th><th>Tickets on the wall</th><th>Their prizes</th></tr></thead><tbody>{month_rows}</tbody></table>
   {month_note}
 
   <h2 style="font-size:24px;margin:34px 0 12px">By game</h2>
-  <table><thead><tr><th>Game</th><th>Winners</th><th>Paid out</th></tr></thead><tbody>{game_rows}</tbody></table>
+  <table><thead><tr><th>Game</th><th>Tickets on the wall</th><th>Their prizes</th></tr></thead><tbody>{game_rows}</tbody></table>
 
   <div class="note">Every figure on this page is a ticket actually sold and paid at our counter. It says nothing
   about your odds on the next one — the Lottery's odds are the Lottery's odds. Play for fun, spend what you can

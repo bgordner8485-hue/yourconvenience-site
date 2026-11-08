@@ -95,6 +95,23 @@ def summarise(rows):
             "biggest": max((r["amount"] for r in rows), default=0),
             "average": round(total / len(rows), 2) if rows else 0}
 
+def counter():
+    """What the counter really paid out: the lottery terminal's Daily Pays totals (public/payouts.json)."""
+    days = [d for d in load("payouts.json", {}).get("days", []) if d.get("date") and d.get("amount") is not None]
+    if not days:
+        return None
+    today = dt.date.today()
+    rows = [(dt.date.fromisoformat(d["date"]), float(d["amount"]), d.get("count")) for d in days]
+    def win(n):
+        r = [x for x in rows if 0 <= (today - x[0]).days < n]
+        return {"total": round(sum(x[1] for x in r), 2), "pays": sum(x[2] or 0 for x in r), "days": len(r)}
+    first = min(x[0] for x in rows)
+    total = round(sum(x[1] for x in rows), 2)
+    span = (today - first).days + 1
+    return {"source": "Daily Pays", "since": first.isoformat(), "days": len(rows), "total": total,
+            "pays": sum(x[2] or 0 for x in rows), "last_7": win(7), "last_30": win(30),
+            "per_week_average": round(total / (span / 7), 2) if span >= 14 else None}
+
 def main():
     rows, portal = collect()
     if not rows:
@@ -146,6 +163,7 @@ def main():
         "by_weekday": [{"day": d, "count": weekday.get(d, 0)} for d in
                        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]],
         "portal_through": portal.get("through"),
+        "counter": counter(),
     }
     b = stats["biggest_win"]
     stats["biggest_win"] = {"date": b["date"].isoformat(), "amount": b["amount"], "game": b["game"]}

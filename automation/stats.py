@@ -106,9 +106,17 @@ def counter():
         r = [x for x in rows if 0 <= (today - x[0]).days < n]
         return {"total": round(sum(x[1] for x in r), 2), "pays": sum(x[2] or 0 for x in r), "days": len(r)}
     first = min(x[0] for x in rows)
+    last = max(x[0] for x in rows)
     total = round(sum(x[1] for x in rows), 2)
     span = (today - first).days + 1
+    # Only a run of closings with no missing day can stand in as "what we paid out" — a gap would undercount.
+    have = {x[0] for x in rows}
+    streak = 0
+    d = last
+    while d in have:
+        streak += 1; d -= dt.timedelta(days=1)
     return {"source": "Daily Pays", "since": first.isoformat(), "days": len(rows), "total": total,
+            "complete": len(have) == (last - first).days + 1 and (today - last).days <= 1, "streak": streak,
             "pays": sum(x[2] or 0 for x in rows), "last_7": win(7), "last_30": win(30),
             "per_week_average": round(total / (span / 7), 2) if span >= 14 else None}
 

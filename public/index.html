@@ -243,11 +243,13 @@ fetch('/payouts.json',{cache:'no-store'}).then(r=>r.json()).then(p=>{
   const all=(p.days||[]).filter(d=>d&&d.date&&typeof d.amount==='number');
   const w7=all.filter(d=>d.date>day(7)), w30=all.filter(d=>d.date>day(30));
   if(!w7.length)return;
+  if(w7.length<6){ // not a full week of closings yet: a partial total would undercount, so only show what it is
+    paidOut.textContent=fmt(w7.reduce((s,d)=>s+d.amount,0)); paidLabel.textContent='paid out at our counter on the last '+w7.length+' recorded closing'+(w7.length>1?'s':''); paidBox.hidden=false; return }
   counterSet=true;
   weekTotal.textContent=fmt(w7.reduce((s,d)=>s+d.amount,0)); weekLabel.textContent='paid out to winners at our counter this week';
   const pays=w7.reduce((s,d)=>s+(d.count||0),0);
   if(pays){weekCount.textContent=pays; weekCountLabel.textContent='winning tickets cashed this week';}
-  paidOut.textContent=fmt(w30.reduce((s,d)=>s+d.amount,0)); paidLabel.textContent='paid out at our counter (30 days)'; paidBox.hidden=false;
+  if(w30.length>=26){paidOut.textContent=fmt(w30.reduce((s,d)=>s+d.amount,0)); paidLabel.textContent='paid out at our counter (30 days)'; paidBox.hidden=false;}
 }).catch(()=>{});
 document.getElementById('filters').onclick=e=>{const f=e.target.dataset.f;if(!f)return;filter=f;shown=16;document.querySelectorAll('.chip[data-f]').forEach(c=>c.classList.toggle('on',c===e.target));render()};
 moreBtn.onclick=()=>{shown+=16;render()};

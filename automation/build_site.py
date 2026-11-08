@@ -215,7 +215,7 @@ def stats_page():
         csince = dt.date.fromisoformat(c["since"]).strftime("%b %-d, %Y")
         counter_tiles = "".join([
             tile(money(c["total"]), "paid out at our counter", f"since {csince}"),
-            tile(f'{c["pays"]:,}' if c["pays"] else "—", "winning tickets cashed", f'{c["days"]} days of Daily Pays'),
+            tile(f'{c["pays"]:,}' if c["pays"] else "—", "winning tickets cashed", f'{c["days"]} closing{"s" if c["days"] != 1 else ""} with a Daily Pays report'),
             tile(money(c["last_7"]["total"]), "paid out, last 7 days", f'{c["last_7"]["pays"]} tickets cashed' if c["last_7"]["pays"] else ""),
             tile(money(c["last_30"]["total"]), "paid out, last 30 days", f'{c["last_30"]["pays"]} tickets cashed' if c["last_30"]["pays"] else ""),
         ])
@@ -255,7 +255,10 @@ def stats_page():
                       f'so those months are left out of this table — they are still in the '
                       f'totals above.</p>')
 
-    if c:
+    if c and not (c.get("complete") and c["days"] >= 7):
+        counter_tiles = (counter_tiles.replace("paid out at our counter", f'paid out on {c["days"]} recorded closing{"s" if c["days"] != 1 else ""}')
+                         .replace("paid out, last 7 days", "recorded closings, last 7 days").replace("paid out, last 30 days", "recorded closings, last 30 days"))
+    if c and c.get("complete") and c["days"] >= 7:
         head_html = (f'<h1>{esc(money(c["total"]))} <span>paid out at our counter</span></h1>\n'
                      f'  <p>Since {esc(csince)}, straight from the Lottery terminal\'s Daily Pays report at every closing — '
                      f'every prize cashed at {esc(STORE)}, not just the ones we photograph.</p>')
@@ -263,6 +266,13 @@ def stats_page():
                         f'  <h2 style="font-size:28px;margin:38px 0 6px">Our winners wall</h2>\n'
                         f'  <p class="note" style="margin:0 0 14px">The winning tickets we\'ve photographed and posted since {esc(since)}. '
                         f'{esc(source)} Not every winner gets a picture, so the counter total above is the real payout.</p>')
+    elif c:
+        head_html = (f'<h1>{esc(money(at["total"]))} <span>on our winners wall</span></h1>\n'
+                     f'  <p>Winning tickets sold at {esc(STORE)} since {esc(since)} that we\'ve photographed and posted. {esc(source)} '
+                     f'We\'ve started recording every closing\'s Daily Pays report too — once a full week is in, the real counter payout leads this page.</p>')
+        counter_html = (f'<h2 style="font-size:24px;margin:6px 0 12px">From the Lottery terminal\'s Daily Pays</h2>\n'
+                        f'  <div class="tiles">{counter_tiles}</div>\n'
+                        f'  <h2 style="font-size:28px;margin:38px 0 6px">Our winners wall</h2>')
     else:
         head_html = (f'<h1>{esc(money(at["total"]))} <span>on our winners wall</span></h1>\n'
                      f'  <p>Winning tickets sold at {esc(STORE)} since {esc(since)} that we\'ve photographed and posted. {esc(source)}</p>')

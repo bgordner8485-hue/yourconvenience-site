@@ -1,6 +1,54 @@
 {
   "winners": [
     {
+      "id": "1SWbBkGjc7dIHTtFeXKyLEvo7tr7cf6k9",
+      "date": "2026-11-08T00:49:24.999Z",
+      "image": "/winners/1SWbBkGjc7dIHTtFeXKyLEvo7tr7cf6k9.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "The Game of Life"
+    },
+    {
+      "id": "1JT-FDTuB8O-xVe5CImHX4tFRcXI9TnTX",
+      "date": "2026-11-08T00:48:59.905Z",
+      "image": "/winners/1JT-FDTuB8O-xVe5CImHX4tFRcXI9TnTX.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Festive"
+    },
+    {
+      "id": "1aqF0eqsaX7GkQN-DS5gxtiFsuSmnKUMK",
+      "date": "2026-11-08T00:48:22.167Z",
+      "image": "/winners/1aqF0eqsaX7GkQN-DS5gxtiFsuSmnKUMK.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": "Cash Money"
+    },
+    {
+      "id": "1HUGGTwWT2GgNgFeagUQgzUy4FHVmtmL5",
+      "date": "2026-11-08T00:46:54.416Z",
+      "image": "/winners/1HUGGTwWT2GgNgFeagUQgzUy4FHVmtmL5.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": "Cash Money"
+    },
+    {
+      "id": "13sKdy1HCRIy6XBBXuY_KaX5ori-orhEW",
+      "date": "2026-11-08T00:46:20.388Z",
+      "image": "/winners/13sKdy1HCRIy6XBBXuY_KaX5ori-orhEW.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Million Dollar Win It All"
+    },
+    {
+      "id": "1HqJiVeHfGm6qZdPSgoh8PWdpYRR4Z0Ms",
+      "date": "2026-11-08T00:45:55.267Z",
+      "image": "/winners/1HqJiVeHfGm6qZdPSgoh8PWdpYRR4Z0Ms.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Million Dollar Win It All"
+    },
+    {
       "id": "1yujkhrXvQz6AUk9T_BPVoTh130RHVXoT",
       "date": "2026-11-08T00:36:06.989Z",
       "image": "/winners/1yujkhrXvQz6AUk9T_BPVoTh130RHVXoT.jpg",

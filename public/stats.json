@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-08T00:44:30+00:00",
+ "updated": "2026-11-08T01:03:42+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 824,
-  "total": 231549.0,
+  "count": 830,
+  "total": 232249.0,
   "biggest": 2500.0,
-  "average": 281.01
+  "average": 279.82
  },
  "last_7": {
-  "count": 51,
-  "total": 12200.0,
+  "count": 57,
+  "total": 12900.0,
   "biggest": 1000.0,
-  "average": 239.22
+  "average": 226.32
  },
  "last_30": {
-  "count": 203,
-  "total": 47405.0,
+  "count": 209,
+  "total": 48105.0,
   "biggest": 1000.0,
-  "average": 233.52
+  "average": 230.17
  },
  "last_365": {
-  "count": 821,
-  "total": 228549.0,
+  "count": 827,
+  "total": 229249.0,
   "biggest": 2500.0,
-  "average": 278.38
+  "average": 277.21
  },
- "per_week_average": 5457.59,
+ "per_week_average": 5475.15,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 666
+   "count": 672
   },
   {
    "tier": "Under $100",
@@ -116,6 +116,11 @@
    "total": 2500.0
   },
   {
+   "game": "Cash Money",
+   "count": 9,
+   "total": 2200.0
+  },
+  {
    "game": "Merry & Bright",
    "count": 8,
    "total": 2100.0
@@ -129,18 +134,13 @@
    "game": "$1 MILLION MONEYBAG CROSSWORD",
    "count": 2,
    "total": 2000.0
-  },
-  {
-   "game": "Cash Money",
-   "count": 7,
-   "total": 1900.0
   }
  ],
  "by_month": [
   {
    "month": "2026-11",
-   "total": 12200.0,
-   "count": 51
+   "total": 12900.0,
+   "count": 57
   },
   {
    "month": "2026-10",
@@ -215,7 +215,7 @@
   },
   {
    "day": "Sunday",
-   "count": 96
+   "count": 102
   }
  ],
  "portal_through": "2026-10-27"

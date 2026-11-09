@@ -11,9 +11,33 @@
       "src": "/videos/week-latest.mp4",
       "archive_file": "week-2026-11-09.mp4",
       "release_tag": "montages"
+    },
+    "month": {
+      "period": "month",
+      "label": "OCTOBER 2026",
+      "built": "2026-11-09T18:44:45+00:00",
+      "count": 176,
+      "total": 41505.0,
+      "seconds": 150.3,
+      "song": "You Thought I Didnt Notice",
+      "src": "/videos/month-latest.mp4",
+      "archive_file": "month-2026-11-09.mp4",
+      "release_tag": "montages"
     }
   },
   "archive": [
+    {
+      "period": "month",
+      "label": "OCTOBER 2026",
+      "built": "2026-11-09T18:44:45+00:00",
+      "count": 176,
+      "total": 41505.0,
+      "seconds": 150.3,
+      "song": "You Thought I Didnt Notice",
+      "src": "/videos/month-latest.mp4",
+      "archive_file": "month-2026-11-09.mp4",
+      "release_tag": "montages"
+    },
     {
       "period": "week",
       "label": "",

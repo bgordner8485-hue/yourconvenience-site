@@ -48,7 +48,7 @@ jobs:
           git add public data
           if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT; exit 0; fi
           echo "changed=true" >> $GITHUB_OUTPUT
-          git commit -m "Lottery data refresh" && git push
+          git commit -m "Lottery data refresh" && git pull --rebase && git push
   deploy:
     needs: refresh
     if: needs.refresh.outputs.changed == 'true'

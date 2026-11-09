@@ -83,7 +83,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">@ Your <b>Convenience</b></a>
-  <ul><li><a href="/numbers">Winning Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="#winners">Our Winners</a></li><li><a href="/stats">The Numbers</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="#stores">Stores</a></li></ul>
+  <ul><li><a href="/numbers">Winning Numbers</a></li><li><a href="/scratch-offs">Scratch-Offs</a></li><li><a href="#winners">Our Winners</a></li><li><a href="#videos">Winner Videos</a></li><li><a href="/stats">The Numbers</a></li><li><a href="/scratchinlottotv">ScratchinLottoTV</a></li><li><a href="/blog">Blog</a></li><li><a href="#stores">Stores</a></li></ul>
   <a class="call" href="tel:+15709747351">📞 (570) 974-7351</a>
 </div></nav>
 
@@ -112,6 +112,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
   <p>Every PA game, updated after each drawing. <a href="/numbers"><b>See all games and past results →</b></a></p></div>
   <div class="filters"><a class="chip" href="/scratch-offs">Scratch-off top prizes left</a></div></div>
   <div class="grid" id="numgrid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))"></div>
+</div></section>
+<section id="videos" hidden style="padding:40px 0;background:var(--ink,#10233d);color:#fff"><div class="wrap">
+  <div class="sec-head"><div><h2 style="color:#fff">🎬 Winner videos</h2>
+  <p style="color:#cfd8e6">Every winner from the week and the month, set to our own Rust &amp; Rail songs. New ones drop automatically every Sunday and on the 1st.</p></div></div>
+  <div id="vidgrid" style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center"></div>
 </div></section>
 <section id="winners"><div class="wrap">
   <div class="sec-head">
@@ -216,6 +221,15 @@ fetch('/winners.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
     if(!counterSet&&st.last_7&&st.last_7.total>0){weekTotal.textContent=fmt(st.last_7.total);weekCount.textContent=st.last_7.count;}
   }).catch(()=>{});
 }).catch(render);
+fetch('/videos/montages.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(m=>{
+  if(!m||!m.latest)return;
+  const order=[['week',"This week's winners"],['month',"Last month's winners"]];
+  const cards=order.filter(([k])=>m.latest[k]).map(([k,t])=>{const v=m.latest[k];
+    return `<figure style="margin:0;width:min(320px,100%)"><video src="${v.src}?v=${encodeURIComponent(v.built)}" controls playsinline preload="metadata" style="width:100%;aspect-ratio:9/16;border-radius:16px;background:#000"></video>
+    <figcaption style="margin-top:8px;font-weight:700">${t}${v.label?' · '+v.label.charAt(0)+v.label.slice(1).toLowerCase():''}<br><span style="color:var(--gold,#ffc83d)">${v.count} winners · ${fmt(v.total)} won</span></figcaption></figure>`;});
+  if(!cards.length)return;
+  vidgrid.innerHTML=cards.join('');document.getElementById('videos').hidden=false;
+}).catch(()=>{});
 fetch('/site.json',{cache:'no-store'}).then(r=>r.json()).then(s=>{
   if(s.hours)hoursSW.innerHTML=s.hours;
 }).catch(()=>{});

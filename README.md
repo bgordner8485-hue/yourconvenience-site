@@ -9,6 +9,18 @@
 3. **Every Sunday 7pm** (`montage.yml`) it builds a vertical video of the week's winners set to a
    Rust & Rail song (rotates through the list in `automation/config.json`) and posts it to Facebook,
    Instagram Reels, TikTok and YouTube Shorts. Skips the week if fewer than 2 winners.
+4. **The 1st of every month, 7pm** (same workflow) it builds a longer montage of ALL of last month's
+   winners (up to ~2½ minutes) with a different song, and posts it the same way.
+5. Both videos are also saved as files on the repo's **`montages` release** (`week-latest.mp4`,
+   `month-latest.mp4`, plus a dated copy of each) and copied into the website at every deploy — so
+   they show in the **Winner videos** section of the homepage and on the store TVs automatically.
+
+## Store TVs
+Each TV opens `https://www.atyourconveniencestores.com/tv?screen=register` (or `entrance`, `coolers`,
+`coffee`, `music`) full-screen in its browser. It loops this week's winners, the weekly and monthly
+montages, the week's total and the Powerball/Mega Millions jackpots, and refreshes itself — nothing to
+copy to the TVs, ever. How often each thing shows per TV, and your own ad pictures/videos, are set in
+`public/tv/playlist.json` (put ad files in `public/tv/ads/`).
 
 ## Ticket photo rule
 Cover or crop the **barcode / validation number** before saving, or only save tickets that are already cashed.

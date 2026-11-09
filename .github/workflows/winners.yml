@@ -46,7 +46,7 @@ jobs:
           git add public data
           if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT; exit 0; fi
           git diff --cached --name-only | grep -q '^public/' && echo "changed=true" >> $GITHUB_OUTPUT || echo "changed=false" >> $GITHUB_OUTPUT
-          git commit -m "New winner(s)" && git push
+          git commit -m "New winner(s)" && git pull --rebase && git push
   deploy:
     needs: sync
     if: needs.sync.outputs.changed == 'true'

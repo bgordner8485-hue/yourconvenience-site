@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-09T12:28:53+00:00",
+ "updated": "2026-11-09T12:41:37+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 840,
-  "total": 234699.0,
+  "count": 842,
+  "total": 235349.0,
   "biggest": 2500.0,
-  "average": 279.4
+  "average": 279.51
  },
  "last_7": {
-  "count": 61,
-  "total": 13950.0,
+  "count": 63,
+  "total": 14600.0,
   "biggest": 1000.0,
-  "average": 228.69
+  "average": 231.75
  },
  "last_30": {
-  "count": 219,
-  "total": 50555.0,
+  "count": 221,
+  "total": 51205.0,
   "biggest": 1000.0,
-  "average": 230.84
+  "average": 231.7
  },
  "last_365": {
-  "count": 837,
-  "total": 231699.0,
+  "count": 839,
+  "total": 232349.0,
   "biggest": 2500.0,
-  "average": 276.82
+  "average": 276.94
  },
- "per_week_average": 5516.85,
+ "per_week_average": 5533.1,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 110
+   "count": 111
   },
   {
    "tier": "$100\u2013$499",
-   "count": 680
+   "count": 681
   },
   {
    "tier": "Under $100",
@@ -106,14 +106,14 @@
    "total": 3600.0
   },
   {
+   "game": "Merry & Bright",
+   "count": 10,
+   "total": 3100.0
+  },
+  {
    "game": "Match 6",
    "count": 3,
    "total": 3053.0
-  },
-  {
-   "game": "Merry & Bright",
-   "count": 9,
-   "total": 2600.0
   },
   {
    "game": "MONOPOLY SECRET VAULT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 15350.0,
-   "count": 67
+   "total": 16000.0,
+   "count": 69
   },
   {
    "month": "2026-10",
@@ -191,7 +191,7 @@
  "by_weekday": [
   {
    "day": "Monday",
-   "count": 133
+   "count": 135
   },
   {
    "day": "Tuesday",

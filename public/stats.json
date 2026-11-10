@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-10T21:42:02+00:00",
+ "updated": "2026-11-10T22:02:55+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 845,
-  "total": 236749.0,
+  "count": 848,
+  "total": 239949.0,
   "biggest": 2500.0,
-  "average": 280.18
+  "average": 282.96
  },
  "last_7": {
-  "count": 61,
-  "total": 15450.0,
-  "biggest": 1000.0,
-  "average": 253.28
+  "count": 64,
+  "total": 18650.0,
+  "biggest": 2000.0,
+  "average": 291.41
  },
  "last_30": {
-  "count": 216,
-  "total": 50155.0,
-  "biggest": 1000.0,
-  "average": 232.2
+  "count": 219,
+  "total": 53355.0,
+  "biggest": 2000.0,
+  "average": 243.63
  },
  "last_365": {
-  "count": 842,
-  "total": 233749.0,
+  "count": 845,
+  "total": 236949.0,
   "biggest": 2500.0,
-  "average": 277.61
+  "average": 280.41
  },
- "per_week_average": 5548.28,
+ "per_week_average": 5628.0,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -44,15 +44,15 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-   "count": 51
+   "count": 52
   },
   {
    "tier": "$500\u2013$999",
-   "count": 111
+   "count": 112
   },
   {
    "tier": "$100\u2013$499",
-   "count": 683
+   "count": 684
   },
   {
    "tier": "Under $100",
@@ -62,8 +62,8 @@
  "by_game": [
   {
    "game": "Scratch-off",
-   "count": 557,
-   "total": 126141.0
+   "count": 558,
+   "total": 128141.0
   },
   {
    "game": "Scratch Off",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 17400.0,
-   "count": 72
+   "total": 20600.0,
+   "count": 75
   },
   {
    "month": "2026-10",
@@ -195,7 +195,7 @@
   },
   {
    "day": "Tuesday",
-   "count": 118
+   "count": 121
   },
   {
    "day": "Wednesday",

@@ -1,6 +1,30 @@
 {
   "winners": [
     {
+      "id": "184wX_359ysyeqZStbktHrqxX49ALAc5v",
+      "date": "2026-11-10T21:50:16.484Z",
+      "image": "/winners/184wX_359ysyeqZStbktHrqxX49ALAc5v.jpg",
+      "amount": 300.0,
+      "store": "South Williamsport",
+      "game": "Crossword Extra"
+    },
+    {
+      "id": "1ix7XGbGDBP25uhTCEjcLPCoMHthldyOL",
+      "date": "2026-11-10T21:48:42.210Z",
+      "image": "/winners/1ix7XGbGDBP25uhTCEjcLPCoMHthldyOL.jpg",
+      "amount": 2000.0,
+      "store": "South Williamsport",
+      "game": null
+    },
+    {
+      "id": "1HA-dlcDRpwsIV81Myyyn2bC7_484p0KX",
+      "date": "2026-11-10T21:46:50.419Z",
+      "image": "/winners/1HA-dlcDRpwsIV81Myyyn2bC7_484p0KX.jpg",
+      "amount": 900.0,
+      "store": "South Williamsport",
+      "game": "Let it Snow"
+    },
+    {
       "id": "1l81OJpLE5qzP8dQQNqpejED5ftSKngl2",
       "date": "2026-11-10T18:04:24.447Z",
       "image": "/winners/1l81OJpLE5qzP8dQQNqpejED5ftSKngl2.jpg",

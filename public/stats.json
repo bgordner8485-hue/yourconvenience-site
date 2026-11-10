@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-10T18:23:15+00:00",
+ "updated": "2026-11-10T18:42:04+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 843,
-  "total": 235599.0,
+  "count": 845,
+  "total": 236749.0,
   "biggest": 2500.0,
-  "average": 279.48
+  "average": 280.18
  },
  "last_7": {
-  "count": 59,
-  "total": 14300.0,
+  "count": 61,
+  "total": 15450.0,
   "biggest": 1000.0,
-  "average": 242.37
+  "average": 253.28
  },
  "last_30": {
-  "count": 214,
-  "total": 49005.0,
+  "count": 216,
+  "total": 50155.0,
   "biggest": 1000.0,
-  "average": 229.0
+  "average": 232.2
  },
  "last_365": {
-  "count": 840,
-  "total": 232599.0,
+  "count": 842,
+  "total": 233749.0,
   "biggest": 2500.0,
-  "average": 276.9
+  "average": 277.61
  },
- "per_week_average": 5519.64,
+ "per_week_average": 5548.28,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -44,7 +44,7 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-   "count": 50
+   "count": 51
   },
   {
    "tier": "$500\u2013$999",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 682
+   "count": 683
   },
   {
    "tier": "Under $100",
@@ -81,6 +81,11 @@
    "total": 5000.0
   },
   {
+   "game": "Cash Money",
+   "count": 18,
+   "total": 4000.0
+  },
+  {
    "game": "SNAKE, RATTLE AND ROLL",
    "count": 4,
    "total": 4000.0
@@ -94,11 +99,6 @@
    "game": "$1,000,000 A YEAR FOR LIFE",
    "count": 4,
    "total": 4000.0
-  },
-  {
-   "game": "Cash Money",
-   "count": 17,
-   "total": 3850.0
   },
   {
    "game": "PICK 4",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 16250.0,
-   "count": 70
+   "total": 17400.0,
+   "count": 72
   },
   {
    "month": "2026-10",
@@ -195,7 +195,7 @@
   },
   {
    "day": "Tuesday",
-   "count": 116
+   "count": 118
   },
   {
    "day": "Wednesday",

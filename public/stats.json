@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-11T02:42:07+00:00",
+ "updated": "2026-11-11T03:03:45+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 849,
-  "total": 240099.0,
+  "count": 850,
+  "total": 240249.0,
   "biggest": 2500.0,
-  "average": 282.8
+  "average": 282.65
  },
  "last_7": {
-  "count": 61,
-  "total": 18100.0,
+  "count": 62,
+  "total": 18250.0,
   "biggest": 2000.0,
-  "average": 296.72
+  "average": 294.35
  },
  "last_30": {
-  "count": 214,
-  "total": 52355.0,
+  "count": 215,
+  "total": 52505.0,
   "biggest": 2000.0,
-  "average": 244.65
+  "average": 244.21
  },
  "last_365": {
-  "count": 845,
-  "total": 236099.0,
+  "count": 846,
+  "total": 236249.0,
   "biggest": 2500.0,
-  "average": 279.41
+  "average": 279.25
  },
- "per_week_average": 5611.77,
+ "per_week_average": 5615.49,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 685
+   "count": 686
   },
   {
    "tier": "Under $100",
@@ -82,8 +82,8 @@
   },
   {
    "game": "Cash Money",
-   "count": 18,
-   "total": 4000.0
+   "count": 19,
+   "total": 4150.0
   },
   {
    "game": "SNAKE, RATTLE AND ROLL",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 20750.0,
-   "count": 76
+   "total": 20900.0,
+   "count": 77
   },
   {
    "month": "2026-10",
@@ -199,7 +199,7 @@
   },
   {
    "day": "Wednesday",
-   "count": 108
+   "count": 109
   },
   {
    "day": "Thursday",

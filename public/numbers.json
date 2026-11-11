@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T03:24:16+00:00",
+ "updated": "2026-11-11T04:23:42+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -115,6 +115,20 @@
     "3"
    ],
    "wild_ball": "2"
+  },
+  {
+   "game": "Mega Millions",
+   "slug": "mega-millions",
+   "date": "11/10/2026",
+   "draw": "",
+   "numbers": [
+    "2",
+    "18",
+    "25",
+    "30",
+    "65"
+   ],
+   "mega_ball": "22"
   },
   {
    "game": "Match 6",

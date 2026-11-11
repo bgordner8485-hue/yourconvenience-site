@@ -1,6 +1,30 @@
 {
   "winners": [
     {
+      "id": "1GEmzsEKJkEhcfjqQrt_5LzYI1qmtn8A2",
+      "date": "2026-11-11T16:26:18.377Z",
+      "image": "/winners/1GEmzsEKJkEhcfjqQrt_5LzYI1qmtn8A2.jpg",
+      "amount": 200.0,
+      "store": "South Williamsport",
+      "game": "Million Dollar Win It All"
+    },
+    {
+      "id": "1OE3pBS5iyoXcQ5pzoHq910MAN_IX7kDV",
+      "date": "2026-11-11T16:25:47.577Z",
+      "image": "/winners/1OE3pBS5iyoXcQ5pzoHq910MAN_IX7kDV.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Merry & Bright"
+    },
+    {
+      "id": "18tO5acSljRCoTSlVEDxI8btsncUorLC1",
+      "date": "2026-11-11T16:25:23.910Z",
+      "image": "/winners/18tO5acSljRCoTSlVEDxI8btsncUorLC1.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Snake, Rattle & Roll"
+    },
+    {
       "id": "1WaBcvLtAuPS3MYv3h4e8EuWYg2ZUudJ2",
       "date": "2026-11-11T16:18:45.417Z",
       "image": "/winners/1WaBcvLtAuPS3MYv3h4e8EuWYg2ZUudJ2.jpg",

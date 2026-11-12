@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-12T15:22:54+00:00",
+ "updated": "2026-11-12T15:41:55+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 859,
-  "total": 242199.0,
+  "count": 860,
+  "total": 243099.0,
   "biggest": 2500.0,
-  "average": 281.95
+  "average": 282.67
  },
  "last_7": {
-  "count": 68,
-  "total": 18950.0,
+  "count": 69,
+  "total": 19850.0,
   "biggest": 2000.0,
-  "average": 278.68
+  "average": 287.68
  },
  "last_30": {
-  "count": 223,
-  "total": 54305.0,
+  "count": 224,
+  "total": 55205.0,
   "biggest": 2000.0,
-  "average": 243.52
+  "average": 246.45
  },
  "last_365": {
-  "count": 855,
-  "total": 238199.0,
+  "count": 856,
+  "total": 239099.0,
   "biggest": 2500.0,
-  "average": 278.6
+  "average": 279.32
  },
- "per_week_average": 5643.88,
+ "per_week_average": 5666.14,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,7 +48,7 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 113
+   "count": 114
   },
   {
    "tier": "$100\u2013$499",
@@ -116,6 +116,11 @@
    "total": 3053.0
   },
   {
+   "game": "Let It Snow",
+   "count": 5,
+   "total": 2800.0
+  },
+  {
    "game": "MONOPOLY SECRET VAULT",
    "count": 1,
    "total": 2500.0
@@ -129,18 +134,13 @@
    "game": "MONOPOLY OWN IT ALL",
    "count": 2,
    "total": 2000.0
-  },
-  {
-   "game": "$1 MILLION MONEYBAG CROSSWORD",
-   "count": 2,
-   "total": 2000.0
   }
  ],
  "by_month": [
   {
    "month": "2026-11",
-   "total": 22850.0,
-   "count": 86
+   "total": 23750.0,
+   "count": 87
   },
   {
    "month": "2026-10",
@@ -203,7 +203,7 @@
   },
   {
    "day": "Thursday",
-   "count": 113
+   "count": 114
   },
   {
    "day": "Friday",

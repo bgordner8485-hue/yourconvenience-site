@@ -1,6 +1,22 @@
 {
   "winners": [
     {
+      "id": "1cx1DAHeS1Mv7dVW9GUfRlhXA3CUAP5Jd",
+      "date": "2026-11-11T23:56:34.041Z",
+      "image": "/winners/1cx1DAHeS1Mv7dVW9GUfRlhXA3CUAP5Jd.jpg",
+      "amount": 300.0,
+      "store": "South Williamsport",
+      "game": "Super Star"
+    },
+    {
+      "id": "12UZjPJJszmC9aBP3g-KsZqMfUVv0SwJj",
+      "date": "2026-11-11T23:55:43.715Z",
+      "image": "/winners/12UZjPJJszmC9aBP3g-KsZqMfUVv0SwJj.jpg",
+      "amount": 250.0,
+      "store": "South Williamsport",
+      "game": "Festive"
+    },
+    {
       "id": "1GEmzsEKJkEhcfjqQrt_5LzYI1qmtn8A2",
       "date": "2026-11-11T16:26:18.377Z",
       "image": "/winners/1GEmzsEKJkEhcfjqQrt_5LzYI1qmtn8A2.jpg",

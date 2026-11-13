@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T04:23:31+00:00",
+ "updated": "2026-11-13T05:22:06+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -115,6 +115,20 @@
     "0"
    ],
    "wild_ball": "3"
+  },
+  {
+   "game": "Millionaire for Life",
+   "slug": "millionaire-for-life",
+   "date": "11/12/2026",
+   "draw": "",
+   "numbers": [
+    "6",
+    "22",
+    "27",
+    "29",
+    "39"
+   ],
+   "bonus": "5"
   },
   {
    "game": "Match 6",

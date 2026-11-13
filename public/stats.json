@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-13T19:41:31+00:00",
+ "updated": "2026-11-13T20:03:11+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 863,
-  "total": 243849.0,
+  "count": 864,
+  "total": 243949.0,
   "biggest": 2500.0,
-  "average": 282.56
+  "average": 282.35
  },
  "last_7": {
-  "count": 62,
-  "total": 18650.0,
+  "count": 63,
+  "total": 18750.0,
   "biggest": 2000.0,
-  "average": 300.81
+  "average": 297.62
  },
  "last_30": {
-  "count": 227,
-  "total": 55955.0,
+  "count": 228,
+  "total": 56055.0,
   "biggest": 2000.0,
-  "average": 246.5
+  "average": 245.86
  },
  "last_365": {
-  "count": 859,
-  "total": 239849.0,
+  "count": 860,
+  "total": 239949.0,
   "biggest": 2500.0,
-  "average": 279.22
+  "average": 279.01
  },
- "per_week_average": 5664.68,
+ "per_week_average": 5667.14,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 696
+   "count": 697
   },
   {
    "tier": "Under $100",
@@ -107,8 +107,8 @@
   },
   {
    "game": "Merry & Bright",
-   "count": 11,
-   "total": 3200.0
+   "count": 12,
+   "total": 3300.0
   },
   {
    "game": "Match 6",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 24500.0,
-   "count": 90
+   "total": 24600.0,
+   "count": 91
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 199
+   "count": 200
   },
   {
    "day": "Saturday",

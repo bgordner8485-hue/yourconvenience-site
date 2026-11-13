@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-13T12:41:39+00:00",
+ "updated": "2026-11-13T13:03:26+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 862,
-  "total": 243749.0,
+  "count": 863,
+  "total": 243849.0,
   "biggest": 2500.0,
-  "average": 282.77
+  "average": 282.56
  },
  "last_7": {
-  "count": 61,
-  "total": 18550.0,
+  "count": 62,
+  "total": 18650.0,
   "biggest": 2000.0,
-  "average": 304.1
+  "average": 300.81
  },
  "last_30": {
-  "count": 226,
-  "total": 55855.0,
+  "count": 227,
+  "total": 55955.0,
   "biggest": 2000.0,
-  "average": 247.15
+  "average": 246.5
  },
  "last_365": {
-  "count": 858,
-  "total": 239749.0,
+  "count": 859,
+  "total": 239849.0,
   "biggest": 2500.0,
-  "average": 279.43
+  "average": 279.22
  },
- "per_week_average": 5662.21,
+ "per_week_average": 5664.68,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 695
+   "count": 696
   },
   {
    "tier": "Under $100",
@@ -117,8 +117,8 @@
   },
   {
    "game": "Let It Snow",
-   "count": 5,
-   "total": 2800.0
+   "count": 6,
+   "total": 2900.0
   },
   {
    "game": "MONOPOLY SECRET VAULT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 24400.0,
-   "count": 89
+   "total": 24500.0,
+   "count": 90
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 198
+   "count": 199
   },
   {
    "day": "Saturday",

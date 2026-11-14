@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T04:22:44+00:00",
+ "updated": "2026-11-14T05:22:14+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -117,6 +117,20 @@
    "wild_ball": "9"
   },
   {
+   "game": "Millionaire for Life",
+   "slug": "millionaire-for-life",
+   "date": "11/13/2026",
+   "draw": "",
+   "numbers": [
+    "34",
+    "37",
+    "46",
+    "50",
+    "52"
+   ],
+   "bonus": "4"
+  },
+  {
    "game": "Mega Millions",
    "slug": "mega-millions",
    "date": "11/13/2026",
@@ -128,7 +142,9 @@
     "49",
     "57"
    ],
-   "mega_ball": "18"
+   "mega_ball": "18",
+   "next_jackpot": "$600,000,000",
+   "next_draw": "11/17/2026"
   },
   {
    "game": "Match 6",

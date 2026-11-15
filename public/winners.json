@@ -1,6 +1,38 @@
 {
   "winners": [
     {
+      "id": "1qPhlqhvsqnWRIKMhUnLYNk46Bh_QURHC",
+      "date": "2026-11-15T18:22:05.103Z",
+      "image": "/winners/1qPhlqhvsqnWRIKMhUnLYNk46Bh_QURHC.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Merry & Bright"
+    },
+    {
+      "id": "1nBf-9ruqx6DwJMqOLT_fD5p6j4eOv036",
+      "date": "2026-11-15T18:15:55.838Z",
+      "image": "/winners/1nBf-9ruqx6DwJMqOLT_fD5p6j4eOv036.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Festive Frenzy"
+    },
+    {
+      "id": "1gRD_VXVABawdp4FiWTD_iIB0AG8iwmCE",
+      "date": "2026-11-15T18:13:34.999Z",
+      "image": "/winners/1gRD_VXVABawdp4FiWTD_iIB0AG8iwmCE.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": "Code Word Crossword"
+    },
+    {
+      "id": "1TgEn2T5EWu9fTJncPB2pwbF02zNR7VVG",
+      "date": "2026-11-15T18:11:28.467Z",
+      "image": "/winners/1TgEn2T5EWu9fTJncPB2pwbF02zNR7VVG.jpg",
+      "amount": 500.0,
+      "store": "South Williamsport",
+      "game": "Extreme Green"
+    },
+    {
       "id": "1_u3BUi_vlq0o4_DHEx9p-fNFvAQphKod",
       "date": "2026-11-15T15:50:06.494Z",
       "image": "/winners/1_u3BUi_vlq0o4_DHEx9p-fNFvAQphKod.jpg",

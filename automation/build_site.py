@@ -57,7 +57,7 @@ def shell(title, desc, body, canonical, extra_head="", active=""):
     <div class="fine">Winning numbers and prize data are posted here for convenience and are unofficial —
     always confirm with the Pennsylvania Lottery before claiming a prize. Must be 18+ to play; 21+ for tobacco and vape.
     Please play responsibly — if you or someone you know has a gambling problem, call 1-800-GAMBLER.</div></div>
-  <div><a href="/blog">Blog</a> · <a href="/scratchinlottotv">ScratchinLottoTV</a> · © {TODAY.year}</div>
+  <div><a href="/blog">Blog</a> · <a href="/scratchinlottotv">ScratchinLottoTV</a> &middot; <a href="https://www.facebook.com/YourConvenienceStores/" target="_blank" rel="noopener">Facebook</a><div class="fine" style="margin-top:10px">Also ours: <a href="https://www.hookedjingles.com" target="_blank" rel="noopener">Hooked Jingles</a> &middot; <a href="https://www.santasaidmyname.com" target="_blank" rel="noopener">Santa Said My Name</a> &middot; <a href="https://www.sendaserenade.com" target="_blank" rel="noopener">Send a Serenade</a> &middot; <a href="https://www.justlistedreel.com" target="_blank" rel="noopener">JustListedReel</a></div> · © {TODAY.year}</div>
 </div></footer>
 </body></html>"""
 

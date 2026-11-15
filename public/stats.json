@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-15T15:41:24+00:00",
+ "updated": "2026-11-15T16:03:04+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 865,
-  "total": 244449.0,
+  "count": 868,
+  "total": 244849.0,
   "biggest": 2500.0,
-  "average": 282.6
+  "average": 282.08
  },
  "last_7": {
-  "count": 46,
-  "total": 14300.0,
+  "count": 49,
+  "total": 14700.0,
   "biggest": 2000.0,
-  "average": 310.87
+  "average": 300.0
  },
  "last_30": {
-  "count": 216,
-  "total": 53905.0,
+  "count": 219,
+  "total": 54305.0,
   "biggest": 2000.0,
-  "average": 249.56
+  "average": 247.97
  },
  "last_365": {
-  "count": 861,
-  "total": 240449.0,
+  "count": 864,
+  "total": 240849.0,
   "biggest": 2500.0,
-  "average": 279.27
+  "average": 278.76
  },
- "per_week_average": 5639.75,
+ "per_week_average": 5649.54,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 697
+   "count": 700
   },
   {
    "tier": "Under $100",
@@ -86,6 +86,11 @@
    "total": 4650.0
   },
   {
+   "game": "PICK 4",
+   "count": 6,
+   "total": 4050.0
+  },
+  {
    "game": "SNAKE, RATTLE AND ROLL",
    "count": 4,
    "total": 4000.0
@@ -101,11 +106,6 @@
    "total": 4000.0
   },
   {
-   "game": "PICK 4",
-   "count": 5,
-   "total": 3850.0
-  },
-  {
    "game": "Merry & Bright",
    "count": 13,
    "total": 3800.0
@@ -117,8 +117,8 @@
   },
   {
    "game": "Let It Snow",
-   "count": 6,
-   "total": 2900.0
+   "count": 7,
+   "total": 3000.0
   },
   {
    "game": "MONOPOLY SECRET VAULT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 25100.0,
-   "count": 92
+   "total": 25500.0,
+   "count": 95
   },
   {
    "month": "2026-10",
@@ -215,7 +215,7 @@
   },
   {
    "day": "Sunday",
-   "count": 112
+   "count": 115
   }
  ],
  "portal_through": "2026-10-27",

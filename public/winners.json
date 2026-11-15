@@ -1,6 +1,30 @@
 {
   "winners": [
     {
+      "id": "1_u3BUi_vlq0o4_DHEx9p-fNFvAQphKod",
+      "date": "2026-11-15T15:50:06.494Z",
+      "image": "/winners/1_u3BUi_vlq0o4_DHEx9p-fNFvAQphKod.jpg",
+      "amount": 200.0,
+      "store": "South Williamsport",
+      "game": "Pick 4"
+    },
+    {
+      "id": "1cc43MCVKLqlyWhDfVK-BtZxaDVilg-pV",
+      "date": "2026-11-15T15:49:46.706Z",
+      "image": "/winners/1cc43MCVKLqlyWhDfVK-BtZxaDVilg-pV.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Wild Side"
+    },
+    {
+      "id": "1JQZlhp6IwGapTbKzVK2htjKtjDrkGTeo",
+      "date": "2026-11-15T15:48:50.688Z",
+      "image": "/winners/1JQZlhp6IwGapTbKzVK2htjKtjDrkGTeo.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Let it Snow"
+    },
+    {
       "id": "1CqkJF0_sNI5fZNFpNDQWAZI9nq9qgGtQ",
       "date": "2026-11-14T03:22:24.222Z",
       "image": "/winners/1CqkJF0_sNI5fZNFpNDQWAZI9nq9qgGtQ.jpg",

@@ -3,13 +3,13 @@
     "week": {
       "period": "week",
       "label": "",
-      "built": "2026-11-09T18:32:30+00:00",
-      "count": 58,
-      "total": 14050.0,
-      "seconds": 58.3,
-      "song": "Chasing Sun",
+      "built": "2026-11-15T23:11:01+00:00",
+      "count": 32,
+      "total": 11000.0,
+      "seconds": 58.4,
+      "song": "Cold Beer Bad Ideas",
       "src": "/videos/week-latest.mp4",
-      "archive_file": "week-2026-11-09.mp4",
+      "archive_file": "week-2026-11-15.mp4",
       "release_tag": "montages"
     },
     "month": {
@@ -26,6 +26,18 @@
     }
   },
   "archive": [
+    {
+      "period": "week",
+      "label": "",
+      "built": "2026-11-15T23:11:01+00:00",
+      "count": 32,
+      "total": 11000.0,
+      "seconds": 58.4,
+      "song": "Cold Beer Bad Ideas",
+      "src": "/videos/week-latest.mp4",
+      "archive_file": "week-2026-11-15.mp4",
+      "release_tag": "montages"
+    },
     {
       "period": "month",
       "label": "OCTOBER 2026",

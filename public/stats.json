@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-16T19:22:18+00:00",
+ "updated": "2026-11-16T19:41:47+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 873,
-  "total": 245849.0,
+  "count": 877,
+  "total": 246649.0,
   "biggest": 2500.0,
-  "average": 281.61
+  "average": 281.24
  },
  "last_7": {
-  "count": 33,
-  "total": 11150.0,
+  "count": 37,
+  "total": 11950.0,
   "biggest": 2000.0,
-  "average": 337.88
+  "average": 322.97
  },
  "last_30": {
-  "count": 219,
-  "total": 54405.0,
+  "count": 223,
+  "total": 55205.0,
   "biggest": 2000.0,
-  "average": 248.42
+  "average": 247.56
  },
  "last_365": {
-  "count": 869,
-  "total": 241849.0,
+  "count": 873,
+  "total": 242649.0,
   "biggest": 2500.0,
-  "average": 278.31
+  "average": 277.95
  },
- "per_week_average": 5654.24,
+ "per_week_average": 5673.76,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 117
+   "count": 118
   },
   {
    "tier": "$100\u2013$499",
-   "count": 704
+   "count": 707
   },
   {
    "tier": "Under $100",
@@ -86,6 +86,11 @@
    "total": 4650.0
   },
   {
+   "game": "Merry & Bright",
+   "count": 15,
+   "total": 4400.0
+  },
+  {
    "game": "PICK 4",
    "count": 6,
    "total": 4050.0
@@ -104,11 +109,6 @@
    "game": "$1,000,000 A YEAR FOR LIFE",
    "count": 4,
    "total": 4000.0
-  },
-  {
-   "game": "Merry & Bright",
-   "count": 14,
-   "total": 3900.0
   },
   {
    "game": "Match 6",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 26500.0,
-   "count": 100
+   "total": 27300.0,
+   "count": 104
   },
   {
    "month": "2026-10",
@@ -191,7 +191,7 @@
  "by_weekday": [
   {
    "day": "Monday",
-   "count": 136
+   "count": 140
   },
   {
    "day": "Tuesday",

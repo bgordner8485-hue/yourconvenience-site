@@ -1,6 +1,38 @@
 {
   "winners": [
     {
+      "id": "1gLBmZ_h4UaiP8v8fpxHHoHshi1gEG9ms",
+      "date": "2026-11-16T19:27:46.047Z",
+      "image": "/winners/1gLBmZ_h4UaiP8v8fpxHHoHshi1gEG9ms.jpg",
+      "amount": 500.0,
+      "store": "South Williamsport",
+      "game": "Merry & Bright"
+    },
+    {
+      "id": "1U8tg5vNaXNyJLPi1bp82nhQMDepXKwA7",
+      "date": "2026-11-16T19:27:29.041Z",
+      "image": "/winners/1U8tg5vNaXNyJLPi1bp82nhQMDepXKwA7.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Festive"
+    },
+    {
+      "id": "14BloTGnLqzBJM-RJszrsOJ3R-HslQvtL",
+      "date": "2026-11-16T19:27:12.444Z",
+      "image": "/winners/14BloTGnLqzBJM-RJszrsOJ3R-HslQvtL.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Snake, Rattle & Roll"
+    },
+    {
+      "id": "1vRAOCMsyuD6BNJV4BNN79s9w_nQVMGzB",
+      "date": "2026-11-16T19:26:54.164Z",
+      "image": "/winners/1vRAOCMsyuD6BNJV4BNN79s9w_nQVMGzB.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Super Star"
+    },
+    {
       "id": "1BPHL_SZD24pfvETmEvpoygEaSLD6SsHa",
       "date": "2026-11-16T12:34:59.018Z",
       "image": "/winners/1BPHL_SZD24pfvETmEvpoygEaSLD6SsHa.jpg",

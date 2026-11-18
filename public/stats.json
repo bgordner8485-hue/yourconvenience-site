@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-18T18:41:46+00:00",
+ "updated": "2026-11-18T19:02:33+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 891,
-  "total": 248649.0,
+  "count": 892,
+  "total": 249649.0,
   "biggest": 2500.0,
-  "average": 279.07
+  "average": 279.88
  },
  "last_7": {
-  "count": 43,
-  "total": 8700.0,
-  "biggest": 900.0,
-  "average": 202.33
+  "count": 44,
+  "total": 9700.0,
+  "biggest": 1000.0,
+  "average": 220.45
  },
  "last_30": {
-  "count": 217,
-  "total": 52480.0,
+  "count": 218,
+  "total": 53480.0,
   "biggest": 2000.0,
-  "average": 241.84
+  "average": 245.32
  },
  "last_365": {
-  "count": 886,
-  "total": 243649.0,
+  "count": 887,
+  "total": 244649.0,
   "biggest": 2500.0,
-  "average": 275.0
+  "average": 275.82
  },
- "per_week_average": 5682.93,
+ "per_week_average": 5707.16,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -44,7 +44,7 @@
   },
   {
    "tier": "$1,000\u2013$9,999",
-   "count": 52
+   "count": 53
   },
   {
    "tier": "$500\u2013$999",
@@ -121,6 +121,11 @@
    "total": 3000.0
   },
   {
+   "game": "Snake, Rattle & Roll",
+   "count": 10,
+   "total": 2800.0
+  },
+  {
    "game": "MONOPOLY SECRET VAULT",
    "count": 1,
    "total": 2500.0
@@ -129,18 +134,13 @@
    "game": "$2,500 FESTIVE FRENZY",
    "count": 1,
    "total": 2500.0
-  },
-  {
-   "game": "MONOPOLY OWN IT ALL",
-   "count": 2,
-   "total": 2000.0
   }
  ],
  "by_month": [
   {
    "month": "2026-11",
-   "total": 29300.0,
-   "count": 118
+   "total": 30300.0,
+   "count": 119
   },
   {
    "month": "2026-10",
@@ -199,7 +199,7 @@
   },
   {
    "day": "Wednesday",
-   "count": 116
+   "count": 117
   },
   {
    "day": "Thursday",

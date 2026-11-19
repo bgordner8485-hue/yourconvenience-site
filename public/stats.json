@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-19T19:22:17+00:00",
+ "updated": "2026-11-19T19:23:49+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 894,
-  "total": 249899.0,
+  "count": 895,
+  "total": 249999.0,
   "biggest": 2500.0,
-  "average": 279.53
+  "average": 279.33
  },
  "last_7": {
-  "count": 38,
-  "total": 8200.0,
+  "count": 39,
+  "total": 8300.0,
   "biggest": 1000.0,
-  "average": 215.79
+  "average": 212.82
  },
  "last_30": {
-  "count": 214,
-  "total": 52580.0,
+  "count": 215,
+  "total": 52680.0,
   "biggest": 2000.0,
-  "average": 245.7
+  "average": 245.02
  },
  "last_365": {
-  "count": 889,
-  "total": 244899.0,
+  "count": 890,
+  "total": 244999.0,
   "biggest": 2500.0,
-  "average": 275.48
+  "average": 275.28
  },
- "per_week_average": 5693.51,
+ "per_week_average": 5695.92,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 723
+   "count": 724
   },
   {
    "tier": "Under $100",
@@ -122,8 +122,8 @@
   },
   {
    "game": "Snake, Rattle & Roll",
-   "count": 10,
-   "total": 2800.0
+   "count": 11,
+   "total": 2900.0
   },
   {
    "game": "MONOPOLY SECRET VAULT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 30550.0,
-   "count": 121
+   "total": 30650.0,
+   "count": 122
   },
   {
    "month": "2026-10",
@@ -203,7 +203,7 @@
   },
   {
    "day": "Thursday",
-   "count": 116
+   "count": 117
   },
   {
    "day": "Friday",

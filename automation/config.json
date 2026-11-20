@@ -7,6 +7,10 @@
   "hashtags": "#YourConvenience #PALottery #Winner #SouthWilliamsport #WilliamsportPA #ScratchOff",
   "postiz": {
     "api_base": "https://api.postiz.com/public/v1",
+    "alert_channels": {
+      "facebook": "cmulym5oo08lcrt0y72yy7u8s",
+      "gmb": "cmwjglbq104c0mn07bui4g6uj"
+    },
     "winner_channels": {
       "facebook": "cmulym5oo08lcrt0y72yy7u8s",
       "instagram": "PASTE_YOURCONVENIENCE_INSTAGRAM_ID",

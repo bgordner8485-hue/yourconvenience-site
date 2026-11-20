@@ -34,6 +34,10 @@ jobs:
         run: python automation/stats.py
       - name: Rebuild pages
         run: python automation/build_site.py
+      - name: Jackpot and new-ticket alerts
+        run: python automation/alerts.py
+        env:
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
       - name: Refuse to publish conflict markers
         run: |
           if grep -rIl --exclude-dir=.git -e '^<<<<<<< ' -e '^>>>>>>> ' public/ ; then

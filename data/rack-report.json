@@ -1,0 +1,536 @@
+{
+ "generated": "2026-11-20T20:36:10.998853+00:00",
+ "bins": 180,
+ "dead": [
+  {
+   "bin": "114",
+   "game": "1705",
+   "name": "$3,000,000 Golden Ticket",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 0,
+   "tickets": 21,
+   "tied_up": 630
+  }
+ ],
+ "thin": [
+  {
+   "bin": "3",
+   "game": "1717",
+   "name": "$5,000,000 Lion\u2019s Share",
+   "price": 50,
+   "top_prize": "$5,000,000",
+   "top_left": 1,
+   "tickets": 48,
+   "tied_up": 2400
+  },
+  {
+   "bin": "M4-20",
+   "game": "1717",
+   "name": "$5,000,000 Lion\u2019s Share",
+   "price": 50,
+   "top_prize": "$5,000,000",
+   "top_left": 1,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "17",
+   "game": "1734",
+   "name": "3s a Charm",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 29,
+   "tied_up": 870
+  },
+  {
+   "bin": "18",
+   "game": "1723",
+   "name": "The Hunt for $3,000,000",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 15,
+   "tied_up": 450
+  },
+  {
+   "bin": "109",
+   "game": "1742",
+   "name": "$3 Million Mega Moolah Multiplier",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 11,
+   "tied_up": 330
+  },
+  {
+   "bin": "M3-14",
+   "game": "1742",
+   "name": "$3 Million Mega Moolah Multiplier",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "M4-15",
+   "game": "1742",
+   "name": "$3 Million Mega Moolah Multiplier",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 3,
+   "tied_up": 90
+  },
+  {
+   "bin": "M4-18",
+   "game": "1723",
+   "name": "The Hunt for $3,000,000",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 13,
+   "tied_up": 390
+  },
+  {
+   "bin": "M4-19",
+   "game": "1682",
+   "name": "$160 Million Cash Blowout",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 26,
+   "tied_up": 780
+  },
+  {
+   "bin": "M4-24",
+   "game": "1734",
+   "name": "3s a Charm",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 1,
+   "tickets": 24,
+   "tied_up": 720
+  },
+  {
+   "bin": "93",
+   "game": "1765",
+   "name": "$10,000 a Month for Life",
+   "price": 5,
+   "top_prize": "$1,600,000",
+   "top_left": 1,
+   "tickets": 17,
+   "tied_up": 85
+  },
+  {
+   "bin": "M4-29",
+   "game": "1765",
+   "name": "$10,000 a Month for Life",
+   "price": 5,
+   "top_prize": "$1,600,000",
+   "top_left": 1,
+   "tickets": 37,
+   "tied_up": 185
+  },
+  {
+   "bin": "M3-8",
+   "game": "1781",
+   "name": "Win Win Win",
+   "price": 10,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "51",
+   "game": "1746",
+   "name": "Millionaire Loading",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 14,
+   "tied_up": 280
+  },
+  {
+   "bin": "60",
+   "game": "1781",
+   "name": "Win Win Win",
+   "price": 10,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 15,
+   "tied_up": 150
+  },
+  {
+   "bin": "61",
+   "game": "1781",
+   "name": "Win Win Win",
+   "price": 10,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 41,
+   "tied_up": 410
+  },
+  {
+   "bin": "M3-21",
+   "game": "1746",
+   "name": "Millionaire Loading",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "M4-11",
+   "game": "1781",
+   "name": "Win Win Win",
+   "price": 10,
+   "top_prize": "$1,000,000",
+   "top_left": 1,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "4",
+   "game": "1762",
+   "name": "$1,000,000 a Year for Life",
+   "price": 50,
+   "top_prize": "$14,500,000",
+   "top_left": 2,
+   "tickets": 22,
+   "tied_up": 1100
+  },
+  {
+   "bin": "M4-2",
+   "game": "1762",
+   "name": "$1,000,000 a Year for Life",
+   "price": 50,
+   "top_prize": "$14,500,000",
+   "top_left": 2,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "M3-18",
+   "game": "1762",
+   "name": "$1,000,000 a Year for Life",
+   "price": 50,
+   "top_prize": "$14,500,000",
+   "top_left": 2,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "52",
+   "game": "1763",
+   "name": "$500,000 a Year for Life",
+   "price": 20,
+   "top_prize": "$7,250,000",
+   "top_left": 2,
+   "tickets": 27,
+   "tied_up": 540
+  },
+  {
+   "bin": "53",
+   "game": "1763",
+   "name": "$500,000 a Year for Life",
+   "price": 20,
+   "top_prize": "$7,250,000",
+   "top_left": 2,
+   "tickets": 11,
+   "tied_up": 220
+  },
+  {
+   "bin": "M3-10",
+   "game": "1763",
+   "name": "$500,000 a Year for Life",
+   "price": 20,
+   "top_prize": "$7,250,000",
+   "top_left": 2,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "M4-35",
+   "game": "1763",
+   "name": "$500,000 a Year for Life",
+   "price": 20,
+   "top_prize": "$7,250,000",
+   "top_left": 2,
+   "tickets": 13,
+   "tied_up": 260
+  },
+  {
+   "bin": "108",
+   "game": "1696",
+   "name": "Mega Bucks",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 2,
+   "tickets": 6,
+   "tied_up": 180
+  },
+  {
+   "bin": "M4-22",
+   "game": "1696",
+   "name": "Mega Bucks",
+   "price": 30,
+   "top_prize": "$3,000,000",
+   "top_left": 2,
+   "tickets": 1,
+   "tied_up": 30
+  },
+  {
+   "bin": "36",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 25,
+   "tied_up": 500
+  },
+  {
+   "bin": "37",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 27,
+   "tied_up": 540
+  },
+  {
+   "bin": "38",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 23,
+   "tied_up": 460
+  },
+  {
+   "bin": "39",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 11,
+   "tied_up": 220
+  },
+  {
+   "bin": "M4-4",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "M3-12",
+   "game": "1797",
+   "name": "Snake, Rattle and Roll",
+   "price": 20,
+   "top_prize": "$1,000,000",
+   "top_left": 2,
+   "tickets": 0,
+   "tied_up": 0
+  },
+  {
+   "bin": "104",
+   "game": "1735",
+   "name": "Six Figures",
+   "price": 10,
+   "top_prize": "$600,000",
+   "top_left": 2,
+   "tickets": 59,
+   "tied_up": 590
+  },
+  {
+   "bin": "82",
+   "game": "1751",
+   "name": "Extreme Green",
+   "price": 10,
+   "top_prize": "$500,000",
+   "top_left": 2,
+   "tickets": 3,
+   "tied_up": 30
+  },
+  {
+   "bin": "M4-16",
+   "game": "1751",
+   "name": "Extreme Green",
+   "price": 10,
+   "top_prize": "$500,000",
+   "top_left": 2,
+   "tickets": 13,
+   "tied_up": 130
+  },
+  {
+   "bin": "101",
+   "game": "1770",
+   "name": "PHILADELPHIA 76ERS",
+   "price": 5,
+   "top_prize": "$250,000",
+   "top_left": 2,
+   "tickets": 40,
+   "tied_up": 200
+  },
+  {
+   "bin": "110",
+   "game": "1758",
+   "name": "ELF Available on iLottery",
+   "price": 5,
+   "top_prize": "$250,000",
+   "top_left": 2,
+   "tickets": 53,
+   "tied_up": 265
+  },
+  {
+   "bin": "91",
+   "game": "1753",
+   "name": "Crossword Extra",
+   "price": 3,
+   "top_prize": "$50,000",
+   "top_left": 2,
+   "tickets": 15,
+   "tied_up": 45
+  }
+ ],
+ "unchecked": [
+  {
+   "bin": "M4-6",
+   "game": "1813",
+   "name": "Minty Multiplier",
+   "price": 2,
+   "tickets": 0
+  },
+  {
+   "bin": "69",
+   "game": "1811",
+   "name": "What\u2019s Under the Tree",
+   "price": 5,
+   "tickets": 51
+  },
+  {
+   "bin": "70",
+   "game": "1811",
+   "name": "What\u2019s Under the Tree",
+   "price": 5,
+   "tickets": 52
+  },
+  {
+   "bin": "71",
+   "game": "x-100blowout",
+   "name": "$100 Blowout",
+   "price": 5,
+   "tickets": 45
+  },
+  {
+   "bin": "78",
+   "game": "x-fatstacks",
+   "name": "Fat Stacks",
+   "price": 5,
+   "tickets": 56
+  },
+  {
+   "bin": "79",
+   "game": "x-fatstacks",
+   "name": "Fat Stacks",
+   "price": 5,
+   "tickets": 4
+  },
+  {
+   "bin": "80",
+   "game": "x-fatstacks",
+   "name": "Fat Stacks",
+   "price": 5,
+   "tickets": 47
+  },
+  {
+   "bin": "81",
+   "game": "x-fatstacks",
+   "name": "Fat Stacks",
+   "price": 5,
+   "tickets": 48
+  },
+  {
+   "bin": "83",
+   "game": "1811",
+   "name": "What\u2019s Under the Tree",
+   "price": 5,
+   "tickets": 41
+  },
+  {
+   "bin": "97",
+   "game": "1813",
+   "name": "Minty Multiplier",
+   "price": 2,
+   "tickets": 11
+  },
+  {
+   "bin": "105",
+   "game": "x-500week",
+   "name": "$500 a Week for Life",
+   "price": 1,
+   "tickets": 72
+  },
+  {
+   "bin": "106",
+   "game": "x-50100500",
+   "name": "$50, $100 or $500",
+   "price": 10,
+   "tickets": 58
+  },
+  {
+   "bin": "111",
+   "game": "x-fast1000",
+   "name": "Fast $1,000",
+   "price": 10,
+   "tickets": 23
+  },
+  {
+   "bin": "112",
+   "game": "x-ladyluck",
+   "name": "Lady Luck",
+   "price": 10,
+   "tickets": 56
+  },
+  {
+   "bin": "113",
+   "game": "x-monopoly",
+   "name": "Monopoly Secret Vault",
+   "price": 5,
+   "tickets": 42
+  },
+  {
+   "bin": "115",
+   "game": "x-got",
+   "name": "Game of Thrones",
+   "price": 10,
+   "tickets": 37
+  },
+  {
+   "bin": "116",
+   "game": "x-lucky13",
+   "name": "Lucky 13",
+   "price": 5,
+   "tickets": 24
+  },
+  {
+   "bin": "M4-26",
+   "game": "1811",
+   "name": "What\u2019s Under the Tree",
+   "price": 5,
+   "tickets": 0
+  }
+ ]
+}

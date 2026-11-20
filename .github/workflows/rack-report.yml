@@ -1,0 +1,30 @@
+name: Rack report
+on:
+  schedule:
+    - cron: "40 14 * * *"   # ~9:40am Eastern, after the morning lottery count is in
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: store-bot }
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      # prizes.json is refreshed hourly by lottery.yml, but pull it fresh so the
+      # report is never built against a stale prizes-remaining feed.
+      - name: Refresh the prizes-remaining feed
+        run: python automation/lottery_data.py
+      - name: Build the rack report
+        run: python automation/rack_report.py
+      - name: Show it on the run summary
+        run: cat data/rack-report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Save changes
+        run: |
+          git config user.name "store-bot"; git config user.email "store-bot@users.noreply.github.com"
+          git add data/rack-report.md data/rack-report.json public/prizes.json
+          git diff --cached --quiet && echo "no change" && exit 0
+          git commit -m "Rack report" && git pull --rebase && git push

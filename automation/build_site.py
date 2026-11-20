@@ -414,7 +414,7 @@ def blog_pages(posts):
     return posts
 
 def feeds(posts, games):
-    urls = ["/", "/stats", "/numbers", "/scratch-offs", "/scratchinlottotv", "/blog"]
+    urls = ["/", "/winners", "/stats", "/numbers", "/scratch-offs", "/lucky-numbers", "/tv", "/scratchinlottotv", "/blog"]
     urls += [f"/numbers/{g}" for g in games]
     urls += [f'/blog/{p["slug"]}' for p in posts]
     body = "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)

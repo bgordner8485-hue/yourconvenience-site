@@ -1787,7 +1787,7 @@
   "alerts": {
     "jackpots": {
       "Powerball": {
-        "tier": 0,
+        "tier": 100,
         "amount": 114000000
       },
       "Mega Millions": {

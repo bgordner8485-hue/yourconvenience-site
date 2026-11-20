@@ -1781,5 +1781,18 @@
   ],
   "since": "2026-11-20T17:16:12.971Z",
   "montage_count": 10,
-  "monthly_count": 1
+  "monthly_count": 1,
+  "alerts": {
+    "jackpots": {
+      "Powerball": {
+        "tier": 0,
+        "amount": 114000000
+      },
+      "Mega Millions": {
+        "tier": 600,
+        "amount": 629000000
+      }
+    },
+    "announced_games": []
+  }
 }

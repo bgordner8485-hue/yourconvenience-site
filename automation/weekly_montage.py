@@ -295,5 +295,32 @@ def main():
     media = postiz_upload(out_mp4)
     postiz_post(channels, media, text, title=title)
 
+    # Google Business Profile takes text plus one image and never video, so the montage
+    # goes up there as a cover frame. The LEARN_MORE button carries people to the site.
+    cover_channels = {k: v for k, v in CFG["postiz"].get("montage_cover_channels", {}).items()
+                      if v and not v.startswith("PASTE_")}
+    if cover_channels:
+        try:
+            cover = out_mp4.with_name(f"cover-{a.period}.jpg")
+            grab = ["ffmpeg", "-y", "-loglevel", "error", "-ss", "3", "-i", str(out_mp4),
+                    "-frames:v", "1", "-q:v", "3", str(cover)]
+            subprocess.run(grab, check=True)
+            if not cover.exists():          # montage shorter than the seek
+                grab[5] = "0"
+                subprocess.run(grab, check=True)
+            # No link or hashtags here: Google rejects post text that carries a URL,
+            # and the call-to-action button is the link instead.
+            if a.period == "week":
+                cover_text = (f"This week at {CFG['store_name']}: {full_count} winning tickets and "
+                              f"{money(total)} paid out right here at our counter. "
+                              f"Congratulations to everyone who cashed in!")
+            else:
+                cover_text = (f"{label.title()} at {CFG['store_name']}: {full_count} winning tickets "
+                              f"and {money(total)} paid out at our counter. Thank you for playing with us.")
+            postiz_post(cover_channels, postiz_upload(cover), cover_text, title=title)
+            print("  cover frame posted to:", ", ".join(cover_channels))
+        except Exception as e:             # never let the cover post break the montage run
+            print("  COVER POST FAILED:", e)
+
 if __name__ == "__main__":
     main()

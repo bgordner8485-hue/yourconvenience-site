@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="At Your Convenience">
+  <circle cx="256" cy="256" r="256" fill="#D81E27"/>
+  <g transform="translate(256 256) scale(2.42) translate(-112 -102)">
+    <g fill="none" stroke="#FFC61E" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M90 124 L58 146" stroke-width="22"/>
+      <path d="M58 146 L34 136" stroke-width="20"/>
+      <path d="M106 78 L74 101" stroke-width="17"/>
+      <path d="M108 72 L92 123" stroke-width="27"/>
+      <path d="M94 122 L126 139" stroke-width="22"/>
+      <path d="M126 139 L121 171" stroke-width="20"/>
+      <path d="M110 77 L152 88" stroke-width="17"/>
+    </g>
+    <circle cx="123" cy="51" r="20" fill="#FFC61E"/>
+    <rect x="148" y="74" width="40" height="27" rx="4" fill="#FFFFFF" transform="rotate(-14 168 88)"/>
+  </g>
+</svg>

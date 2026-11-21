@@ -1,6 +1,22 @@
 {
   "winners": [
     {
+      "id": "1joC2S7zG5_I5P46_tTOHCUssV5dw3kil",
+      "date": "2026-11-21T19:32:00.106Z",
+      "image": "/winners/1joC2S7zG5_I5P46_tTOHCUssV5dw3kil.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Merry & Bright"
+    },
+    {
+      "id": "15tfMdv-DBnkluf7bOJCNt1TRGMQwGRk-",
+      "date": "2026-11-21T19:31:22.628Z",
+      "image": "/winners/15tfMdv-DBnkluf7bOJCNt1TRGMQwGRk-.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Blowout"
+    },
+    {
       "id": "1uhHuarIbOKvyXustkku9FenbfMTWO-g-",
       "date": "2026-11-20T20:39:57.981Z",
       "image": "/winners/1uhHuarIbOKvyXustkku9FenbfMTWO-g-.jpg",

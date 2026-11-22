@@ -1,6 +1,14 @@
 {
   "winners": [
     {
+      "id": "1ahbb1MbLVQ6VtZm0wVX5imrQeEqYMVOq",
+      "date": "2026-11-22T17:07:02.405Z",
+      "image": "/winners/1ahbb1MbLVQ6VtZm0wVX5imrQeEqYMVOq.jpg",
+      "amount": 500.0,
+      "store": "South Williamsport",
+      "game": "Blowout"
+    },
+    {
       "id": "1gL67r64nzbradLxBnQb0NZV5BdkAkxRO",
       "date": "2026-11-22T03:47:52.007Z",
       "image": "/winners/1gL67r64nzbradLxBnQb0NZV5BdkAkxRO.jpg",

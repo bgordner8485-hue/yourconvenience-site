@@ -3,13 +3,13 @@
     "week": {
       "period": "week",
       "label": "",
-      "built": "2026-11-15T23:11:01+00:00",
-      "count": 32,
-      "total": 11000.0,
-      "seconds": 58.4,
-      "song": "Cold Beer Bad Ideas",
+      "built": "2026-11-22T23:11:06+00:00",
+      "count": 37,
+      "total": 7250.0,
+      "seconds": 58.3,
+      "song": "Daddys Dance",
       "src": "/videos/week-latest.mp4",
-      "archive_file": "week-2026-11-15.mp4",
+      "archive_file": "week-2026-11-22.mp4",
       "release_tag": "montages"
     },
     "month": {
@@ -26,6 +26,18 @@
     }
   },
   "archive": [
+    {
+      "period": "week",
+      "label": "",
+      "built": "2026-11-22T23:11:06+00:00",
+      "count": 37,
+      "total": 7250.0,
+      "seconds": 58.3,
+      "song": "Daddys Dance",
+      "src": "/videos/week-latest.mp4",
+      "archive_file": "week-2026-11-22.mp4",
+      "release_tag": "montages"
+    },
     {
       "period": "week",
       "label": "",

@@ -1,6 +1,30 @@
 {
   "winners": [
     {
+      "id": "1gL67r64nzbradLxBnQb0NZV5BdkAkxRO",
+      "date": "2026-11-22T03:47:52.007Z",
+      "image": "/winners/1gL67r64nzbradLxBnQb0NZV5BdkAkxRO.jpg",
+      "amount": 500.0,
+      "store": "South Williamsport",
+      "game": "Cash Money"
+    },
+    {
+      "id": "13FO_xXZ5BdvXhr7VtUa5s7dBVj4ClmKp",
+      "date": "2026-11-22T03:46:46.267Z",
+      "image": "/winners/13FO_xXZ5BdvXhr7VtUa5s7dBVj4ClmKp.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Lights, Camera, Crossword!"
+    },
+    {
+      "id": "1gxxLYeEQ0bI_UQqpRAu1Q3T-_47gW6lQ",
+      "date": "2026-11-22T03:45:43.571Z",
+      "image": "/winners/1gxxLYeEQ0bI_UQqpRAu1Q3T-_47gW6lQ.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Let it Snow"
+    },
+    {
       "id": "1-La81fUm3LCsUZN88onC_ORMjP3uIqwx",
       "date": "2026-11-21T19:50:45.108Z",
       "image": "/winners/1-La81fUm3LCsUZN88onC_ORMjP3uIqwx.jpg",

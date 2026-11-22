@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-22T03:41:37+00:00",
+ "updated": "2026-11-22T04:03:58+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 905,
-  "total": 251749.0,
+  "count": 908,
+  "total": 252449.0,
   "biggest": 2500.0,
-  "average": 278.18
+  "average": 278.03
  },
  "last_7": {
-  "count": 40,
-  "total": 7300.0,
+  "count": 43,
+  "total": 8000.0,
   "biggest": 1000.0,
-  "average": 182.5
+  "average": 186.05
  },
  "last_30": {
-  "count": 217,
-  "total": 53430.0,
+  "count": 220,
+  "total": 54130.0,
   "biggest": 2000.0,
-  "average": 246.22
+  "average": 246.05
  },
  "last_365": {
-  "count": 899,
-  "total": 245749.0,
+  "count": 902,
+  "total": 246449.0,
   "biggest": 2500.0,
-  "average": 273.36
+  "average": 273.23
  },
- "per_week_average": 5679.41,
+ "per_week_average": 5696.14,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,11 +48,11 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 119
+   "count": 120
   },
   {
    "tier": "$100\u2013$499",
-   "count": 733
+   "count": 735
   },
   {
    "tier": "Under $100",
@@ -76,6 +76,11 @@
    "total": 12500.0
   },
   {
+   "game": "Cash Money",
+   "count": 22,
+   "total": 5250.0
+  },
+  {
    "game": "JACKPOT",
    "count": 5,
    "total": 5000.0
@@ -84,11 +89,6 @@
    "game": "Merry & Bright",
    "count": 20,
    "total": 4900.0
-  },
-  {
-   "game": "Cash Money",
-   "count": 21,
-   "total": 4750.0
   },
   {
    "game": "PICK 4",
@@ -111,14 +111,14 @@
    "total": 4000.0
   },
   {
+   "game": "Let It Snow",
+   "count": 8,
+   "total": 3100.0
+  },
+  {
    "game": "Match 6",
    "count": 3,
    "total": 3053.0
-  },
-  {
-   "game": "Let It Snow",
-   "count": 7,
-   "total": 3000.0
   },
   {
    "game": "Snake, Rattle & Roll",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 32400.0,
-   "count": 132
+   "total": 33100.0,
+   "count": 135
   },
   {
    "month": "2026-10",
@@ -215,7 +215,7 @@
   },
   {
    "day": "Sunday",
-   "count": 119
+   "count": 122
   }
  ],
  "portal_through": "2026-10-27",

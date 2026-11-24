@@ -1,6 +1,14 @@
 {
   "winners": [
     {
+      "id": "1oSxxlebb3ncfIoflCR3Yr1HFPqCig0xM",
+      "date": "2026-11-24T18:53:31.736Z",
+      "image": "/winners/1oSxxlebb3ncfIoflCR3Yr1HFPqCig0xM.jpg",
+      "amount": 100.0,
+      "store": "South Williamsport",
+      "game": "Snake, Rattle & Roll"
+    },
+    {
       "id": "1GDAAeBREvczXSRMjf32IIF9BW--6Wwgz",
       "date": "2026-11-24T17:48:44.146Z",
       "image": "/winners/1GDAAeBREvczXSRMjf32IIF9BW--6Wwgz.jpg",

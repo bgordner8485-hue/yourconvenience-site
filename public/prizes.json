@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T17:21:54+00:00",
+ "updated": "2026-11-25T18:24:05+00:00",
  "games": [
   {
    "number": "1814",
@@ -66,6 +66,40 @@
     {
      "prize": "$50",
      "left": "6,562"
+    }
+   ]
+  },
+  {
+   "number": "1811",
+   "name": "What\u2019s Under the Tree Second-Chance Eligible",
+   "price": "$5",
+   "new": true,
+   "top_prize": "$50,000",
+   "top_prize_left": "23",
+   "prizes": [
+    {
+     "prize": "$50,000",
+     "left": "23"
+    },
+    {
+     "prize": "$10,000",
+     "left": "19"
+    },
+    {
+     "prize": "$1,000",
+     "left": "312"
+    },
+    {
+     "prize": "$500",
+     "left": "879"
+    },
+    {
+     "prize": "$150",
+     "left": "7,834"
+    },
+    {
+     "prize": "$75",
+     "left": "21,479"
     }
    ]
   },

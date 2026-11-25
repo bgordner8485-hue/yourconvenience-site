@@ -1,6 +1,14 @@
 {
   "winners": [
     {
+      "id": "10K_-iuoOsl9JT0utNCJ-1SQD_A29yTgP",
+      "date": "2026-11-25T03:56:09.637Z",
+      "image": "/winners/10K_-iuoOsl9JT0utNCJ-1SQD_A29yTgP.jpg",
+      "amount": 150.0,
+      "store": "South Williamsport",
+      "game": "The Game of Life"
+    },
+    {
       "id": "1asXOcUdwI5P2M8oMsk5YfFZrn8dalHxV",
       "date": "2026-11-25T01:44:56.346Z",
       "image": "/winners/1asXOcUdwI5P2M8oMsk5YfFZrn8dalHxV.jpg",

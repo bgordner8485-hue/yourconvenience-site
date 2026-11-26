@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T03:25:09+00:00",
+ "updated": "2026-11-26T04:24:40+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -15,6 +15,21 @@
    ],
    "next_jackpot": "$53,000",
    "next_draw": "11/26/2026"
+  },
+  {
+   "game": "Powerball",
+   "slug": "powerball",
+   "date": "11/25/2026",
+   "draw": "",
+   "numbers": [
+    "23",
+    "43",
+    "57",
+    "58",
+    "68"
+   ],
+   "powerball": "12",
+   "power_play": "3"
   },
   {
    "game": "PICK 5",

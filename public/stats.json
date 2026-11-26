@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-26T00:41:25+00:00",
+ "updated": "2026-11-26T00:42:36+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 939,
-  "total": 257499.0,
+  "count": 944,
+  "total": 258199.0,
   "biggest": 2500.0,
-  "average": 274.23
+  "average": 273.52
  },
  "last_7": {
-  "count": 47,
-  "total": 7850.0,
+  "count": 52,
+  "total": 8550.0,
   "biggest": 500.0,
-  "average": 167.02
+  "average": 164.42
  },
  "last_30": {
-  "count": 213,
-  "total": 48940.0,
+  "count": 218,
+  "total": 49640.0,
   "biggest": 2000.0,
-  "average": 229.77
+  "average": 227.71
  },
  "last_365": {
-  "count": 933,
-  "total": 251499.0,
+  "count": 938,
+  "total": 252199.0,
   "biggest": 2500.0,
-  "average": 269.56
+  "average": 268.87
  },
- "per_week_average": 5738.44,
+ "per_week_average": 5754.94,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 764
+   "count": 769
   },
   {
    "tier": "Under $100",
@@ -77,8 +77,8 @@
   },
   {
    "game": "Cash Money",
-   "count": 26,
-   "total": 6400.0
+   "count": 27,
+   "total": 6500.0
   },
   {
    "game": "JACKPOT",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 38150.0,
-   "count": 166
+   "total": 38850.0,
+   "count": 171
   },
   {
    "month": "2026-10",
@@ -203,7 +203,7 @@
   },
   {
    "day": "Thursday",
-   "count": 117
+   "count": 122
   },
   {
    "day": "Friday",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T04:24:40+00:00",
+ "updated": "2026-11-26T05:23:09+00:00",
  "draws": [
   {
    "game": "Treasure Hunt",
@@ -29,7 +29,9 @@
     "68"
    ],
    "powerball": "12",
-   "power_play": "3"
+   "power_play": "3",
+   "next_jackpot": "$48,000,000",
+   "next_draw": "11/28/2026"
   },
   {
    "game": "PICK 5",
@@ -130,6 +132,20 @@
     "4"
    ],
    "wild_ball": "6"
+  },
+  {
+   "game": "Millionaire for Life",
+   "slug": "millionaire-for-life",
+   "date": "11/25/2026",
+   "draw": "",
+   "numbers": [
+    "30",
+    "39",
+    "40",
+    "51",
+    "52"
+   ],
+   "bonus": "1"
   },
   {
    "game": "Match 6",

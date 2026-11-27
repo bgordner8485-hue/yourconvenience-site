@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-27T15:22:28+00:00",
+ "updated": "2026-11-27T15:41:30+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 949,
-  "total": 259249.0,
+  "count": 950,
+  "total": 259349.0,
   "biggest": 2500.0,
-  "average": 273.18
+  "average": 273.0
  },
  "last_7": {
-  "count": 54,
-  "total": 9250.0,
+  "count": 55,
+  "total": 9350.0,
   "biggest": 500.0,
-  "average": 171.3
+  "average": 170.0
  },
  "last_30": {
-  "count": 219,
-  "total": 48540.0,
+  "count": 220,
+  "total": 48640.0,
   "biggest": 2000.0,
-  "average": 221.64
+  "average": 221.09
  },
  "last_365": {
-  "count": 943,
-  "total": 253249.0,
+  "count": 944,
+  "total": 253349.0,
   "biggest": 2500.0,
-  "average": 268.56
+  "average": 268.38
  },
- "per_week_average": 5760.3,
+ "per_week_average": 5762.64,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 773
+   "count": 774
   },
   {
    "tier": "Under $100",
@@ -81,14 +81,14 @@
    "total": 6500.0
   },
   {
-   "game": "JACKPOT",
-   "count": 5,
+   "game": "Merry & Bright",
+   "count": 21,
    "total": 5000.0
   },
   {
-   "game": "Merry & Bright",
-   "count": 20,
-   "total": 4900.0
+   "game": "JACKPOT",
+   "count": 5,
+   "total": 5000.0
   },
   {
    "game": "PICK 4",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 39900.0,
-   "count": 176
+   "total": 40000.0,
+   "count": 177
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 205
+   "count": 206
   },
   {
    "day": "Saturday",

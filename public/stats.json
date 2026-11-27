@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-27T11:23:24+00:00",
+ "updated": "2026-11-27T11:41:37+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 948,
-  "total": 258749.0,
+  "count": 949,
+  "total": 259249.0,
   "biggest": 2500.0,
-  "average": 272.94
+  "average": 273.18
  },
  "last_7": {
-  "count": 53,
-  "total": 8750.0,
+  "count": 54,
+  "total": 9250.0,
   "biggest": 500.0,
-  "average": 165.09
+  "average": 171.3
  },
  "last_30": {
-  "count": 218,
-  "total": 48040.0,
+  "count": 219,
+  "total": 48540.0,
   "biggest": 2000.0,
-  "average": 220.37
+  "average": 221.64
  },
  "last_365": {
-  "count": 942,
-  "total": 252749.0,
+  "count": 943,
+  "total": 253249.0,
   "biggest": 2500.0,
-  "average": 268.31
+  "average": 268.56
  },
- "per_week_average": 5748.55,
+ "per_week_average": 5760.3,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -48,7 +48,7 @@
   },
   {
    "tier": "$500\u2013$999",
-   "count": 122
+   "count": 123
   },
   {
    "tier": "$100\u2013$499",
@@ -111,14 +111,14 @@
    "total": 4000.0
   },
   {
+   "game": "Snake, Rattle & Roll",
+   "count": 14,
+   "total": 3600.0
+  },
+  {
    "game": "Let It Snow",
    "count": 10,
    "total": 3300.0
-  },
-  {
-   "game": "Snake, Rattle & Roll",
-   "count": 13,
-   "total": 3100.0
   },
   {
    "game": "Match 6",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 39400.0,
-   "count": 175
+   "total": 39900.0,
+   "count": 176
   },
   {
    "month": "2026-10",
@@ -207,7 +207,7 @@
   },
   {
    "day": "Friday",
-   "count": 204
+   "count": 205
   },
   {
    "day": "Saturday",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T08:23:48+00:00",
+ "updated": "2026-11-28T09:22:43+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
@@ -222,21 +222,21 @@
  "counter": {
   "source": "Daily Pays",
   "since": "2026-11-04",
-  "days": 21,
-  "total": 78192.5,
+  "days": 22,
+  "total": 84377.5,
   "complete": false,
-  "streak": 20,
-  "pays": 1681,
+  "streak": 21,
+  "pays": 1844,
   "last_7": {
-   "total": 16113.5,
-   "pays": 461,
-   "days": 5
+   "total": 22298.5,
+   "pays": 624,
+   "days": 6
   },
   "last_30": {
-   "total": 78192.5,
-   "pays": 1681,
-   "days": 21
+   "total": 84377.5,
+   "pays": 1844,
+   "days": 22
   },
-  "per_week_average": 21893.9
+  "per_week_average": 23625.7
  }
 }

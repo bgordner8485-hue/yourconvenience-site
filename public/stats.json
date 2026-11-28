@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-28T17:22:35+00:00",
+ "updated": "2026-11-28T17:41:58+00:00",
  "source": "portal+photos",
  "since": "2025-10-04",
  "all_time": {
-  "count": 956,
-  "total": 261249.0,
+  "count": 962,
+  "total": 262149.0,
   "biggest": 2500.0,
-  "average": 273.27
+  "average": 272.5
  },
  "last_7": {
-  "count": 57,
-  "total": 10200.0,
+  "count": 63,
+  "total": 11100.0,
   "biggest": 500.0,
-  "average": 178.95
+  "average": 176.19
  },
  "last_30": {
-  "count": 220,
-  "total": 49290.0,
+  "count": 226,
+  "total": 50190.0,
   "biggest": 2000.0,
-  "average": 224.05
+  "average": 222.08
  },
  "last_365": {
-  "count": 950,
-  "total": 255249.0,
+  "count": 956,
+  "total": 256149.0,
   "biggest": 2500.0,
-  "average": 268.68
+  "average": 267.94
  },
- "per_week_average": 5787.85,
+ "per_week_average": 5808.92,
  "full_since": "2026-02-02",
  "biggest_win": {
   "date": "2026-09-15",
@@ -52,7 +52,7 @@
   },
   {
    "tier": "$100\u2013$499",
-   "count": 778
+   "count": 784
   },
   {
    "tier": "Under $100",
@@ -82,8 +82,8 @@
   },
   {
    "game": "Merry & Bright",
-   "count": 23,
-   "total": 6000.0
+   "count": 26,
+   "total": 6300.0
   },
   {
    "game": "JACKPOT",
@@ -112,8 +112,8 @@
   },
   {
    "game": "Snake, Rattle & Roll",
-   "count": 14,
-   "total": 3600.0
+   "count": 15,
+   "total": 3700.0
   },
   {
    "game": "Let It Snow",
@@ -139,8 +139,8 @@
  "by_month": [
   {
    "month": "2026-11",
-   "total": 41900.0,
-   "count": 183
+   "total": 42800.0,
+   "count": 189
   },
   {
    "month": "2026-10",
@@ -211,7 +211,7 @@
   },
   {
    "day": "Saturday",
-   "count": 79
+   "count": 85
   },
   {
    "day": "Sunday",
